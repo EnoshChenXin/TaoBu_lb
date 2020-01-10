@@ -27,6 +27,10 @@ import java.util.List;
 import butterknife.BindView;
 
 public class MainActivity1 extends BaseActivity {
+    /***
+     *
+     * 测试
+     */
     private TaobuFragment taobuFragment;
     private CircleFragment circleFragment;
     private ShopFragment shopFragment;
