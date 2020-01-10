@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/view_background"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".mine.view.OrderDuiHuanActivity">
+    <com.lianbei.taobu.base.NavigationView
+        app:titleText="免单兑换"
+        android:id="@+id/navigation_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/bg_gridview_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/dp_20"
+            android:textSize="@dimen/sp_size_18"
+            android:textColor="@color/white"
+            android:text="免单兑换规则"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="@dimen/dp_20"
+            android:textSize="@dimen/sp_size_14"
+            android:textColor="@color/white"
+            android:text="您在免单活动中抢购的商品，在拼多多确认收货，并且收到系统可兑换消息后，可在此操作免单兑换，成功后付款金额直接反至微信零钱，请注意查收。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:id="@+id/search_goods"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/circle_view_search2"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:background="@mipmap/search_icon" />
+
+
+            <EditText
+                android:layout_marginRight="@dimen/dp_50"
+                android:id="@+id/et_input_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@null"
+                android:hint="请输入订单号"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/disable_or_hint_black"
+                android:textSize="@dimen/sp_size_14" />
+
+            <RelativeLayout
+                android:layout_marginLeft="-80dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/clean_search_tv"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:background="@mipmap/close"
+                    android:visibility="gone" />
+                <View
+                    android:background="@color/view_background"
+                    android:layout_toLeftOf="@+id/search"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="搜索"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_size_14" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

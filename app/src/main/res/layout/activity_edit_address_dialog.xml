@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_20"
+    tools:context=".mine.view.EditAddressDialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_list_gridview"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:inputType="text"
+                android:text="编辑地址"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_16" />
+
+            <ImageView
+                android:id="@+id/close_dialog"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="@dimen/dp_10"
+                android:src="@mipmap/close" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal">
+
+            <com.lianbei.taobu.views.mMaterialEditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/HINT_INPUT_CONSIGNEE"
+                android:paddingLeft="@dimen/dp_10"
+                android:text=""
+                app:met_clearButton="false"
+                app:met_hideUnderline="true"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/text_grey"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white2" />
+
+            <com.lianbei.taobu.views.mMaterialEditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/HINT_INPUT_PHONT1"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/dp_10"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/text_grey"
+                app:met_clearButton="false"
+                app:met_hideUnderline="true"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_address_picker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10">
+
+            <TextView
+                android:layout_marginRight="@dimen/dp_40"
+                android:id="@+id/tv_district"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/HINT_INPUT_DISTRICT"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:id="@+id/btn_address_picker"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70">
+
+            <com.lianbei.taobu.views.mMaterialEditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/HINT_INPUT_ADDRESS"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_2"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_2"
+                android:scrollbars="vertical"
+                android:text=""
+                app:met_hideUnderline="true"
+                app:met_clearButton="true"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/text_grey"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white2" />
+
+        <com.lianbei.taobu.views.MButton
+            android:id="@+id/mybutton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_margin="@dimen/dp_10"
+            android:text="保存"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

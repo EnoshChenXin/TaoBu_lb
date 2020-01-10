@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/view_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mine.view.OrderListFragment">
+    <com.lianbei.taobu.base.NavigationView
+        android:id="@+id/navigation_id"
+        app:titleText="收获地址"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.chaychan.uikit.powerfulrecyclerview.PowerfulRecyclerView
+        android:id="@+id/rv_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:dividerColor="@color/color_transparent"
+        app:dividerMarginLeft="2dp"
+        app:dividerMarginRight="2dp"
+        app:dividerSize="8dp" />
+
+    <com.lianbei.taobu.views.MButton
+        android:id="@+id/MButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_margin="@dimen/dp_10"
+        android:text="添加收货地址"
+        android:textColor="@color/white" />
+
+</LinearLayout>

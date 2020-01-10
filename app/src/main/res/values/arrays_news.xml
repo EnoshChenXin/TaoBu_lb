@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="channel">
+        <item>精选</item>
+        <item>女装</item>
+        <item>百货</item>
+        <item>手机</item>
+        <item>食品</item>
+        <item>电器</item>
+        <item>汽车</item>
+        <item>男装</item>
+        <item>运动</item>
+        <item>内衣</item>
+        <item>水果</item>
+        <item>鞋包</item>
+        <item>家具</item>
+        <item>电脑</item>
+        <item>医药</item>
+        <item>家装</item>
+        <item>母婴</item>
+        <item>美妆</item>
+        <item>家访</item>
+    </string-array>
+    <string-array name="channel_code">
+        <item>shop_jinxuan</item>
+        <item>shop_nvzhuang</item>
+        <item>shop_baihuo</item>
+        <item>shop_shouji</item>
+        <item>shop_shipin</item>
+        <item>shop_dianqi</item>
+        <item>shop_qiche</item>
+        <item>shop_nanzhuang</item>
+        <item>shop_yundong</item>
+        <item>shop_neiyi</item>
+        <item>shop_shuiguo</item>
+        <item>shop_xiebao</item>
+        <item>shop_jiaju</item>
+        <item>shop_diannao</item>
+        <item>shop_yiyao</item>
+        <item>shop_jiazhuang</item>
+        <item>shop_muying</item>
+        <item>shop_meizhuang</item>
+        <item>shop_jiafang</item>
+    </string-array>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".taobu.view.SignMyFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <!--下半部分 限时免费抢-->
+        <com.chaychan.uikit.powerfulrecyclerview.PowerfulRecyclerView
+            android:id="@+id/rv_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dividerColor="@color/view_background"
+            app:dividerMarginLeft="2dp"
+            app:dividerMarginRight="2dp"
+            app:dividerSize="10dp" />
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

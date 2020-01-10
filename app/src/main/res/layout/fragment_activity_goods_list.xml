@@ -1,0 +1,12 @@
+<com.chaychan.uikit.powerfulrecyclerview.PowerfulRecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/m_RvNews"
+    android:clipToPadding="false"
+    android:paddingTop="@dimen/dp_10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:dividerMarginLeft="10dp"
+    app:dividerMarginRight="10dp"
+    app:dividerColor="@color/color_transparent"
+    app:dividerSize="10dp"/>

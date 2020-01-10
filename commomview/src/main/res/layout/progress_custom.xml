@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_loadingView"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <RelativeLayout
+            android:background="@color/loading_background_pressed"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+            <ProgressBar
+                android:layout_centerHorizontal="true"
+                android:id="@+id/loadingpro"
+                android:layout_width="@dimen/edge_40"
+                android:layout_height="@dimen/edge_40"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/load_animdraw"
+                android:indeterminateDuration="1500" />
+            <TextView
+                android:layout_marginTop="5dp"
+               android:layout_centerHorizontal="true"
+                android:textSize="@dimen/font_size_30"
+                android:textColor="@color/font_color_white"
+                android:layout_below="@+id/loadingpro"
+                android:text="加载中..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/jiazaiche" />
+
+            <ImageView
+                android:id="@+id/spinnerImageView"
+                android:layout_width="49dp"
+                android:layout_height="5dp"
+                android:layout_marginBottom="23dp"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/anim_dot"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_tipView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/progressdialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/successImageView"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:layout_marginTop="15dip"
+            android:src="@mipmap/tanchukuang_chenggong"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/FailImageView"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:layout_marginTop="15dip"
+            android:src="@mipmap/tanchukuang_shibai"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/WarnImageView"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:layout_marginTop="15dip"
+            android:src="@mipmap/tanchukuang_warn"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dip"
+            android:gravity="center"
+            android:maxLines="8"
+            android:paddingBottom="15dp"
+            android:text="Message"
+            android:textColor="#5E5E5E" />
+    </LinearLayout>
+</LinearLayout>

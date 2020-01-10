@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_share"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical"
+    tools:context=".shop.view.ShareGoodsActivity">
+
+    <com.lianbei.taobu.base.NavigationView
+        android:id="@+id/navigation_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="商品分享" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:paddingBottom="@dimen/dp_300"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--图片-->
+        <HorizontalScrollView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/share_image_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_120"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white">
+            <TextView
+                android:textSize="@dimen/sp_size_18"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="分享文案"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@drawable/bg_gridview5"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="新鲜水果红富士苹果脆甜多汁丑苹果孕妇水果带箱10斤装非冰糖心"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_size_14" />
+
+                <TextView
+                    android:id="@+id/min_group_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="拼团活动价:￥3.9"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_size_14" />
+
+                <TextView
+                    android:id="@+id/coupon_total_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="优惠卷后价:￥3.9"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_size_14" />
+
+                <TextView
+                    android:id="@+id/short_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="优惠链接:https://p.pinduoduo.com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_size_16" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

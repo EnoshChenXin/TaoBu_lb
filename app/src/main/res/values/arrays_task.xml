@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>我的好友</item>
+        <item>收益详情</item>
+        <item>糖豆明细</item>
+        <item>提现明细</item>
+        <item>邀请好友</item>
+
+        <item>收藏</item>
+        <item>地址管理</item>
+        <item>帮助中心</item>
+        <item>体脂计算</item>
+    </string-array>
+</resources>

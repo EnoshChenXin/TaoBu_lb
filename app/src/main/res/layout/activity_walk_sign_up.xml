@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical"
+    tools:context=".taobu.view.WalkSignUpActivity">
+
+    <com.lianbei.taobu.base.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/NAVIGATION_TITLE_WALK" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_rel"
+        android:layout_below="@id/navigation_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/map_share_title_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报名明日挑战赛(0001期)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_size_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="开赛日期：2019/7/20 - 0023:59"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:paddingLeft="@dimen/dp_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:text="选择挑战组缴纳报名保证金"
+                        android:textColor="@color/gray" />
+
+
+                    <LinearLayout
+                        android:padding="@dimen/dp_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_10">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/writhdrawls_tag_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:paddingRight="@dimen/dp_20"
+                        android:text="选择支付方式"
+                        android:textColor="@color/gray" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/white"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:text="糖豆"
+                            android:textColor="@color/dark_gray" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp_20"
+                            android:background="@mipmap/choose" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/show_friend"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:text="# 3步瓜分运动糖豆 #"
+                        android:textColor="@color/color_505050"
+                        android:textSize="@dimen/sp_size_16" />
+                    <!--第一条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_20">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="第1步：报名参与活动"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="@dimen/sp_size_14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1.用户选择相应的组并按照档位缴纳一定保证金"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp_size_10" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2.注：组为所参加比赛选择的组队，如10糖豆3000步为一组，20糖豆5000步为一组"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp_size_10" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!--第二条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_20">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="第2步：报名参与活动"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="@dimen/sp_size_14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="次日 00：00 - 23：59（北京时间）完成保证金对应的步数，
+并回到首页提交成绩"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp_size_10" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <!--第三条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_20">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="第3步：获得奖励"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="@dimen/sp_size_14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1.比赛结束后，成功提交成绩并完成任务的用户可平分本组红包，获得一个 ≥保证金的糖豆奖励"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp_size_10" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2.奖金需要手动领取，请于赛事结束后两日内在本页面领取，过期作废"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp_size_10" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/background_item"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_20">
+
+                        <TextView
+                            style="@style/share_font_38_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="温馨提示：" />
+
+                        <TextView
+                            style="@style/share_font_38_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="
+淘步的数据来源于微信运动，请保持您的微信运动可以正常接收数据，请根据自身状况保持适量运动，任何因此导致的意外均与淘步无关" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_white_item"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/sugarBean_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:text="糖豆：0"
+            android:textColor="@color/color_222222"
+            android:textSize="@dimen/sp_size_16"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/pay_btn"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="#EF7A25"
+            android:gravity="center"
+            android:text="立即支付"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>

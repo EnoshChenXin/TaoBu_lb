@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical"
+    tools:context=".circle.view.GroupGameDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:navigationIcon="@mipmap/back">
+
+            <!--上部分start-->
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:background="@mipmap/walkbg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_100" />
+
+                    <com.lianbei.taobu.views.CircleImageView
+                        android:src="@mipmap/icon3"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:id="@+id/headImageView"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_60"
+                         />
+
+                </LinearLayout>
+                <!--好友和邀请好友-->
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40">
+                    <LinearLayout
+                        android:id="@+id/lin_button"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:id="@+id/icon"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:background="@mipmap/icon2"
+                            android:layout_width="@dimen/dp_16"
+                            android:layout_height="@dimen/dp_16" />
+                        <LinearLayout
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/color_505050"
+                                android:textSize="@dimen/sp_size_16"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_marginLeft="-4dp"
+                                android:gravity="center"
+                                android:background="@drawable/circle_view_red_time"
+                                android:layout_width="@dimen/dp_18"
+                                android:layout_height="@dimen/dp_18">
+                                <TextView
+                                    android:layout_marginBottom="@dimen/dp_3"
+                                    android:textSize="@dimen/sp_size_14"
+                                    android:textColor="@color/white"
+                                    android:text="2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_margin="@dimen/dp_5"
+                            android:background="@color/mj_content_color"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:id="@+id/group_tag"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:textColor="@color/color_505050"
+                            android:textSize="@dimen/sp_size_12"
+                            android:text=""
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+                    <!--邀请好友-->
+                    <LinearLayout
+                        android:id="@+id/share_group"
+                        android:visibility="gone"
+                        android:background="@drawable/circle_view_layout2"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_30">
+                        <ImageView
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_gravity="center_vertical"
+                            android:background="@mipmap/add_friend"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20" />
+                        <TextView
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_20"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/main_font1"
+                            android:textSize="@dimen/sp_size_12"
+                            android:text="邀请"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <!--邀请好友-->
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/join_group"
+                        android:gravity="center"
+                        android:background="@drawable/button_selector"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="80dp"
+                        android:layout_height="@dimen/dp_30">
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_size_12"
+                            android:text="加入"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <!--上部分end-->
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <View
+            android:background="@color/view_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_3"/>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabIndicatorColor="#666666"
+            app:tabSelectedTextColor="#4D4D4D"
+            app:tabTextColor="#A7A7A7">
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

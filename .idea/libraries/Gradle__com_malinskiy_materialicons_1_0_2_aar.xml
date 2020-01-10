@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.malinskiy:materialicons:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e3644f709a6533516b8ff44e0070f43c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e3644f709a6533516b8ff44e0070f43c/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.malinskiy/materialicons/1.0.2/f92e016fa0c4bc8f2d182f8fc707a02c2d182743/materialicons-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

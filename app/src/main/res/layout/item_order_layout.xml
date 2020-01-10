@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cart="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/bg_list_gridview"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+           android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30">
+            <TextView
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/mj_content_color"
+                android:textSize="@dimen/sp_14"
+                android:id="@+id/order_create_time"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/orange500"
+                android:id="@+id/order_status_desc"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_20"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="状态"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.lianbei.taobu.views.CustomRoundAngleImageView
+                    android:background="@drawable/bg_list_gridview"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/iv_img"
+                    android:layout_width="@dimen/dp_126"
+                    android:layout_height="@dimen/dp_126" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/dp_10"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:lineSpacingMultiplier="1.1"
+                    android:letterSpacing="0.03"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:id="@+id/goods_name"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/sp_size_14"
+                    android:text="芬芳最美的芬芳最美的就是你芬芳最美的就是你芬芳最美的就是你就是你芬芳最美的就是你芬芳最美的就是你"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:id="@+id/juan"
+                    android:layout_below="@id/goods_name"
+                    android:src="@mipmap/duihuan"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_18" />
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_below="@id/juan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="@dimen/sp_size_10"
+                        android:id="@+id/describe"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:textColor="#6E6E6E"
+                        android:text="已兑换8万单子"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:textSize="@dimen/sp_size_10"
+                        android:textColor="#6E6E6E"
+                        android:text="剩余343件"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30">
+
+                    <LinearLayout
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/td_logo"
+                            android:src="@mipmap/td_logo"
+                            android:layout_width="@dimen/dp_14"
+                            android:layout_height="@dimen/dp_14" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:textSize="@dimen/sp_14"
+                            android:textColor="@color/red"
+                            android:layout_marginLeft="@dimen/dp_4"
+                            android:text="40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textSize="@dimen/sp_size_8"
+                            android:textColor="@color/red"
+                            android:text="糖豆"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.lianbei.taobu.views.PriceView
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:id="@+id/oldprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            cart:value="12.0"
+                            cart:moneySize="12dp"
+                            cart:intSize="12dp"
+                            cart:decimalSize="12dp"
+                            cart:textColor="#717171"
+                            cart:strike="true"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

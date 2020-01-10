@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.bingoogolapple:bga-banner:2.2.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/df58f86fb0ad01d4936747926fa32a90/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/df58f86fb0ad01d4936747926fa32a90/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.bingoogolapple/bga-banner/2.2.5/6ea0f9eec988b012c9a20bfe30eb5241c84c9f46/bga-banner-2.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

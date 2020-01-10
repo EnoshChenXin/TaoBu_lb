@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_background"
+    android:clipToPadding="false"
+    android:descendantFocusability="blocksDescendants"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".taobu.view.TaobuFragment">
+
+    <include
+        android:name="@layout/layout_taobu_title"
+        layout="@layout/layout_taobu_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"/>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ScrollView
+            style="@style/MatchAuto"
+            android:overScrollMode="never"
+            android:padding="5dp"
+            android:scrollbars="none"
+>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_restart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="重置"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <com.lianbei.taobu.views.CircleBarView
+                        android:id="@+id/circle_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_180"
+                        android:layout_centerHorizontal="true"
+                        app:bar_width="8dp"
+                        app:bg_color="@color/glod_bg_end"
+                        app:progress_color="@color/blue"
+                        app:start_angle="135"
+                        app:sweep_angle="270" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/text_progress"
+                            android:layout_alignBottom="@id/text_progress"
+                            android:layout_centerHorizontal="true"
+                            android:text="今日步数"
+                            android:textSize="@dimen/sp_size_14" />
+
+                        <TextView
+                            android:id="@+id/text_progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-10dp"
+                            android:text="0"
+                            android:textColor="@color/main_text_black"
+                            android:textSize="@dimen/sp_size_50"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/text_progress"
+                            android:layout_alignBottom="@id/text_progress"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="-10dp"
+                            android:text="目标6000步"
+                            android:textSize="@dimen/sp_size_14" />
+
+                        <LinearLayout
+                            android:id="@+id/upload_btn"
+                            android:layout_width="@dimen/dp_100"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginTop="@dimen/sp_12"
+                            android:background="@drawable/button_upload_count_select">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="上传步数"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp_14" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="今日糖豆："
+                        android:textSize="@dimen/sp_size_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1231"
+                        android:textSize="@dimen/sp_size_16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/daka_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/sign" />
+
+                    <ImageView
+                        android:id="@+id/walk_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/run" />
+
+                    <ImageView
+                        android:id="@+id/huanwu_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/tangdouhuanwu" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_NewWalk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:minHeight="@dimen/dp_90">
+
+                    <fragment
+                        android:id="@+id/fragment_cycle_viewpager_content"
+                        android:name="com.lianbei.taobu.views.bannerview.lib.CycleViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_90"
+                        android:scaleType="fitCenter" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--下半部分 推荐活动-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:text="推荐活动" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/light_gray5"></View>
+                <!--群组，我的权益-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal">
+                    <!--群组头像&名称-->
+                    <LinearLayout
+                        android:id="@+id/group_game_lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/dp_18"
+                            android:layout_weight="1"
+                            android:src="@mipmap/qunzu" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:lines="1"
+                                android:ellipsize="end"
+                                style="@style/style_title_48_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_2"
+                                android:text="群组" />
+
+                            <TextView
+                                android:lines="1"
+                                android:ellipsize="end"
+                                style="@style/style_font_38_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_2"
+                                android:text="和好友一起运动" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_gray5"></View>
+                    <!--我的权益-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/dp_18"
+                            android:layout_weight="1"
+                            android:src="@mipmap/quanyi" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:lines="1"
+                                android:ellipsize="end"
+                                style="@style/style_title_48_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_2"
+                                android:text="我的权益" />
+
+                            <TextView
+                                android:lines="1"
+                                android:ellipsize="end"
+                                style="@style/style_font_38_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_2"
+                                android:text="查看拥有权益" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/light_gray5"></View>
+                <!--群组，我的权益-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal">
+                    <!--体脂计算器-->
+                    <LinearLayout
+                        android:id="@+id/bim_lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/dp_18"
+                            android:layout_weight="1"
+                            android:src="@mipmap/fat" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:lines="1"
+                                android:ellipsize="end"
+                                style="@style/style_title_48_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_2"
+                                android:text="体脂计算器" />
+
+                            <TextView
+                                style="@style/style_font_38_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_2"
+                                android:text="瘦身计算工具" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_gray5"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!--下半部分 限时免费抢-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <!--限时免费抢头部-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44">
+
+                    <TextView
+                        android:id="@+id/mianfeiqiang"
+                        style="@style/title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:gravity="center_vertical"
+                        android:text="限时免费抢" />
+
+                    <TextView
+                        style="@style/task_gold_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/mianfeiqiang"
+                        android:gravity="center_vertical"
+                        android:text="6:30开场" />
+
+                    <TextView
+                        android:id="@+id/more_activity"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/sp_size_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:gravity="center_vertical"
+                        android:text="更多>" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/view_background"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:paddingLeft="@dimen/dp_20"
+                        android:background="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <com.lianbei.taobu.taobu.view.viewutils.MastGridView
+                            android:id="@+id/mastgridview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:numColumns="auto_fit"
+                            android:stretchMode="spacingWidthUniform"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+            <!--下半部分 限时免费抢-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/dp_20"
+                    style="@style/title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_44"
+                    android:gravity="center_vertical"
+                    android:text="糖豆换物" />
+
+                <com.chaychan.uikit.powerfulrecyclerview.PowerfulRecyclerView
+                    android:id="@+id/rv_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:dividerColor="@color/view_background"
+                    app:dividerMarginLeft="2dp"
+                    app:dividerMarginRight="2dp"
+                    app:dividerSize="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</LinearLayout>

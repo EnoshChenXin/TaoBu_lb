@@ -1,0 +1,157 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="FullBleedTheme" parent="android:Theme.Light.NoTitleBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="ActionBarTheme" parent="android:Theme.Light">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- dialog自定义  start -->
+    <style name="dot_style">
+        <item name="android:layout_width">5dip</item>
+        <item name="android:layout_height">5dip</item>
+        <item name="android:background">@drawable/dot_normal</item>
+        <item name="android:layout_marginLeft">1.5dip</item>
+        <item name="android:layout_marginRight">1.5dip</item>
+    </style>
+    <style name="dialog_tran" parent="android:style/Theme.Dialog"></style>
+
+    <!-- dialog自定义 -->
+    <style name="dialog_untran" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否悬浮在activity上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item><!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.6</item><!-- 灰度 -->
+        <item name="android:windowContentOverlay">@null</item><!-- 对话框是否有遮盖 -->
+        <item name="android:colorBackgroundCacheHint">@null</item><!-- 背景缓存颜色 -->
+    </style>
+    <!-- 自定义Dialog -->
+    <style name="Custom_Progress" parent="@android:style/Theme.Dialog">
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="load_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+    </style>
+        <style name="dialog_transparent" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <!-- <item name="android:windowBackground">@color/alpha_bg</item>背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="dialog_btn">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/color_transparent</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 主标题 58px  5f5f5f -->
+    <style name="style_font_58_black">
+        <item name="android:textSize">@dimen/font_size_58</item>
+        <item name="android:textColor">@color/font_third_black</item>
+    </style>
+    <!-- 商品内容标题 -->
+    <style name="style_title_48_black">
+        <item name="android:textSize">@dimen/font_size_48</item>
+        <item name="android:textColor">@color/mon_dialog_mesg_color</item>
+    </style>
+
+    <!-- 商品内容标题 -->
+    <style name="style_title_48_5F5F5F">
+        <item name="android:textSize">@dimen/font_size_48</item>
+        <item name="android:textColor">@color/font_color_black</item>
+    </style>
+
+    <!-- 正文 -30px 灰色 ACACAC -->
+    <style name="style_font_30_gray">
+        <item name="android:textSize">@dimen/font_size_30</item>
+        <item name="android:textColor">@color/font_third_gray</item>
+    </style>
+    <!-- 正文 -30px 灰色 ACACAC -->
+    <style name="style_font_12_gray">
+        <item name="android:textSize">@dimen/font_size_36</item>
+        <item name="android:textColor">@color/font_third_gray</item>
+    </style>
+
+    <!-- 正文 -38px 黑色 5f5f5f -->
+    <style name="style_font_38_black">
+        <item name="android:textSize">@dimen/font_size_38</item>
+        <item name="android:textColor">@color/font_third_black</item>
+    </style>
+
+    <style name="DialogWindowTitle">
+        <item name="android:textSize">@dimen/font_size_58</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    <style name="UpdateDialogWindowTitle">
+        <item name="android:textSize">@dimen/font_size_18_share</item>
+        <item name="android:textColor">@color/button_red</item>
+    </style>
+
+
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <!-- dialog自定义  end -->
+
+    <!-- 分享标题文字 -->
+    <style name="ShareTitleStyle" >
+        <item name="android:textSize">@dimen/font_size_30</item>
+        <item name="android:textColor">@color/font_share</item>
+    </style>
+</resources>

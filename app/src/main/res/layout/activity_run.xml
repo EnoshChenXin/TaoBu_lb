@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical"
+    tools:context=".taobu.view.WalkActivity">
+
+    <com.lianbei.taobu.base.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/NAVIGATION_TITLE_WALK" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#facd89">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/walkbg" />
+
+            <LinearLayout
+                android:id="@+id/lin_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_100"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@mipmap/red_envelope"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/circle_view_red_time"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:text="明日00:00开赛"
+                    android:textColor="@color/white" />
+
+                <!--未报名-->
+
+                <LinearLayout
+                    android:id="@+id/lin_No_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/lin_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/start_time"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0001期"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="糖豆总奖池数量(个)"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/all_tangdou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:text="46538"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_size_40"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/all_tangdou"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:text="参赛满3000步起分红包    已有460752人报名"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_size_12" />
+
+
+                    <LinearLayout
+                        android:id="@+id/sign_up_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_marginLeft="@dimen/dp_40"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_40"
+                        android:layout_marginBottom="@dimen/dp_30"
+                        android:background="@drawable/circle_view_red_layout"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="立即报名 瓜分糖豆"
+                            android:textColor="#9d4320"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--已报名/比赛中-->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_registration"
+                    android:layout_width="@dimen/dp_140"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.lianbei.taobu.views.CircleBarView
+                            android:id="@+id/circle_view"
+                            android:layout_width="@dimen/dp_200"
+                            android:layout_height="@dimen/dp_120"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp_20"
+                            app:bar_width="6dp"
+                            app:bg_color="@color/mj_main_fond"
+                            app:progress_color="@color/blue"
+                            app:start_angle="180"
+                            app:sweep_angle="180" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp_50"
+                            android:text="明天开赛"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_size_16"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp_84"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+                            <!--提交成绩-->
+                            <RelativeLayout
+                                android:id="@+id/rel_upload"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:text="0"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_size_10" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="3000"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_size_10" />
+
+                                <!--同步数据-->
+                                <LinearLayout
+                                    android:id="@+id/lin_updata"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/dp_12"
+                                        android:layout_height="@dimen/dp_12"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@mipmap/updata_step" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dp_2"
+                                        android:text="同步数据"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp_size_10" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lin_updata_main"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/lin_updata"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="@dimen/dp_100"
+                                        android:layout_height="@dimen/dp_34"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        android:background="@drawable/circle_view_updatastep"
+                                        android:gravity="center"
+                                        android:text="提交成绩"
+                                        android:textColor="@color/secondly_text_white"
+                                        android:textSize="@dimen/dp_14" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                            <TextView
+                                android:layout_below="@id/lin_updata_main"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:text="距离比赛开始还有 0900909"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp_size_10" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <!--查看小组比赛名次-->
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rel_ranking"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:background="@color/red500">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dp_4">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:src="@mipmap/default_head" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="-4dp"
+                            android:src="@mipmap/default_head" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="-4dp"
+                            android:src="@mipmap/default_head" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="-4dp"
+                            android:src="@mipmap/default_head" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="-4dp"
+                            android:src="@mipmap/default_head" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_6"
+                            android:gravity="center_vertical"
+                            android:text="······"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_size_28" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:text="查看小组赛况>"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_size_10" />
+
+                </RelativeLayout>
+                <!--比赛金额/报名人数-->
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rel_amountNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:background="#EC5F1F">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dp_4">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:textColor="@color/white"
+                                    android:layout_weight="1"
+                                    android:text="2451431"
+                                    android:textSize="@dimen/sp_size_20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:textColor="@color/white"
+                                    android:layout_weight="1"
+                                    android:textSize="@dimen/sp_size_10"
+                                    android:text="糖豆总量(个)"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:textColor="@color/white"
+                                    android:layout_weight="1"
+                                    android:text="3242"
+                                    android:textSize="@dimen/sp_size_20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:textColor="@color/white"
+                                    android:layout_weight="1"
+                                    android:text="报名人数"
+                                    android:textSize="@dimen/sp_size_10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:id="@+id/show_friend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@+id/lin_red"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/circle_view_red_layout"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_40"
+                    android:paddingRight="@dimen/dp_40"
+                    android:text="邀请好友 一起走呗"
+                    android:textColor="#9d4320"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:id="@+id/lin_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/show_friend"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/bg_gridview"
+            android:orientation="vertical">
+                <com.lianbei.taobu.views.h5.ProgressWebView
+                    android:id="@+id/web"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+<!--废弃-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/lin_2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/show_friend"-->
+                <!--android:layout_marginLeft="@dimen/dp_20"-->
+                <!--android:layout_marginTop="@dimen/dp_30"-->
+                <!--android:layout_marginRight="@dimen/dp_20"-->
+                <!--android:background="@drawable/bg_gridview"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginTop="@dimen/dp_20"-->
+                    <!--android:text="# 如何参与新手挑战赛获取糖豆 #"-->
+                    <!--android:textColor="@color/color_505050"-->
+                    <!--android:textSize="@dimen/sp_size_16" />-->
+                <!--&lt;!&ndash;第一条&ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/dp_20"-->
+                    <!--android:paddingRight="@dimen/dp_20">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="@dimen/dp_20"-->
+                        <!--android:layout_height="@dimen/dp_20"-->
+                        <!--android:layout_marginLeft="@dimen/dp_20">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@drawable/circle_view_press_layout" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="1"-->
+                            <!--android:textColor="@color/white" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="@dimen/dp_10"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="报名参与活动"-->
+                            <!--android:textColor="@color/cardview_dark_background"-->
+                            <!--android:textSize="@dimen/sp_size_14" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="1.用户选择相应的组并按照档位缴纳一定保证金"-->
+                            <!--android:textColor="@color/cardview_dark_background"-->
+                            <!--android:textSize="@dimen/sp_size_10" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="2.注：组为所参加比赛选择的组队，如10糖豆3000步为一组，20糖豆5000步为一组"-->
+                            <!--android:textColor="@color/cardview_dark_background"-->
+                            <!--android:textSize="@dimen/sp_size_10" />-->
+
+                    <!--</LinearLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--&lt;!&ndash;第二条&ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/dp_20">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="@dimen/dp_20"-->
+                        <!--android:layout_height="@dimen/dp_20"-->
+                        <!--android:layout_marginLeft="@dimen/dp_20">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@drawable/circle_view_press_layout" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="2"-->
+                            <!--android:textColor="@color/white" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="@dimen/dp_10"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="报名参与活动"-->
+                            <!--android:textColor="@color/cardview_dark_background"-->
+                            <!--android:textSize="@dimen/sp_size_14" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="次日 00：00 - 23：59（北京时间）完成保证金对应的步数，-->
+<!--并回到首页提交成绩"-->
+                            <!--android:textColor="@color/cardview_dark_background"-->
+                            <!--android:textSize="@dimen/sp_size_10" />-->
+
+                    <!--</LinearLayout>-->
+
+
+                <!--</LinearLayout>-->
+                <!--&lt;!&ndash;第三条&ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/dp_20">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="@dimen/dp_20"-->
+                        <!--android:layout_height="@dimen/dp_20"-->
+                        <!--android:layout_marginLeft="@dimen/dp_20">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@drawable/circle_view_press_layout" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="2"-->
+                            <!--android:textColor="@color/white" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="@dimen/dp_10"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="获得奖励"-->
+                            <!--android:textColor="@color/cardview_dark_background"-->
+                            <!--android:textSize="@dimen/sp_size_14" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="1.比赛结束后，成功提交成绩的用户可平分本组红包，获得一个 ≥保证金的糖豆奖励"-->
+                            <!--android:textColor="@color/cardview_dark_background"-->
+                            <!--android:textSize="@dimen/sp_size_10" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="2.奖金需要手动领取，请于赛事结束后两日内在本页面领取，过期作废"-->
+                            <!--android:textColor="@color/cardview_dark_background"-->
+                            <!--android:textSize="@dimen/sp_size_10" />-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+
+                <!--<View-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/dp_1"-->
+                    <!--android:layout_marginTop="@dimen/dp_10"-->
+                    <!--android:background="@drawable/background_item"></View>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/dp_20">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/share_font_38_black"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="温馨提示：" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/share_font_38_black"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="-->
+<!--淘步的数据来源于微信运动，请保持您的微信运动可以正常接收数据，请根据自身状况保持适量运动，任何因此导致的意外均与淘步无关" />-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

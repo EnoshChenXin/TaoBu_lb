@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".taobu.viewmanager.PicDetailActivity">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageViews"
+        android:src="@mipmap/zaoqi_banner"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content"
+          />
+
+</LinearLayout>

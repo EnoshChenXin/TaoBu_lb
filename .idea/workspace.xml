@@ -1,0 +1,1625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f0c580c-0ee7-4897-a41f-2c8e384a2696" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileContent/annotation-processors.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__AndroidProject_TaoBu_lb_app_libs_libammsdk_jar_unspecified_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__AndroidProject_TaoBu_lb_app_libs_open_sdk_r5793_jar_unspecified_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__AndroidProject_TaoBu_lb_app_libs_sqlcipher_jar_unspecified_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__AndroidProject_TaoBu_lb_app_libs_sqlcipher_javadoc_jar_unspecified_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__AndroidProject_TaoBu_lb_app_libs_systembartint_1_0_4_jar_unspecified_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__AndroidProject_TaoBu_lb_commomview_libs_ShareSDK_Core_3_0_1_jar_unspecified_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_bingoogolapple_bga_banner_2_2_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_bingoogolapple_bga_indicator_1_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_bingoogolapple_bga_progressbar_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_bingoogolapple_bga_refreshlayout_1_1_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_arouter_annotation_1_0_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_arouter_api_1_2_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_adapters_3_4_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_baseLibrary_3_4_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_library_3_4_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_25_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_collections_28_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_25_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_1_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_instrumentation_1_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_palette_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_25_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_25_3_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_25_3_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_rules_1_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_25_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ashokvarma_android_bottom_navigation_bar_2_0_4_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_dalong_refreshlayout_1_0_3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_drawee_0_12_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_fbcore_0_12_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_fresco_0_12_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_imagepipeline_0_12_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_imagepipeline_base_0_12_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_rebound_rebound_0_3_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_flyco_pageindicator_FlycoPageIndicator_Lib_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_0_0_RC0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_0_0_RC0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_0_0_RC0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_0_0_RC0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_chaychan_BottomBarLayout_1_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_chaychan_MultipleItemRvAdapter_1_0_4_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_chaychan_SlideCloseLib_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_chrisbanes_PhotoView_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_chrisbanes_photoview_library_1_2_4_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_limedroid_XRichText_v1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_nukc_stateview_library_1_2_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_zxing_core_3_4_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jaeger_recyclerviewdivider_library_1_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_9_0_0_rc2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_annotations_9_0_0_rc2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_runtime_9_0_0_rc2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_picasso_picasso2_okhttp3_downloader_1_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_malinskiy_materialicons_1_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nineoldandroids_library_2_4_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nostra13_universalimageloader_universal_image_loader_1_9_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_tasks_1_4_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sina_weibo_sdk_core_4_1_0_openDefaultRelease_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_4_3_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_2_4_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_5_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_adapter_rxjava_2_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sunfusheng_glideimageview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tencent_bugly_crashreport_3_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tencent_mm_opensdk_wechat_sdk_android_without_mta_5_1_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxandroid_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava_1_1_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_weyye_ColorTrackTabLayout_library_1_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_greenrobot_eventbus_3_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_61_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_61_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xutils_xutils_3_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__pub_devrel_easypermissions_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__uk_co_chrisjenx_calligraphy_2_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Configure" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Could" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaoBu.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaoBu_lb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/debug/app.aab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/libammsdk.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/open_sdk_r5793.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/sqlcipher-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/sqlcipher.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/systembartint-1.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/release/app.aab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/lianbei/taobu/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/region.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/MainActivity1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/MyAppGlideModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/ShareInvitation/InvitationViewManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/ShareInvitation/ShareStepsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/action/AdDialogManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/action/AdRulesManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/action/model/AdNewsModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/action/model/AdProgressModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/action/model/AndroidtoJs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/action/model/DataBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/adapter/MainTabAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/api/APIs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/api/PddParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/api/TBParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/application/GlobalApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/ActivityManagerUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/BaseActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/BaseFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/BaseViewInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/EventMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/LazyLoadFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/MessageEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/NavigationEmptyView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/NavigationView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/NavigationViewUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/SplashActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/SplashCommonActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/WelcomeActiity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/adapter/MyPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/share/SharePopView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/share/ShareViewManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/GroupDiscussAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/GroupDiscussListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/GroupGameDatailAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/GroupGameListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/GroupManagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/InformationAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/base/BaseDisscussItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/base/BaseDisscussListProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/itemprovider/BaseGroupGameItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/itemprovider/BaseGroupManagerItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/itemprovider/DiscussItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/adapter/itemprovider/GroupManagerItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/model/GameBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/model/GroupPoperBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/model/InformationBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/model/ItemDymlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/model/ItemInfoMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/model/ItmeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/model/lineListBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ArticleSelectFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/CircleFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/CreatOrAddGroupActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/GameDiscussionDetailActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/GameEventFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/GroupGameDetailActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/GroupGameFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/GroupManagerActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListDiscussionFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListMonthFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListTodayFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListYesterdayFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/SearchGroupListActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/commondialog/DialogCallBackInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/commondialog/GlobalDialogModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/viewmanager/GameManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/constants/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/constants/GlobalRequestManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/constants/ModelGlobalRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/constants/Reminder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/constants/ShareManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/global/GlobalConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/listener/LoginRequestCompletions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/listener/OnChannelListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/listener/RequestCompletion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/listener/RequestOnClick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/listener/RetroftManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/listener/ShareRequestCompletion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/listener/WXLoginResuleInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/listener/WXShareResuleInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/adapter/AddressListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/adapter/OrderListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/login/Fill_InviteCodeActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/login/WXAccessTokenInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/login/WXErrorInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/login/WXLoginActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/login/WXLoginViewManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/model/AddressBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/model/Clockinfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/model/LoginBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/model/MemberInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/model/MemberUserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/model/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/model/WXUserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/AddressManagerActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/EditAddressDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/MineFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/OrderActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/OrderDuiHuanActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/OrderListFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/SetActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/addresspickerview/AddressDistrictBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/addresspickerview/AreaAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/addresspickerview/AreaPickerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/addresspickerview/CityAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/view/addresspickerview/ProvinceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/viewmanager/UserInfoManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/mine/viewmanager/UserUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/CatsAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/ChannelPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/SecordRecordListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/ShopListAdatper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/ShopRecommendListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/SnapUpPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/baseadapter/BaseGoodItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/baseadapter/BaseGoodListAdatper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/itemview/BaseShopItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/itemview/HelpGoodItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/itemview/HuanGoodItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/itemview/MianDanGoodItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/itemview/SearchGoodItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/adapter/itemview/ShopItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/BannerImgInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/CatsBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/Channel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/GoodDetailBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/GoodsBasicInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/GoodsOptBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/GoodsSearchBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/GoodsThemeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/MainGoodsBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/OptInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/OrderBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/PromotionUrlInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/SearchRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/ShopBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/TabModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/TopGoodsBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/model/UnitUrlnfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ActivityGoodsDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ActivityGoodsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ActivityGoodsListFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ActivityGoodsMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ColorTrackTabLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ColorTrackView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/HelpGoodsDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/HelpGoodsDetailProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/PostScrollView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/PostView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/SearchGoodsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/SearchGoodsListActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/SearchGoodsListFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/SearchGoodsListFragment2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/SearchGoodsListView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ShareGoodsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ShopDetailActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ShopFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ShopHotPagerFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ShopListFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ShopListFragment2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/SnapUpTabLayoutAddOnClickHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ThemeGoodsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/gradual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/pop/OrderSelectPopView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/wrf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/viewmanager/PID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/viewmanager/ShopManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/BaseCommodityItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/BaseDynamicItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/CommodityItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/CommodityListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/CommonTabPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/DynamicDetailLisetAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/DynamicListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/DynamicPhotoPickerGridAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/GridViewAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/GroupGameItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/PhotoPickerGridAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/SectionsPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/WalkSignUpTagAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/adapter/itemprovider/DynamicItemProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/model/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/model/BaseTbBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/model/CommodityBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/model/DynamicBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/model/ServerImageUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/model/SignReplyBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/model/WalkAllNeedBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/model/WalkApplyBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/model/WalkBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/AddDynamicActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/BMICalcAct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/GoodsUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/HuanWuActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/MyGridView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/SignActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/SignDynamicDetailActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/SignHotkFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/SignMyFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/SignTalentFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/SignUpSuccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/TaobuFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/WalkActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/WalkSignUpActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/viewutils/DpOrPxUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/viewutils/KeyMapDailog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/viewutils/LinearGradientUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/viewutils/MastGridView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/viewutils/SimpleMonthView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/viewutils/SimpleWeekView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/viewutils/TransAvtivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/viewmanager/BMIUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/viewmanager/FileUploadManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/viewmanager/PicDetailActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/viewmanager/TaoBuManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/viewmanager/WalkSignUpManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/ACache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/ActivityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/AmountUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/AppUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/BitmapUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/CacheHelp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/CheckAndRequestPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/CustomValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/DirectoryHelp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/DisplayUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/GLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/GlideUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/GsonTypeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/JXConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/MGson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/OSUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/PermissionsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/PhotoUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/PreUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/SPUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/ScreenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/SelectorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/ShareUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/SmartScrollView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/StatusBarUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/TabLayoutAddOnClickHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/ThreadUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/TimeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/ToastUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/UIUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/ViewGenerationImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/WXUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/ZXingUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/clip/CircularImagesCutUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/clip/ClipActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/clip/ClipImageBorderView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/clip/ClipImageLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/clip/ClipZoomImageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/clip/ImageTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/dbhelper/CarRentalDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/dbhelper/TbDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/dbhelper/dao/OptDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/dbhelper/dao/OptDAPImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/dbhelper/db/CarRentalDBHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/dbhelper/db/SQLiteHelperFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/dbhelper/db/TaoBuDBHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/dbhelper/util/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/flyn/Eyes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/flyn/EyesKitKat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/flyn/EyesLollipop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/log/BaseLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/log/FileLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/log/JsonLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/log/KLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/log/KLogUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/log/XmlLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/risenumber/IRiseNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/risenumber/NumberTextView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/secureity/Base64.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/secureity/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/secureity/Security.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/BitmapUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/ChildViewPager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/CircleBarView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/CircleImageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/CustomRoundAngleImageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/CxButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/ImageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/MButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/PriceView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/SoftInputUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/TextFromHtml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/TextViewUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/bannerview/bean/IBanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/bannerview/lib/BaseViewPager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/bannerview/lib/CycleViewPager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/bannerview/lib/CycleViewPagerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/bannerview/lib/FixedSpeedScroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/bannerview/ui/ADInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/bannerview/utils/ViewFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/dialog/CustomLoadingDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/h5/ButtonClick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/h5/H5PublicActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/h5/JSuserinfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/h5/ProgressWebView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/mMaterialEditText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/materialedittext/Colors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/materialedittext/Density.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/materialedittext/MaterialAutoCompleteTextView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/materialedittext/MaterialEditText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/materialedittext/MaterialMultiAutoCompleteTextView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/materialedittext/validation/METLengthChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/materialedittext/validation/METValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/materialedittext/validation/RegexpValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/wxapi/WXEntryActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/cycle_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/dialog_bottom_slide_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/dialog_bottom_slide_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/picker_bottom_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/picker_bottom_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/push_bottom_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/push_bottom_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/shake.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/slide_bottom_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/slide_bottom_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_button_press.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_dotted.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_white_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/baoyou.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_carts_bottom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_carts_bottom_select.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_gridview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_gridview0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_gridview2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_gridview3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_gridview4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_gridview5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_gridview_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_list_gridview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_ripple.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_walk_tag_normal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_small_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_buy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_share.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_upload_count.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_upload_count_select.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_upload_press.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_view_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_view_layout2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_view_press_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_view_red_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_view_red_time.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_view_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_view_search2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_view_updatastep.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/color_cursor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/comm_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/goods_view_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/goods_view_search_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/help_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_point.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_point_pre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_stub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/indicator_point.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jbshape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mainbg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/met_ic_clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/my_ka_circle_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nomal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nomal_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nomal_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/novicearea_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nvzhuang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/photo_rotate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/progressbar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/qqq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/radio_choose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/radio_choose_defaul.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/radio_select.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/renzheng_anniu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/select_button_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selected_button_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selector_bottom_tab.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selector_special_tab_check.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/setting_down_nor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/setting_down_pressed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/setting_down_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/setting_one_nor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/setting_one_pressed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/setting_one_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/setting_up_nor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/setting_up_pressed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/setting_up_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tb_bgnewyear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wx_login_btn_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_dynamic.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_address_manager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_bmicalc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_circle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_clipimage.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_creat_or_add_group.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_discussion_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dynamic_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_address_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_fill__invite_code.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_goods.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_goods_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_goods_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_group_game_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_group_game_detail_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_group_manager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_h5_public.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_help_goods_progress.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_huan_wu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_image_pager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_splash.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_order.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_order_dui_huan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pic_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search_goods.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search_goods_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search_group_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_set.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_share_goods.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_share_steps.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_shop_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up_success.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sing.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash_common.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_theme_goods.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trans_avtivity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_walk_sign_up.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_wxlogin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/add_dynamic_title.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/comment_dialog_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/common_custom_loading_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/common_share.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_area_pickerview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dynamic_ppg_item_image.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_activity_goods_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_article_select.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_circle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_game_event.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_group_game.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_hot_signk.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_discussion.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_month.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_today.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_yesterday.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mine.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_sign.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_order_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search_goods_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_shop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_shop_hot.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_shop_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_sign_talent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_taobu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/goods_add_zhuti.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/help_goods_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_address.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_address_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_cats.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_commodity_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_discuss_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_discuss_list_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_dynamic_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_free_good_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_gridview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_group_game_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_group_manager_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_group_tab_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_help_good_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_information.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_normal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_order_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_search_record_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_shop_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_shop_recommend_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/lay_help_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/lay_new_register.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_recyclerview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_taobu_title.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/my_layout_gridlayout_server.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/order_select.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/pop_select_photo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/ppg_item_image.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/sign_discuss_image_item_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/sign_discuss_item_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/tab_text.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/tag_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/text.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/top_layout_tab.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_banner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_banner2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_cycle_viewpager_contet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_cycle_viewpager_indicator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_share_goods.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/add_channel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/add_friend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/add_picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/back2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/baokuan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/choose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/choose_tag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/close_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/collect_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/collect_unselected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/default_head.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/default_walk_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/discuss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/discuss_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/duihuan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ewm_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ewm_bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ewm_bg3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/fat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/found_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/found_icon_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/guide_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/guide_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/guide_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/guide_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/help_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/home_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/home_icon_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/home_sports_bank_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/home_sports_bank_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/icon3.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/juan2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/juan3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/labe_dzg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/labe_sybd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/label_yhh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/label_yym.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/like.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/like2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/mainbanner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/map_share_title_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/me_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/me_icon_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/message.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/message2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/message_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/mini_program_icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/month_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/month_icon_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_address_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_bean_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_bodyfat_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_code_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_collection_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_earnings_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_failure_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_friend_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_head_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_help_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_invitation_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_ka_bean_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_ka_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_ka_line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_ka_withdrawal_toast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_message_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_set_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/my_withdrawal_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/new_message.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/order_all_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/order_failure_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/order_ok_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/order_pay_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/picdemo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/plan_preview_header_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/quanyi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/queshengye_wuwangluo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/qunzu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/radio_choose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/radio_choose_defaul.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/red_envelope.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/right_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/run.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/save_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/search_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/search_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/shadow_add_titlebar_new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/shafa_target_dongdong_sir_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/share_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/shop_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/shop_icon_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/shou_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/show.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/sing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/sing_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/sing_press.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/tangdouhuanwu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/tb_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/td_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/today_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/today_icon_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/train_waiting_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/updata_step.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/video_share_qq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/video_share_wb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/video_share_wx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/video_share_wxf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/walk_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/walkbg.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/writtecomm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/wuneirongyemian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/wx_login_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/wx_login_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/wx_login_login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/yesterday_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/yesterday_icon_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/youhuijuan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/zaoqi_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/zaoqi_banner2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/zhuti.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/close2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1024x600/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1024x600/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1024x768/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1024x768/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1184x720/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1184x720/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1196x720/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1196x720/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1280x720/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1280x720/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1280x800/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1280x800/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1334x750/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1334x750/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1776x1080/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1776x1080/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1800x1080/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1800x1080/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1812x1080/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1812x1080/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1920x1080/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-1920x1080/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-2560x1440/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-2560x1440/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-480x320/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-480x320/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-800x480/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-800x480/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-854x480/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-854x480/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-960x540/lay_x.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-960x540/lay_y.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays_bmi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays_news.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays_task.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/file_paths.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/lianbei/taobu/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/TaoBu.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/calendarview.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/androidTest/java/com/haibin/calendarview/CalendarUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/androidTest/java/com/haibin/calendarview/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/androidTest/java/com/haibin/calendarview/LunarCalendarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/androidTest/java/com/haibin/calendarview/LunarUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/androidTest/java/com/haibin/calendarview/SolarTermUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/BaseMonthView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/BaseRecyclerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/BaseView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/BaseWeekView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/Calendar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/CalendarLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/CalendarUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/CalendarView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/CalendarViewDelegate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/DefaultMonthView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/DefaultWeekView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/DefaultYearView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/LunarCalendar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/LunarUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/Month.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/MonthView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/MonthViewPager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/MultiMonthView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/MultiWeekView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/RangeMonthView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/RangeWeekView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/SolarTermUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/TrunkBranchAnnals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/WeekBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/WeekView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/WeekViewPager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/YearRecyclerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/YearView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/YearViewAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/java/com/haibin/calendarview/YearViewPager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/res/drawable-v21/cv_bg_material.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/res/drawable/cv_bg_material.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/res/layout/cv_layout_calendar_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/res/layout/cv_week_bar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/res/values-zh-rHK/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/res/values-zh-rTW/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/res/values-zh/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/res/values/attrs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendarview/src/test/java/com/haibin/calendarview/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/commomview.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/libs/ShareSDK-Core-3.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/androidTest/java/com/lianbei/commomview/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/AdConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/AdManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/AnimDialogUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/LApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/anim/AnimSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/bean/ADActionBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/bean/ADctionInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/bean/AdInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/transformer/DepthPageTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/transformer/RotateDownPageTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/transformer/ZoomOutPageTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/utils/DisplayUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/view/MetaballView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/adlibrary/view/ProgressLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/Effectstype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/NiftyDialogBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/BaseEffects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/FadeIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/Fall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/FlipH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/FlipV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/NewsPaper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/RotateBottom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/RotateLeft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/Shake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/SideFall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/SlideBottom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/SlideLeft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/SlideRight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/SlideTop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/dialog/effects/Slit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/loadprogress/CustomProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/loadprogress/DownloadingDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/java/com/lianbei/commomview/loadprogress/LoadProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_circle_128_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_dot.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_dot_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_dot_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_dot_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_dot_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/anim_dot_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/background_mesg_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/dialog_version_update_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/dialog_version_update_bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/dialog_version_update_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/dot_normal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/load_animdraw.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/loading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/progress_dialog_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/radius_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/radius_bg_emp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/shuaxinjian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/drawable/updata_bg_bmp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/ad_dialog_content_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/anim_dialog_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/custom_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/dialog_downloading.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/dialog_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/dialog_updata_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/progress_custom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/progress_empty_custom_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/progress_empty_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/progress_error_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/progress_error_view_small.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/progress_loading_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/layout/viewpager_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xhdpi/ic_cancel_popup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xhdpi/ic_nodata_reminder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xhdpi/image_disable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xhdpi/image_loading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xhdpi/jiazaiche.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xhdpi/tanchukuang_shibai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xxhdpi/hot_big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xxhdpi/ic_cancel_popup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xxhdpi/ic_nodata_reminder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xxhdpi/image_disable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xxhdpi/image_loading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xxhdpi/progressdialog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xxhdpi/share_wx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xxhdpi/tanchukuang_chenggong.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/mipmap-xxhdpi/tanchukuang_warn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/values/attrs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commomview/src/test/java/com/lianbei/commomview/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/httplbrary.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/androidTest/java/com/lianbei/httplbrary/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/ApiRequestParamManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/ApiResultManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/ApiResultModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/BaseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/HttpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/RetrofitHttpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/cacahe/CacheProvide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/converter/StringConverterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/converter/StringRequestBodyConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/converter/StringResponseBodyConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/interceptor/CacheInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/interceptor/DownLoadInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/interceptor/HttpLoggingInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/interceptor/RetryAndChangeIpInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/interfaces/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/interfaces/Fail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/interfaces/HeadersInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/interfaces/ParamsInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/interfaces/Progress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/interfaces/Success.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/utils/ApiRequestParamInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/utils/NetworkAvailableUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/utils/OkhttpProvidede.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/utils/WriteFileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/java/com/lianbei/httplbrary/utils/model/HttpModelGlobalRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplbrary/src/test/java/com/lianbei/httplbrary/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/photopicker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/androidTest/java/com/lidong/photopicker/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/Folder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/FolderAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/ImageCaptureManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/ImageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/ImageGridAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/PhotoPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/PhotoPickerActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/PhotoPreviewActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/SelectModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/intent/PhotoPickerIntent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/intent/PhotoPreviewIntent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/java/com/lidong/photopicker/widget/ViewPagerFixed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/anim/slide_bottom_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/anim/slide_bottom_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/color/action_text_color.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/drawable/text_indicator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/layout/activity_image_preview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/layout/activity_photopicker.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/layout/item_camera.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/layout/item_folder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/layout/item_preview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/layout/item_select_image.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/layout/photopicker_toolbar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/menu/menu_picker.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/menu/menu_preview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-hdpi/ic_action_discard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-mdpi/ic_action_discard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-xhdpi/ic_action_discard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-xhdpi/text_indicator_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-xhdpi/text_indicator_pressed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-xxhdpi/asv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-xxhdpi/asy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-xxhdpi/btn_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-xxhdpi/btn_unselected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-xxhdpi/default_check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-xxhdpi/default_error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/mipmap-xxhdpi/ic_action_discard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photopicker/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taobu.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/androidTest/java/com/chaychan/uikit/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/BorderTextView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/HeaderZoomLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/LoadingFlashView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/NoScrollViewPager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/TipView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/UIUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/powerfulrecyclerview/DividerDecoration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/powerfulrecyclerview/PowerfulRecyclerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/BGAMeiTuanRefreshView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/BGAMeiTuanRefreshViewHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/BGAMoocStyleRefreshView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/BGAMoocStyleRefreshViewHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/BGANormalRefreshViewHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/BGARefreshLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/BGARefreshViewHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/BGAStickinessRefreshView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/BGAStickinessRefreshViewHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/BGAStickyNavLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/adapters/BGARefreshLayoutAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/java/com/chaychan/uikit/refreshlayout/util/BGARefreshScrollingUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/drawable-hdpi/img_net_error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/drawable-hdpi/load_text_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/drawable-hdpi/load_text_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/drawable-hdpi/load_text_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/drawable-hdpi/load_text_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/drawable/bga_refresh_loding.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/drawable/divider.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/drawable/selector_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/layout/loading_flash_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/layout/page_loading.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/layout/page_net_error.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/layout/pager_no_comment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/layout/view_normal_refresh_footer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/layout/view_refresh_header_meituan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/layout/view_refresh_header_mooc_style.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/layout/view_refresh_header_normal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/layout/view_refresh_header_stickiness.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/bga_refresh_loading12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/mipmap-hdpi/refresh_head_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/values/attrs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/main/res/values/style.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/src/test/java/com/chaychan/uikit/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uikit/uikit.iml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="19a4e4df" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/CircleFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="76" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/GameEventFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="132" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListDiscussionFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="106" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/GroupGameFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="83" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListMonthFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="46" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListTodayFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="46" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListYesterdayFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="37" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/SelectorUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/dbhelper/db/SQLiteHelperFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ShopFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="270" column="7" lean-forward="true" selection-start-line="270" selection-start-column="7" selection-end-line="270" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>MyButton</find>
+      <find>setUserVisibleHint</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/CreatOrAddGroupActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/BaseFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ArticleSelectFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/CircleFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/GameEventFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListDiscussionFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/GroupGameFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListMonthFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListTodayFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListYesterdayFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ShopFragment.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-3" />
+    <option name="y" value="-13" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="E:/SOFTWARE/workingsoftware/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f0c580c-0ee7-4897-a41f-2c8e384a2696" name="Default Changelist" comment="" />
+      <created>1578630892737</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578630892737</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.18565683" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Run" weight="0.5944363" />
+      <window_info anchor="bottom" id="Logcat" visible="true" weight="0.53958946" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Android Profiler" />
+      <window_info anchor="bottom" id="Debug" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Find" />
+      <window_info anchor="bottom" id="Build" weight="0.579795" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Preview" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_creat_or_add_group.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2710" />
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/MButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fill__invite_code.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/CreatOrAddGroupActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/views/bannerview/lib/CycleViewPager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5553">
+          <caret line="40" column="48" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/taobu/view/TaobuFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/base/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="120" column="34" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="34" />
+          <folding>
+            <element signature="e#3053#3054#0" expanded="true" />
+            <element signature="e#3099#3100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ArticleSelectFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="65" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/CircleFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="76" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/GameEventFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="132" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListDiscussionFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="106" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/GroupGameFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="83" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListMonthFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="46" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListTodayFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="46" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/circle/view/ListYesterdayFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="37" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/SelectorUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/utils/dbhelper/db/SQLiteHelperFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lianbei/taobu/shop/view/ShopFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="270" column="7" lean-forward="true" selection-start-line="270" selection-start-column="7" selection-end-line="270" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   <!--是否按下，如一个按钮触摸或者点击-->
+    <item android:state_pressed="true">
+    <level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item
+            android:drawable="@drawable/button_upload_press"
+            android:maxLevel="0">
+        </item>
+    </level-list>
+
+    </item>
+    <item  android:state_focused="true">
+        <level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+            <item
+                android:drawable="@drawable/button_upload_count"
+                android:maxLevel="1">
+            </item>
+        </level-list>
+
+
+        </item>
+    <!--是否取得焦点，比如用户选择了一个文本框-->
+    <item android:state_focused="false" android:state_pressed="false">
+
+        <level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+            <item
+                android:drawable="@drawable/button_upload_count"
+                android:maxLevel="1">
+            </item>
+        </level-list>
+
+    </item>
+
+    <item android:state_focused="false">
+        <level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+            <item
+                android:drawable="@drawable/button_upload_count"
+                android:maxLevel="1">
+            </item>
+        </level-list>
+
+    </item>
+
+</selector>

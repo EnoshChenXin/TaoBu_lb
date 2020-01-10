@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/goods_add_zhuti_lin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/view_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/theme_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text=""
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/sp_size_14" />
+
+        <LinearLayout
+            android:id="@+id/imageView_lin"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.lianbei.taobu.views.CustomRoundAngleImageView
+                android:id="@+id/theme_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="销量排行"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/sp_size_14" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="查看更多 >"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_size_12" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dp_10"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_15">
+
+            <com.lianbei.taobu.taobu.view.viewutils.MastGridView
+                android:id="@+id/mastgridview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="spacingWidthUniform" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

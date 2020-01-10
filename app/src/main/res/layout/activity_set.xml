@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical"
+    tools:context=".mine.view.SetActivity">
+
+    <com.lianbei.taobu.base.NavigationView
+        android:id="@+id/navigation_view"
+        app:titleText="@string/set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.lianbei.taobu.base.NavigationView>
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.lianbei.taobu.views.MButton
+                android:id="@+id/outButton"
+                style="@style/buttonText"
+                android:text="@string/log_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

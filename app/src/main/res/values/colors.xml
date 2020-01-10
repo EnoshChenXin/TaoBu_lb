@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#00BCD4</color>
+    <color name="colorAccent">#3FC1C9</color>
+    <color name="main_red_no">#f18277</color>
+    <color name="main_red">#ff5645</color> <!--#ff5645-->
+    <color name="main_color">#ff4742</color> <!--#ff5645-->
+    <color name="main_font">#1e1e1e</color>
+    <color name="main_font1">#3e3e3e</color>
+    <color name="translucent">#aa000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="view_background">#f8f8f8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_86FFFFFF">#86FFFFFF</color>
+    <color name="main_background">#FFFFFF</color>
+    <color name="dark_background">#f5f5f5</color>
+    <color name="wx_background">#4ac94e</color>
+
+    <color name="item_title2_color">#363636</color>
+
+
+    <!--light_gray -->
+    <color name="light_gray">#dfdfdf</color>
+    <color name="light_gray2">#c2c2c2</color>
+    <color name="light_gray4">#dedede</color>
+    <color name="light_gray5">#ececec</color>
+    <color name="light_gray3">#f4f4f4</color>
+    <color name="light_gray1">#f9f9f9</color>
+    <color name="text_grey">#AEAEAE</color>
+    <!--material design guide color -->
+    <color name="dividers_black">#1C000000</color>
+    <color name="disable_or_hint_black">#42000000</color>
+    <color name="secondly_text_or_icon_black">#8A000000</color>
+    <color name="main_text_black">#DE000000</color>
+
+    <color name="dividers_white">#1Cffffff</color>
+    <color name="disable_or_hint_white">#4Cffffff</color>
+    <color name="secondly_text_white">#ABffffff</color>
+    <color name="main_text_white">#fff</color>
+    <color name="common_line">#ececec</color>
+    <color name="share_color">#33475f</color>
+    <color name="bluee_color">#308ec1</color>
+    <color name="orange">#ffac38</color>
+    <color name="orange2">#ff4e0b</color>
+    <color name="orange3">#f95344</color>
+    <color name="orange4">#e13e1b</color>
+    <color name="orange5">#E43D1A</color>
+    <color name="goldcolor">#f6c739</color>
+    <color name="goldcolor2">#fed942</color>
+
+
+    <color name="gray">#8c8c8c</color>
+    <color name="gray_deep">#5c5c5c</color>
+    <color name="gray_deep2">#bfbfbf</color>
+
+    <color name="alpha_gray">#CC646464</color>
+    <color name="theme_gray">#646464</color>
+    <color name="green500">#259b24</color>
+    <color name="green450">#51B450</color>
+    <color name="yellow">#ffff00</color>
+    <color name="yellow500">#FDD835</color>
+    <color name="orange500">#ff9800</color>
+    <color name="orange_deep">#ca7701</color>
+    <color name="red400">#ef5350</color>
+    <color name="red500">#e51c23</color>
+    <color name="purple500">#9c27b0</color>
+    <color name="red900">#b71c1c</color>
+    <color name="dark_gray">#3d3d3d</color>
+    <color name="darkDKGRAY">#FF444444</color>
+    <color name="mj_main_red">#ff5645</color>
+    <color name="mj_main_fond">#b2ffffff</color>
+    <color name="mj_common_line">#ececec</color>
+    <color name="mj_black">#000000</color>
+    <color name="mj_red">#ff0000</color>
+    <color name="mj_upload_btn">#474848</color>
+    <color name="mj_upload_btn_no">#5d5d5d</color>
+    <color name="mj_main">#6ecac9</color>
+    <color name="mj_bottom_icon">#1e1e1e</color>
+    <color name="mj_title_color">#191919</color>
+    <color name="mj_content_color">#9f9f9f</color>
+    <color name="bg_stroke_color">#ffe1e1</color>
+    <color name="pager_bg2">#f2f2f2</color>
+    <color name="item_title_color">#292727</color>
+    <color name="main_font3">#959595</color>
+    <color name="orange_end">#fcd399</color>
+    <color name="glod_bg_end">#fee5c1</color>
+    <color name="glod_bg_none">#9afee5c1</color>
+    <color name="main_blue">#07131a</color>
+    <!--导航栏字体颜色-->
+    <color name="navigation_text_color">#696975</color>
+    <color name="navigation_text_B5B5B5">#B5B5B5</color>
+    <color name="color_f85959">#f85959</color>
+    <color name="color_e8e8e8">#e8e8e8</color>
+    <color name="gary">#898989</color>
+
+    <color name="text_color_999999">#999999</color>
+    <color name="text_color_f6f6f6">#f6f6f6</color>
+    <color name="color_D5E8F6">#D5E8F6</color>
+    <color name="color_4592C6">#4592C6</color>
+    <color name="color_d8d8d8">#d8d8d8</color>
+
+    <color name="color_F3F5F4">#F3F5F4</color>
+    <!--新闻title 颜色-->
+    <color name="news_title_text_color">#222222</color>
+    <!--新闻buttom 颜色-->
+    <color name="color_F96B6B">#F96B6B</color>
+    <color name="red">#ff0000</color><!--#ff0000-->
+    <color name="blue">#0bd5c2</color><!--#ff0000-->
+
+    <color name="color_D33D3C">#D33D3C</color>
+    <color name="color_BDBDBD">#BDBDBD</color>
+    <color name="color_515051">#515051</color>
+    <color name="color_F2F4F3">#F2F4F3</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_d43d3d">#d43d3d</color>
+    <color name="color_1a1b1d">#1a1b1d</color>
+    <color name="color_b11919">#b11919</color>
+    <color name="color_3091D8">#3091D8</color>
+    <color name="color_f4f5f6">#f4f5f6</color>
+    <color name="color_406599">#406599</color>
+    <color name="color_cacaca">#cacaca</color>
+    <color name="color_505050">#505050</color>
+    <color name="color_C1C1C1">#C1C1C1</color>
+    <color name="color_1affffff">#1affffff</color>
+    <color name="color_E6E8E7">#E6E8E7</color>
+
+    <color name="main_font4">#d1d1d1</color>
+    <color name="yellow2">#fde830</color>
+    <!--MaterialEditText-->
+    <dimen name="default_padding_top">8dp</dimen>
+    <dimen name="default_padding_bottom">8dp</dimen>
+    <dimen name="inner_padding_left">0dp</dimen>
+    <dimen name="inner_padding_right">0dp</dimen>
+    <dimen name="floating_label_text_size">12sp</dimen>
+    <dimen name="bottom_text_size">10sp</dimen>
+    <dimen name="inner_components_spacing">6dp</dimen>
+    <dimen name="inner_components_spacing2">3dp</dimen>
+    <dimen name="bottom_ellipsis_height">4dp</dimen>
+    <color name="input_prompt_lineolor_CCCCCC">#CCCCCC</color>
+    <!--输入框颜色-->
+    <color name="text_color666666">#666666</color>
+    <color name="text_color333333">#333333</color>
+    <!--主体绿-->
+    <color name="subject_color">#1AD06C</color>
+    <!--主体绿-->
+    <color name="subject_color_ssist">#9DE7C0</color>
+    <color name="under_line_color">#9EE7C1</color>
+
+    <color name="white2">#f5f3f3</color>
+    <color name="colorRed">#d50f09</color>
+    <color name="hard_color">#48495f</color>
+    <!--主体绿-->
+    <color name="search_bg">#2cffffff</color>
+</resources>

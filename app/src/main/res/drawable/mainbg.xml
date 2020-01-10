@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 圆角 -->
+    <corners
+        android:radius="9dp"
+        android:topLeftRadius="2dp"
+        android:topRightRadius="2dp"
+        android:bottomLeftRadius="150dp"
+        android:bottomRightRadius="150dp"/><!-- 设置圆角半径 -->
+        <gradient
+            android:angle="270"
+            android:centerColor="#FF457A"
+            android:centerX="0.2"
+            android:centerY="0.2"
+            android:endColor="#FFFFFF"
+            android:startColor="#DD0443" />
+
+        <padding
+            android:bottom="0dp"
+            android:left="0dp"
+            android:right="0dp"
+            android:top="0dp" />
+    </shape>

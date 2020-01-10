@@ -1,0 +1,187 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">淘步优选</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--地图搜索-->
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="NAVIGATION_TITLE_NEWS">新闻</string>
+    <string name="NAVIGATION_TITLE_CIRCLE">微跑圈</string>
+    <string name="NAVIGATION_TITLE_SING">我的打卡目标</string>
+    <string name="NAVIGATION_TITLE_WALK">天天赛红包</string>
+    <string name="NAVIGATION_TITLE_HUANWU">换好物</string>
+    <string name="NAVIGATION_TITLE_FOUND">发现</string>
+
+
+    <string name="MAIN_TAB_INDEX">首页</string>
+    <string name="MAIN_TAB_FOUND">发现</string>
+    <string name="MAIN_TAB_SHOP">商城</string>
+    <string name="MAIN_TAB_MY">我的</string>
+
+    <string name="TAB_TEXT_MY">我的</string>
+    <string name="TAB_TEXT_HOT">热门发</string>
+    <string name="TAB_TEXT_DAREN">达人榜</string>
+
+    <string name="TAB_TEXT_GAMEEVENT">赛事</string>
+    <string name="TAB_TEXT_GROUPGAME">群组</string>
+    <string name="TAB_TEXT_ARTICLESELECT">精选</string>
+
+
+    <string name="TAB_TEXT_ALL_ORDER">全部</string>
+    <string name="TAB_TEXT_PAY_ORDER">已支付</string>
+    <string name="TAB_TEXT_COMPLETED_ORDER">已完成</string>
+    <string name="TAB_TEXT_FAILURE_ORDER">已失效</string>
+
+
+    <string name="TAB_TEXT_COMPREHENSIVE">综合</string>
+    <string name="TAB_TEXT_COMMISSION">佣金</string>
+    <string name="TAB_TEXT_PRICE">价格</string>
+    <string name="TAB_TEXT_SALES">销量</string>
+
+    <string name="TAB_TEXT_FREE_ORDER">正在疯抢</string>
+    <string name="TAB_TEXT_NEXT_ORDER">更多预告</string>
+
+    <string name="TAB_TEXT_DISCUSSION"> 群讨论 </string>
+    <string name="TAB_TEXT_TODAY_LIST">今日榜单</string>
+    <string name="TAB_TEXT_YESTERDAY_LIST">昨日榜单</string>
+    <string name="TAB_TEXT_MONTH_LIST">本月榜单</string>
+
+    <string name="TAB_TEXT_GROUP_MANAGER">群组管理</string>
+
+    <string name="NAVIGATION_TITLE_CREAT_GROUP">创建群组</string>
+    <string name="NAVIGATION_TITLE_CREAT">创建</string>
+    <string name="NAVIGATION_TITLE_SEARCH_TXT">使用群名称搜索群</string>
+    <string name="NAVIGATION_TITLE_BMI">体脂率计算</string>
+    <string name="NAVIGATION_DYNAMIC_DETAIL">动态详情</string>
+
+    <string name="take_photo">拍照</string>
+    <string name="from_photo_album">从相册选择</string>
+
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="set">设置</string>
+    <string name="log_out">退出登录</string>
+    <string name="NAVIGATION_TITLE_SHARE_SHEPS">每日步数分享</string>
+    <string name="click_to_skip">点击跳过</string>
+    <string name="shafa_content">还没有人来评论,快抢个沙发吧</string>
+
+
+    <string name="NAVIGATION_INPUT_INVITATION">输入邀请码</string>
+    <string name="NAVIGATION_INVITATION_INSTRUCTIONS">请查看邀请码并完成填写，否则影响部分功能正常使用</string>
+
+
+    <string name="NAVIGATION_SHOP_DETAILS">商品详情</string>
+    <string name="NAVIGATION_GOOD_ACTIVITY">限时送</string>
+
+    <string name="NAVIGATION_TITLE_INVITATION">邀请</string>
+    <string name="NAVIGATION_TITLE_MINE">个人中心</string>
+    <string name="NAVIGATION_TITLE_WITHDRAWALS">提现中心</string>
+    <string name="NAVIGATION_TITLE_INSTRUCTIONS">提现说明</string>
+    <string name="NAVIGATION_TITLE_ORDER">提现</string>
+    <string name="NAVIGATION_TITLE_DAILY_SHARE">每日分享</string>
+    <string name="NAVIGATION_TITLE_INCOMESHARE">晒收入</string>
+    <string name="NAVIGATION_TITLE_WAKE">唤醒好友</string>
+    <string name="NAVIGATION_TITLE_ACTION">活动中心</string>
+    <string name="NAVIGATION_TITLE_ACCOUNTDETAILS">收益明细</string>
+    <string name="NAVIGATION_TITLE_MESSAGE">消息</string>
+    <string name="NAVIGATION_TITLE_MESSAGEDETAIL">消息详情</string>
+    <string name="NAVIGATION_TITLE_FORGET_PASSWORD">忘记密码</string>
+    <string name="NAVIGATION_TITLE_REGISTER">注册</string>
+    <string name="NAVIGATION_TITLE_MODIFYPASSWORDACTIVITY">修改密码</string>
+    <string name="NAVIGATION_TITLE_QUESTIONSURVEY">问卷调查</string>
+    <string name="NAVIGATION_TITLE_LEARNER">新手学习</string>
+    <string name="NAVIGATION_TITLE_LEARNER_QUESTIONS">新手答题</string>
+
+    <string name="NAVIGATION_TITLE_ADD_DYNAMIC">添加动态</string>
+
+    <string name="net_unavailable">网络不可用</string>
+
+    <string name="refresh_pull_down_text">下拉推荐</string>
+    <string name="refresh_release_text">松开推荐</string>
+    <string name="refresh_ing_text">推荐中</string>
+
+    <string name="refresh_pull_down_text1">下拉刷新</string>
+    <string name="refresh_release_text1">松开刷新</string>
+    <string name="refresh_ing_text1">刷新中</string>
+
+    <string name="refresh_pull_down_comment">查看最新评论</string>
+    <string name="refresh_release_comment">松开获取评论</string>
+    <string name="refresh_ing_comment">获取中</string>
+
+    <!--阅读奖励-->
+    <string name="news_reward">高额阅读奖励</string>
+    <string name="newscontent_warning">文章图片均来自网络，如果问题，请联系每日速报删除</string>
+    <string name="title_activity_news_details">NewsDetailsActivity</string>
+
+    <!--hiht-->
+    <string name="INPUT_TRUE_TEXT">请正确填写</string>
+    <string name="HINT_INPUT_PHONT">请输入您的手机号</string>
+    <string name="HINT_INPUT_GROUP_NAME">请输入群组名称</string>
+    <string name="HINT_INPUT_PHONT1">手机号码</string>
+    <string name="HINT_INPUT_PHONT1_TOAST">请填写手机号码</string>
+    <string name="HINT_INPUT_CONSIGNEE">收货姓名</string>
+    <string name="HINT_INPUT_CONSIGNEE_TOAST">请填写收货姓名</string>
+    <string name="HINT_INPUT_DISTRICT">选择地区</string>
+    <string name="HINT_INPUT_DISTRICT_TOAST">请选择地区</string>
+    <string name="HINT_INPUT_ADDRESS">详细地址 (如街道、小区、乡镇、村)</string>
+    <string name="HINT_INPUT_ADDRESS_TOAST">请填写详细地址</string>
+
+    <string name="HINT_INPUT_PASSWORD">请输入您的登录密码</string>
+    <string name="HINT_INPUT_SET_PASSWORD">请输入6到18位的数字、字母或下划线</string>
+    <string name="HINT_INPUT_REPETITION_PASSWORD">请再次输入密码</string>
+    <string name="HINT_INPUT_OLD_PASSWORD">请输入原密码</string>
+    <string name="HINT_INPUT_REPETITION_NEW_PASSWORD">请输入新密码</string>
+    <string name="HINT_INPUT_REPETITION_REPEAT_NEW_PASSWORD">请再次输入新密码</string>
+    <string name="HINT_INPUT_VERIFICATION_CODE">请输入验证码</string>
+    <string name="HINT_INPUT_NAME">请输入您的姓名</string>
+    <string name="HINT_INPUT_IDCARD">请输入您的身份证号</string>
+    <string name="HINT_INPUT_DRIVING_LICENSE">请输入您的驾驶证号</string>
+
+    <string name="LOADING_LOGIN_MESSAGE">努力登录中</string>
+    <string name="LOADING_QUERY_DATA">努力加载中</string>
+    <string name="ERROR_MESSAGE_PHONE_INVALID">无效的手机号</string>
+    <string name="ERROR_MESSAGE_PASSWORD_INVALID">无效的密码</string>
+    <string name="ACTIVITY_TITLE_REGISTER">注册</string>
+    <string name="ACTIVITY_TITLE_FORGETPASSWORD">忘记密码</string>
+    <string name="BUTTON_TITLE_LOGIN">登录</string>
+    <string name="BUTTON_TITLE_OK">确定</string>
+    <string name="LOGIN_UNLOGIN">请登录</string>
+    <string name="STR_NOTEMPTY">不能为空</string>
+    <string name="ERROR_MESSAGE_IDCARD_INVALID">无效的身份证号</string>
+    <string name="ERROR_MESSAGE_Driver_INVALID">无效的驾驶证号</string>
+
+
+    <string name="news_share_content1">转发文章，被朋友阅读</string>
+    <string name="news_share_content2">转发到</string>
+    <string name="news_share_content3">朋友圈</string>
+    <string name="news_share_content4">微信群，收益更高</string>
+
+    <string name="wx_login_message">登录后可参与活动，进行购物，领取优惠券、现金等好礼</string>
+    <string name="wx_login_agreement">查看《淘步优选服务协议》</string>
+
+
+    <!--一助力免费领取商品-->
+    <string name="share_common_title">亲爱的，麻烦帮我一下吧，我很想要这个宝贝,拜托啦，谢谢你！</string>
+
+
+    <!--朋友圈-->
+    <string name="share_friendcircle_title">邀你看资讯赚零花，只要阅读就能赚钱，内容丰富又搞笑，轻松赚零花，提现秒速到账，一起来试试吧！</string>
+    <string name="share_description">看资讯送零花，立马可提现，你也快来领吧！填我邀请码</string>
+    <!--微信好友-->
+    <string name="share_wxfriend_title">每日速报</string>
+    <string name="share_wxfriend_description">看资讯送零花，立马可提现，你也快来领吧！填我邀请码</string>
+    <!--shareQQ-->
+    <string name="share_qq_title">每日速报</string>
+    <string name="share_qq_description">我最近再玩【每日速报】APP, 读资讯就能赚钱，内容丰富又搞笑，轻轻松松赚零花,当日提现，立马到账，一起来试试吧</string>
+    <!--微博-->
+    <string name="share_wb_title">每日速报</string>
+    <string name="share_wb_description">看资讯送零花，立马可提现，你也快来领吧！填我邀请码</string>
+    <string name="share_wb_defaultText">看资讯送零花，立马可提现，你也快来领吧！填我邀请码</string>
+    <!--每日分享-->
+    <string name="share_daily_description">看新闻还能赚钱~赶快抓住机会试试呀，填我邀请码</string>
+
+    <!--晒收入-->
+    <string name="share_income_title">伙伴们快来看我有收益啦！看新闻赚零花钱~填我邀请码</string>
+    <string name="share_income_description">伙伴们快来看我有收益啦！看新闻赚零花钱~填我邀请码</string>
+</resources>

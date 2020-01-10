@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TaoBu_lb.iml" filepath="$PROJECT_DIR$/TaoBu_lb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calendarview/calendarview.iml" filepath="$PROJECT_DIR$/calendarview/calendarview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commomview/commomview.iml" filepath="$PROJECT_DIR$/commomview/commomview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httplbrary/httplbrary.iml" filepath="$PROJECT_DIR$/httplbrary/httplbrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photopicker/photopicker.iml" filepath="$PROJECT_DIR$/photopicker/photopicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uikit/uikit.iml" filepath="$PROJECT_DIR$/uikit/uikit.iml" />
+    </modules>
+  </component>
+</project>

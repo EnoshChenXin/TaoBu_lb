@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NavigationView">
+        <attr name="titleText" format="string|reference"/>
+        <attr name="titleColor" format="color|reference"/>
+        <attr name="titleSize" format="dimension|reference"/>
+
+        <attr name="left_drawable" format="reference"/>
+        <attr name="left_button_hidden" format="boolean"/>
+
+        <attr name="right_drawable" format="reference"/>
+        <attr name="right_text" format="string|reference"/>
+        <attr name="right_text_color" format="color|reference"/>
+        <attr name="right_button_hidden" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ColorTrackView">
+        <attr name="ctvText" format="string|reference"/>
+        <attr name="ctvText_size" format="dimension|reference"/>
+        <attr name="ctvText_origin_color" format="color|reference"/>
+
+        <attr name="ctvText_change_color" format="color|reference"/>
+        <attr name="ctvProgress" format="float"/>
+        <attr name="ctvDirection" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialEditText">
+        <!-- The base color of the line and the texts. Default is black. -->
+        <attr name="met_baseColor" format="color" />
+        <!-- The highlight color of the line, and the floating label if the highlightFloatingLabel is true. -->
+        <attr name="met_primaryColor" format="color" />
+        <!-- How the floating label should be shown. Default is none -->
+        <attr name="met_floatingLabel">
+            <enum name="none" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="highlight" value="2" />
+        </attr>
+        <!-- The color for when something is wrong.(e.g. exceeding max characters) -->
+        <attr name="met_errorColor" format="color" />
+        <!-- Min characters count limit. 0 means no limit. -->
+        <attr name="met_minCharacters" format="integer" />
+        <!-- max Characters count limit. 0 means no limit. -->
+        <attr name="met_maxCharacters" format="integer" />
+        <!-- Whether to show the bottom ellipsis in singleLine mode -->
+        <attr name="met_singleLineEllipsis" format="boolean" />
+        <!-- Reserved bottom text lines count, no matter if there is some helper/error text. -->
+        <attr name="met_minBottomTextLines" format="integer" />
+        <!-- Helper text at the bottom -->
+        <attr name="met_helperText" format="string" />
+        <!-- Helper text color -->
+        <attr name="met_helperTextColor" format="color" />
+        <!-- Font of the paint used to draw accent texts -->
+        <attr name="met_accentTypeface" format="string" />
+        <!-- Font used on view -->
+        <attr name="met_typeface" format="string" />
+        <!-- Custom float label text -->
+        <attr name="met_floatingLabelText" format="string" />
+        <!-- spacing between the main text and the floating label -->
+        <attr name="met_floatingLabelPadding" format="dimension" />
+        <!-- Hide underline -->
+        <attr name="met_hideUnderline" format="boolean" />
+        <!-- Underline's color -->
+        <attr name="met_underlineColor" format="color" />
+        <!-- Auto validate -->
+        <attr name="met_autoValidate" format="boolean" />
+        <!-- Left carmodel_icon -->
+        <attr name="met_iconLeft" format="reference" />
+        <!-- Right carmodel_icon -->
+        <attr name="met_iconRight" format="reference" />
+        <!-- Padding between carmodel_icon(s) and the main area. 8dp by default. -->
+        <attr name="met_iconPadding" format="dimension" />
+        <!-- Clear button -->
+        <attr name="met_clearButton" format="boolean" />
+        <!-- The floating label's text size. 12sp by default. -->
+        <attr name="met_floatingLabelTextSize" format="dimension" />
+        <!-- The floating label's text color. -1 by default. -->
+        <attr name="met_floatingLabelTextColor" format="color" />
+        <!-- The bottom texts' size. 12sp by default. -->
+        <attr name="met_bottomTextSize" format="dimension" />
+        <!-- Always show the floating label, instead of animating it in/out. False by default. -->
+        <attr name="met_floatingLabelAlwaysShown" format="boolean" />
+        <!-- Always show the helper text, no matter if the edit text is focused. False by default. -->
+        <attr name="met_helperTextAlwaysShown" format="boolean" />
+        <!-- Whether use animation to show/hide the floating label. True by default. -->
+        <attr name="met_floatingLabelAnimating" format="boolean"/>
+        <!-- Text color -->
+        <attr name="met_textColor" format="color" />
+        <!-- Hint Text Color -->
+        <attr name="met_textColorHint" format="color" />
+        <!-- Auto validate on focus lost. False by default. -->
+        <attr name="met_validateOnFocusLost" format="boolean"/>
+        <!-- Whether check the characters count at the beginning it's shown. True by default. -->
+        <attr name="met_checkCharactersCountAtBeginning" format="boolean"/>
+    </declare-styleable>
+    <!-- 圆形头像 -->
+    <declare-styleable name="DirectSeedingImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!-- textview 跑马灯-->
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvSingleLine" format="boolean"/>
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberTextView">
+        <attr name="numberColor" format="color|reference"/>
+        <attr name="numberSize" format="integer|reference"/>
+    </declare-styleable>
+
+    <!-- 倒计时-->
+    <declare-styleable name="SnapUpCountDownTimerView">
+        <attr name="viewSize" format="integer"/>
+    </declare-styleable>
+    <!--圆弧进度条-->
+    <declare-styleable name="TasksCompletedView">
+        <attr name="radius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="ringBgColor" format="color"/>
+    </declare-styleable>
+
+
+    <!--注意这里的name要和自定义View的名称一致，不然在布局文件中无法引用-->
+    <declare-styleable name="CircleBarView">
+        <attr name="progress_color" format="color"></attr>
+        <attr name="bg_color" format="color"></attr>
+
+        <attr name="bar_width" format="dimension"></attr>
+
+        <attr name="start_angle" format="float"></attr>
+        <attr name="sweep_angle" format="float"></attr>
+    </declare-styleable>
+      <!--日历-->
+    <declare-styleable name="GroupRecyclerView">
+        <attr name="group_height" format="dimension" />
+        <attr name="group_child_offset" format="dimension" />
+        <attr name="group_background" format="color" />
+        <attr name="group_text_color" format="color" />
+        <attr name="group_text_size" format="dimension" />
+        <attr name="group_center" format="boolean" />
+        <attr name="group_padding_left" format="dimension" />
+        <attr name="group_padding_right" format="dimension" />
+        <attr name="group_has_header" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CartPriceValue">
+        <attr name="value" format="reference|string" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="textSize" format="reference|dimension" />
+        <attr name="moneySize" format="reference|dimension" />
+        <attr name="intSize" format="reference|dimension" />
+        <attr name="decimalSize" format="reference|dimension" />
+        <attr name="strike" format="boolean" />
+        <attr name="withEndZero" format="boolean" />
+    </declare-styleable>
+</resources>

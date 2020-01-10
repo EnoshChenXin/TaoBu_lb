@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.dalong:refreshlayout:1.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9c907b7b97366c4136227e51be82d48/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9c907b7b97366c4136227e51be82d48/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.dalong/refreshlayout/1.0.3/751925a5e8bcbfa33a62127ba2e1628ed2b4b368/refreshlayout-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

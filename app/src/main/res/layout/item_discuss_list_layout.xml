@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--图文内容-->
+    <LinearLayout
+        android:id="@+id/image_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20">
+        <!--评论-->
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/child_headImageView"
+                    android:src="@mipmap/default_head"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:id="@+id/child_title"
+                    android:textColor="#6CADD5"
+                    android:textSize="@dimen/sp_size_16"
+                    android:text="锅锅"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:id="@+id/child_content"
+                    android:textColor="#3E3E3E"
+                    android:textSize="@dimen/sp_size_14"
+                    android:text="锅锅：我该说啥我该说啥我该说啥我该说啥我该说啥我该说啥我该说啥"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--评论回复-->
+        <LinearLayout
+            android:visibility="gone"
+            android:paddingRight="@dimen/dp_20"
+            android:background="@color/view_background"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/grandson_content"
+                android:textColor="#575757"
+                android:textSize="@dimen/sp_size_12"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

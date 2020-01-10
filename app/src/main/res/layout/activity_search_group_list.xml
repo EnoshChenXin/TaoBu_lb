@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/view_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".circle.view.SearchGroupListActivity">
+
+    <RelativeLayout
+        android:paddingTop="@dimen/dp_20"
+        android:background="@color/light_gray5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_90">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_44"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="取消"
+                android:textSize="@dimen/sp_size_16" />
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@id/cancel_btn"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44" >
+                <EditText
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:id="@+id/mSearchEdit"
+                    android:textSize="@dimen/sp_size_14"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:layout_marginLeft="-19dp"
+                    android:background="@drawable/circle_view_search"
+                    android:layout_margin="@dimen/dp_2"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/NAVIGATION_TITLE_SEARCH_TXT"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionSearch"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/search_icon"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.chaychan.uikit.powerfulrecyclerview.PowerfulRecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerColor="@color/view_background"
+        app:dividerMarginLeft="2dp"
+        app:dividerMarginRight="2dp"
+        app:dividerSize="4dp" />
+
+    <TextView
+        android:id="@+id/iv_pager"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

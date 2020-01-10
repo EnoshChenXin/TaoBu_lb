@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cart="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp_4"
+    android:orientation="vertical">
+
+
+    <com.lianbei.taobu.views.CustomRoundAngleImageView
+        android:id="@+id/goods_thumbnail"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/picdemo" />
+
+    <TextView
+        android:letterSpacing="0.05"
+        android:lineSpacingMultiplier='1.2'
+        android:padding="@dimen/dp_4"
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="#414141"
+        android:textSize="@dimen/sp_size_13"
+        android:text="同款吃喝就在这里" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30"
+        >
+        <com.lianbei.taobu.views.PriceView
+            android:id="@+id/nowprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            cart:value="0.00"
+            cart:moneySize="16dp"
+            cart:intSize="16dp"
+            cart:decimalSize="16dp"
+            cart:textColor="#ff0000"
+            cart:strike="false"
+            android:padding="10dp"
+            />
+
+        <com.lianbei.taobu.views.PriceView
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/oldprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cart:value="12.0"
+            cart:moneySize="12dp"
+            cart:intSize="12dp"
+            cart:decimalSize="12dp"
+            cart:textColor="#717171"
+            cart:strike="true"
+            android:padding="10dp"
+             />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    >
+
+    <com.lianbei.taobu.base.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/NAVIGATION_TITLE_MESSAGEDETAIL"
+        />
+
+    <com.lianbei.taobu.views.h5.ProgressWebView
+        android:layout_below="@id/navigation_view"
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

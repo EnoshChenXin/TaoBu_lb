@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lianbei.taobu">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".application.GlobalApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="taobu"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Slide"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".mine.view.OrderDuiHuanActivity"></activity>
+        <activity
+            android:name=".mine.view.EditAddressDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditAddressAddAvatar"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity android:name=".mine.view.AddressManagerActivity" />
+        <activity android:name=".shop.view.ThemeGoodsActivity" />
+        <activity
+            android:name=".shop.view.SearchGoodsActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".shop.view.ShareGoodsActivity" />
+        <activity android:name=".shop.view.HelpGoodsDetailProgress" />
+        <activity android:name=".shop.view.ActivityGoodsMain" />
+        <activity android:name=".mine.view.OrderActivity" />
+        <activity android:name=".circle.view.GameDiscussionDetailActivity" />
+        <activity
+            android:name=".shop.view.SearchGoodsListActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".shop.view.ActivityGoodsDetail" />
+        <activity android:name=".shop.view.HelpGoodsDetail" />
+        <activity android:name=".shop.view.ActivityGoodsList" />
+        <activity android:name=".shop.view.ShopDetailActivity" />
+        <activity android:name=".taobu.view.SignUpSuccess" />
+        <activity android:name=".taobu.viewmanager.PicDetailActivity">
+
+            <!-- android:theme="@style/AppThemeNoAnimation" -->
+        </activity>
+        <activity
+            android:name=".taobu.view.viewutils.TransAvtivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".taobu.view.SignDynamicDetailActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".taobu.view.BMICalcAct"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".taobu.view.AddDynamicActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mine.login.WXLoginActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShareInvitation.ShareStepsActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.view.SetActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.login.Fill_InviteCodeActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".circle.view.SearchGroupListActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".circle.view.CreatOrAddGroupActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".circle.view.GroupManagerActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".base.SplashActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".base.SplashCommonActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".taobu.view.SignActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".circle.view.GroupGameDetailActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.h5.H5PublicActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".taobu.view.WalkSignUpActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".taobu.view.HuanWuActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".taobu.view.WalkActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".utils.clip.ClipActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" /> <!-- 微信登录分享授权回调 -->
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" /> <!-- 主页 -->
+        <activity
+            android:name=".MainActivity1"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" /> <!-- 主页 -->
+        <activity
+            android:name=".base.WelcomeActiity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" /> <!-- 欢迎 -->
+        <activity
+            android:name="com.lidong.photopicker.PhotoPickerActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" /> <!-- 相册选择 -->
+        <activity
+            android:name="com.lidong.photopicker.PhotoPreviewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait" /> <!-- 预览 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 注册QQ分享SDKActivity -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101752859" /> <!-- 获取的APPID -->
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.lianbei.taobu.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

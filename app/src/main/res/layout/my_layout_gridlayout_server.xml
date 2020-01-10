@@ -1,0 +1,309 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GridLayout1"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+
+        <LinearLayout
+           android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/my_server_width"
+                android:layout_height="@dimen/my_server_width"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:src="@mipmap/my_friend_icon" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="我的好友"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:textColor="#777777"
+                android:textSize="@dimen/my_server_found_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/my_server_width"
+                android:layout_height="@dimen/my_server_width"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:src="@mipmap/my_earnings_icon" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="收益详情"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:textColor="#777777"
+                android:textSize="@dimen/my_server_found_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/my_server_width"
+                android:layout_height="@dimen/my_server_width"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:src="@mipmap/my_bean_icon" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="糖豆明细"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:textColor="#777777"
+                android:textSize="@dimen/my_server_found_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/my_server_width"
+                android:layout_height="@dimen/my_server_width"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:src="@mipmap/my_withdrawal_icon" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="提现明细"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:textColor="#777777"
+                android:textSize="@dimen/my_server_found_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/my_server_width"
+                android:layout_height="@dimen/my_server_width"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:src="@mipmap/my_invitation_icon" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="邀请好友"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:textColor="#777777"
+                android:textSize="@dimen/my_server_found_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/my_server_width"
+                android:layout_height="@dimen/my_server_width"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:src="@mipmap/my_collection_icon" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="收藏"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:textColor="#777777"
+                android:textSize="@dimen/my_server_found_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_bt_address"
+                android:layout_width="@dimen/my_server_width"
+                android:layout_height="@dimen/my_server_width"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:src="@mipmap/my_address_icon" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="地址管理"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:textColor="#777777"
+                android:textSize="@dimen/my_server_found_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/my_server_width"
+                android:layout_height="@dimen/my_server_width"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:src="@mipmap/my_help_icon" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="帮助中心"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:textColor="#777777"
+                android:textSize="@dimen/my_server_found_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/my_server_width"
+                android:layout_height="@dimen/my_server_width"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:src="@mipmap/my_bodyfat_icon" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="体脂计算"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:textColor="#777777"
+                android:textSize="@dimen/my_server_found_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_duihuan"
+                android:layout_width="@dimen/my_server_width"
+                android:layout_height="@dimen/my_server_width"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:src="@mipmap/my_bodyfat_icon" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="免单兑换"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:textColor="#777777"
+                android:textSize="@dimen/my_server_found_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

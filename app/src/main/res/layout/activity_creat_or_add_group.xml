@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical"
+    tools:context=".circle.view.CreatOrAddGroupActivity">
+
+    <com.lianbei.taobu.base.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/NAVIGATION_TITLE_CREAT_GROUP"
+        />
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:background="@color/light_gray5"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_50">
+
+          <LinearLayout
+              android:id="@+id/lin_search"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:layout_marginRight="@dimen/dp_20"
+              android:layout_marginLeft="@dimen/dp_20"
+              android:layout_gravity="center"
+              android:background="@drawable/circle_view_search"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp_38" >
+
+              <ImageView
+                  android:background="@mipmap/search_icon"
+                  android:layout_width="@dimen/dp_20"
+                  android:layout_height="@dimen/dp_20" />
+              <TextView
+                  android:textSize="@dimen/sp_size_14"
+                  android:textColor="@color/gray"
+                  android:layout_marginLeft="@dimen/dp_10"
+                  android:text="搜索"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+          </LinearLayout>
+      </LinearLayout>
+
+         <!--创建群组-->
+
+         <LinearLayout
+             android:paddingBottom="@dimen/dp_20"
+             android:background="@color/white"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:background="@mipmap/walkbg"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/dp_80" />
+
+             <RelativeLayout
+                 android:id="@+id/rel_upload_photo"
+                 android:padding="@dimen/dp_4"
+                 android:background="@color/white"
+                 android:layout_marginLeft="@dimen/dp_20"
+                 android:layout_marginTop="-40dp"
+                 android:layout_width="@dimen/dp_70"
+                 android:layout_height="@dimen/dp_70">
+                 <ImageView
+                     android:id="@+id/headImageView"
+                     android:background="@color/light_gray5"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+                 <ImageView
+                     android:layout_centerInParent="true"
+                     android:src="@mipmap/camera"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+             </RelativeLayout>
+         </LinearLayout>
+
+         <!--名称-->
+         <!--账户-->
+         <LinearLayout
+             android:background="@drawable/background_white_item"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="48dp"
+             android:gravity="center_vertical">
+
+             <TextView
+                 android:layout_marginLeft="@dimen/dp_20"
+                 android:text="群组名称"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+
+             <com.lianbei.taobu.views.mMaterialEditText
+                 android:layout_marginLeft="@dimen/dp_20"
+                 android:layout_marginRight="@dimen/dp_20"
+                 android:id="@+id/groupName"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:hint="@string/HINT_INPUT_GROUP_NAME"
+                 android:inputType="text"
+                 android:maxLength="11"
+                 />
+         </LinearLayout>
+         <RelativeLayout
+             android:gravity="center_vertical"
+             android:background="@drawable/background_white_item"
+             android:layout_marginTop="@dimen/dp_10"
+             android:layout_width="match_parent"
+             android:layout_height="48dp">
+             <TextView
+                 android:layout_marginLeft="@dimen/dp_20"
+                 android:text="加入需群主批准"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+             <Switch
+                 android:id="@+id/switch_btn"
+                 android:layout_marginRight="@dimen/dp_20"
+                 android:layout_alignParentRight="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+              </RelativeLayout>
+
+         <LinearLayout
+             android:background="@drawable/background_white_item"
+             android:layout_marginTop="@dimen/dp_10"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/dp_100">
+
+             <EditText
+                 android:id="@+id/edit_text"
+                 android:background="@drawable/background_white_item"
+                 android:gravity="left"
+                 android:textSize="@dimen/sp_size_14"
+                 android:paddingTop="@dimen/dp_10"
+                 android:paddingLeft="@dimen/dp_20"
+                 android:paddingRight="@dimen/dp_20"
+                 android:text=""
+                 android:hint="为你的群组写下简短说明"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" />
+         </LinearLayout>
+
+         <com.lianbei.taobu.views.MButton
+             android:id="@+id/creat_btn"
+             style="@style/buttonText"
+             android:layout_width="match_parent"
+             android:layout_marginLeft="@dimen/dp_40"
+             android:layout_marginRight="@dimen/dp_40"
+             android:layout_height="44dp"
+             android:layout_below="@+id/input_view"
+             android:layout_marginTop="40dp"
+             android:text="@string/NAVIGATION_TITLE_CREAT"
+             android:textColor="@color/white"
+             android:textSize="17sp"
+             android:textStyle="bold"/>
+
+     </LinearLayout>
+
+
+</LinearLayout>

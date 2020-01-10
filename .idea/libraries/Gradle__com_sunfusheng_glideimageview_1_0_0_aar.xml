@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.sunfusheng:glideimageview:1.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5fbe3841ec80408ac1c4d33b449cda5/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5fbe3841ec80408ac1c4d33b449cda5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5fbe3841ec80408ac1c4d33b449cda5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sunfusheng/glideimageview/1.0.0/a116ff3e6a56ea27ec33813baf24563fcd086966/glideimageview-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

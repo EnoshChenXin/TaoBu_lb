@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/setting_one_pressed" android:state_pressed="true">
+        <!-- 圆角 -->
+        <corners
+            android:radius="20dp" />
+        </item>
+<item android:drawable="@drawable/setting_one_nor" >
+    <!-- 圆角 -->
+    <corners
+        android:radius="20dp" />
+    </item>
+</selector>

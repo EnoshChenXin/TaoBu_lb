@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    tools:context=".taobu.view.AddDynamicActivity">
+
+  <include
+      layout="@layout/add_dynamic_title"
+      android:layout_width="match_parent"
+      android:layout_height="44dp">
+  </include>
+
+  <android.support.v4.widget.NestedScrollView
+      android:visibility="visible"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:padding="@dimen/dp_10"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_120">
+
+        <EditText
+            android:hint="想说点什么..."
+            android:gravity="top"
+            android:id="@+id/edit_text"
+            android:textSize="@dimen/sp_size_16"
+            android:textColor="@color/dark_gray"
+            android:background="@color/white"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="@dimen/dp_10"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <com.lianbei.taobu.taobu.view.MyGridView
+            android:layout_marginBottom="@dimen/dp_40"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="0dp"
+            android:numColumns="3"
+            android:columnWidth="@dimen/dp_2"
+            android:verticalSpacing="@dimen/dp_6" />
+      </LinearLayout>
+    </LinearLayout>
+  </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

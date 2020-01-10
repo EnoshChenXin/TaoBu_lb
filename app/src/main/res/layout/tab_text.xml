@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="07:00"
+        android:textColor="#86FFFFFF"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:textSize="@dimen/sp_size_10"
+        android:textColor="#86FFFFFF"
+        android:text="抢购中"
+        android:id="@+id/tab_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

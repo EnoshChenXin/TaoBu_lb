@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_80">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp_20"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.lianbei.taobu.views.CircleImageView
+                    android:id="@+id/headImageView"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:src="@mipmap/icon3"
+                    android:padding="@dimen/dp_6" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+               android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:lines="1"
+                    android:id="@+id/game_title"
+                    android:text=" "
+                    android:textSize="@dimen/sp_size_16"
+                    android:textColor="@color/main_text_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@mipmap/icon2"
+                    android:layout_width="@dimen/dp_14"
+                    android:layout_height="@dimen/dp_14" />
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:text="32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/describe"
+                    android:layout_marginTop="@dimen/dp_8"
+                    style="@style/style_font_30_gray"
+                    android:text="d淘步dd淘步dd淘步dd淘步d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginRight="@dimen/dp_20"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.lianbei.taobu.views.MButton
+                    android:visibility="gone"
+                    android:id="@+id/add_group"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12"
+                    android:text="加入"
+                    android:background="@drawable/bg_gridview2"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_30" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

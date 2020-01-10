@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical"
+    tools:context=".circle.view.GroupManagerActivity">
+
+    <com.lianbei.taobu.base.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/NAVIGATION_TITLE_HUANWU" />
+
+    <com.chaychan.uikit.powerfulrecyclerview.PowerfulRecyclerView
+        android:id="@+id/rv_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerColor="@color/view_background"
+        app:dividerMarginLeft="2dp"
+        app:dividerMarginRight="2dp"
+        app:dividerSize="4dp" />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_20"
+        android:visibility="gone"
+        android:id="@+id/rel_exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center"
+        android:background="@drawable/background_white_item">
+        <Button
+            android:id="@+id/btn_exit"
+            android:background="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="退出群组"
+            android:textColor="@color/color_F96B6B"
+            android:textSize="@dimen/sp_size_14" />
+    </RelativeLayout>
+    <!--解散群组-->
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_20"
+        android:visibility="gone"
+        android:id="@+id/rel_dissolve"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center"
+        android:background="@drawable/background_white_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:text="危险动作" />
+
+        <Button
+            android:id="@+id/btn_dissolve"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@color/white"
+            android:text="解散群组"
+            android:textColor="@color/color_F96B6B"
+            android:textSize="@dimen/sp_size_14" />
+    </RelativeLayout>
+</LinearLayout>

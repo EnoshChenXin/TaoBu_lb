@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/view_background"
+    tools:context=".circle.view.GroupGameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <com.lianbei.taobu.taobu.view.viewutils.MastGridView
+                        android:id="@+id/mastgridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:numColumns="auto_fit"
+                        android:stretchMode="spacingWidthUniform" >
+                    </com.lianbei.taobu.taobu.view.viewutils.MastGridView>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/walk_relBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/walk_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:background="#e95759"
+                        android:layout_width="@dimen/margin_top150"
+                        android:layout_height="@dimen/dp_30">
+                        <TextView
+                            android:textSize="@dimen/sp_size_14"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="新人活动进行中..."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/zaoqi_LinBtn"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/zaoqi_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

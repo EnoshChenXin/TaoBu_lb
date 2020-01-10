@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".mine.login.WXLoginActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/close_wxlogin_img"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_40"
+            android:src="@mipmap/wx_login_close"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_80"
+            android:src="@mipmap/wx_login_login"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_120" />
+
+
+        <LinearLayout
+            android:id="@+id/wx_btn_lin"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_100"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:background="@drawable/wx_login_btn_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44" >
+            <ImageView
+                android:src="@mipmap/wx_login_icon"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25" />
+            <TextView
+                android:layout_marginLeft="@dimen/dp_4"
+                android:textSize="@dimen/sp_size_20"
+                android:textColor="@color/white"
+                android:text="微信登录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <TextView
+            android:textColor="@color/secondly_text_or_icon_black"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:text="@string/wx_login_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/secondly_text_or_icon_black"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:text="@string/wx_login_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20"
+    tools:context=".mine.login.Fill_InviteCodeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/welcome_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text=""
+            android:textSize="@dimen/dp_20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_60"
+            android:text="填写邀请码"
+            android:textSize="@dimen/sp_size_22" />
+
+
+        <com.lianbei.taobu.views.mMaterialEditText
+            android:id="@+id/invitationCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_10"
+            android:hint="@string/NAVIGATION_INPUT_INVITATION"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/NAVIGATION_INVITATION_INSTRUCTIONS" />
+
+        <com.lianbei.taobu.views.MButton
+            android:id="@+id/mybutton"
+            style="@style/buttonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_40"
+            android:text="提交" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20">
+
+            <TextView
+                android:padding="@dimen/dp_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请立即填写,以免邀请码丢失"
+                android:textColor="@color/main_red_no" />
+
+
+            <TextView
+                android:padding="@dimen/dp_8"
+                android:id="@+id/Waiting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="等会再说"
+                android:textColor="@color/mon_title_black" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
