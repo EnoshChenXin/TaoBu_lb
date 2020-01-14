@@ -12,13 +12,14 @@ import android.widget.TextView;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.circle.model.InformationBean;
 import com.lianbei.taobu.shop.model.CatsBean;
+import com.lianbei.taobu.shop.model.GoodsOptBean;
 
 import java.util.List;
 
 public class CatsAdapter extends BaseAdapter {
     Context context;
-    List <CatsBean> list;
-    public CatsAdapter(Context context, List<CatsBean> _list) {
+    List <GoodsOptBean> list;
+    public CatsAdapter(Context context, List<GoodsOptBean> _list) {
         this.list = _list;
         this.context = context;
     }
@@ -44,9 +45,9 @@ public class CatsAdapter extends BaseAdapter {
         TextView cat_name = (TextView) convertView.findViewById(R.id.cat_name);
         RelativeLayout rel_bg =(RelativeLayout)convertView.findViewById(R.id.rel_bg) ;
         LinearLayout lin_bottom = (LinearLayout)convertView.findViewById(R.id.lin_bottom);
-        CatsBean catsBean = list.get(position);
-        cat_name.setText(catsBean.getCat_name());
-        if(catsBean.isSelect()){
+        GoodsOptBean goodsOptBean = list.get(position);
+        cat_name.setText(goodsOptBean.getOpt_name());
+        if(goodsOptBean.isSelect()){
             rel_bg.setBackgroundResource(R.drawable.bg_gridview5);
             lin_bottom.setBackgroundResource(R.drawable.bg_carts_bottom_select);
         }else{

@@ -102,6 +102,7 @@
     </LinearLayout>
     <!--搜索历史-->
     <LinearLayout
+        android:visibility="gone"
         android:id="@+id/lin_serarch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -135,6 +136,7 @@
         </RelativeLayout>
 
         <com.chaychan.uikit.powerfulrecyclerview.PowerfulRecyclerView
+            android:visibility="visible"
             android:id="@+id/list_record"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -150,5 +152,5 @@
         android:id="@+id/listframeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible" />
+        android:visibility="gone" />
 </LinearLayout>

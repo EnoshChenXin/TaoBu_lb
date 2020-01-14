@@ -20,16 +20,16 @@ import net.sqlcipher.database.SQLiteOpenHelper;
  */
 public class TaoBuDBHelper extends SQLiteOpenHelper {
 
-    private static final String TAG = "CarRentalDB";
+    private static final String TAG = "TaoBuDBHelper";
     /*
      * station_database name
      */
-    public static final String DATABASE_NAME = "taobu_db";
+    public static final String DATABASE_NAME = "taobu.db";
 
     /*
      * statcion_database version
      */
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
     /*
      * Station Operation area Table Name
      */
@@ -42,9 +42,13 @@ public class TaoBuDBHelper extends SQLiteOpenHelper {
 
 
     /*
-     * Station Table OPT Name
+     * opt Table OPT Name
      */
     public static final String OPT_TABLE = "opt_tb";
+    /*
+     * SEARCH_RECORD Table OPT Name
+     */
+    public static final String SEARCH_RECORD_TABLE = "search_record_tb";
 
     /**
      * operation　area Table colums;
@@ -78,6 +82,10 @@ public class TaoBuDBHelper extends SQLiteOpenHelper {
     public static final String OPT_KEY_LEVEL = "level";
     public static final String OPT_KEY_PARENT_OPT_ID = "parent_opt_id";
 
+
+
+    public static final String SEARCH_KEY_SEARCH_RECORD = "search_record";
+    public static final String SEARCH_KEY_HOT_NUMBER = "hot_num";
     /**
      * Database creation sql statement
      */
@@ -122,6 +130,10 @@ public class TaoBuDBHelper extends SQLiteOpenHelper {
             + " VARCHAR(100), " + OPT_KEY_LEVEL + " VARCHAR(100), "
             + OPT_KEY_PARENT_OPT_ID + " VARCHAR(100));";
 
+    private static final String CREATE_SEARCH_RECORD_TABLE = "CREATE TABLE "
+            + SEARCH_RECORD_TABLE + " ("
+            + SEARCH_KEY_HOT_NUMBER + " INTEGER(11), "
+            + SEARCH_KEY_SEARCH_RECORD + " VARCHAR(100));";
 
     public TaoBuDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -137,10 +149,10 @@ public class TaoBuDBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         Log.e(TAG, "CREATE_OPERATION_TABLE:  " + CREATE_OPERATION_TABLE);
         Log.e(TAG, "CREATE_OPT_TABLE:  " + CREATE_OPT_TABLE);
-        //	db.execSQL(CREATE_OPERATION_TABLE);
-        //	db.execSQL(CREATE_STATION_TABLE);
-       // db.execSQL(CREATE_STATION_TABLE);
+        Log.e(TAG, "CREATE_SEARCH_RECORD_TABLE:  " + CREATE_SEARCH_RECORD_TABLE);
         db.execSQL(CREATE_OPT_TABLE);
+        db.execSQL(CREATE_SEARCH_RECORD_TABLE);
+
     }
 
     @Override

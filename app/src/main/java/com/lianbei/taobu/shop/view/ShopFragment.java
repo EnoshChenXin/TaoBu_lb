@@ -46,9 +46,7 @@ import com.lianbei.taobu.utils.GlideUtils;
 import com.lianbei.taobu.utils.ShareUtils;
 import com.lianbei.taobu.utils.TabLayoutAddOnClickHelper;
 import com.lianbei.taobu.utils.ThreadUtil;
-import com.lianbei.taobu.utils.dbhelper.TbDB;
 import com.lianbei.taobu.utils.dbhelper.dao.OptDAPImpl;
-import com.lianbei.taobu.utils.dbhelper.db.TaoBuDBHelper;
 import com.lianbei.taobu.views.ImageUtils;
 
 import java.util.ArrayList;
@@ -155,8 +153,15 @@ public class ShopFragment extends BaseFragment implements View.OnClickListener {
             if (mChannelFragments != null && mChannelFragments.size() > 0) {
                 return;
             }
-            List<GoodsOptBean> goodsOptBeans = ShareUtils.getDataList(ShopFragment.this.getContext(), ShareUtils.OPT_INFO, GoodsOptBean.class);
+            OptDAPImpl optDAP = new OptDAPImpl(ShopFragment.this.getContext());
+            List<GoodsOptBean> goodsOptBeans  =optDAP.queryOptBean();
+          //List<GoodsOptBean> goodsOptBeans = ShareUtils.getDataList(ShopFragment.this.getContext(), ShareUtils.OPT_INFO, GoodsOptBean.class);
+
             if (goodsOptBeans != null && goodsOptBeans.size() > 0) {
+                for (int i = 0; i <goodsOptBeans.size() ; i++) {
+                    Log.e("dbname:" ,goodsOptBeans.get(i).getOpt_name()+"--"+goodsOptBeans.get(i).getOpt_id()+"");
+
+                }
                 goodsOptBeanList.addAll(goodsOptBeans);
                 handler.sendEmptyMessage(0);
             } else {
@@ -262,6 +267,7 @@ public class ShopFragment extends BaseFragment implements View.OnClickListener {
     @Override
     public void fetchData() {
         Log.e("fetchData", "fetchData");
+
     }
 
     @Override
@@ -269,9 +275,6 @@ public class ShopFragment extends BaseFragment implements View.OnClickListener {
 //        TbDB tbDB = new TbDB(this.getContext());
 //        tbDB.open();
 //        tbDB.createOptData("0","衣服","1","99");
-
-    //    OptDAPImpl optDAP = new OptDAPImpl(this.getContext());
-
 
         Log.e("---otData", "initData");
 
@@ -298,7 +301,17 @@ public class ShopFragment extends BaseFragment implements View.OnClickListener {
                     @Override
                     public void result(Object o) {
                         goodsOptBeanList.addAll(((List<GoodsOptBean>) o));
-                        ShareUtils.setDataList(ShopFragment.this.getContext(), ShareUtils.OPT_INFO, goodsOptBeanList);
+                        ThreadUtil.runInThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                OptDAPImpl optDAP = new OptDAPImpl(ShopFragment.this.getContext());
+                                for (int i = 0; i <goodsOptBeanList.size() ; i++) {
+                                    long rr =   optDAP.insertGoodsOpt(goodsOptBeanList.get(i));
+                                    Log.e("rr：",rr+"");
+                                }
+                            }
+                        });
+                       // ShareUtils.setDataList(ShopFragment.this.getContext(), ShareUtils.OPT_INFO, goodsOptBeanList);
                         // handler.sendEmptyMessage ( 0 );
                         initChannelData();
                         initChannelFragments();
@@ -337,6 +350,7 @@ public class ShopFragment extends BaseFragment implements View.OnClickListener {
                         public void run() {
                             initChannelData();
                             initChannelFragments();
+                           // dbdb();
                         }
                     });
                 }

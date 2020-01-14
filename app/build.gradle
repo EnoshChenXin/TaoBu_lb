@@ -15,16 +15,16 @@ android {
             abiFilters /*'x86', 'x86_64', */ 'armeabi-v7a'
             // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'  /**/*, 'arm64-v8a'
         }
-//        sourceSets {
-//            main {
-//                // 1. 配置在根目录libs下可以加载第三方so库, (最好不要创建jniLibs, 在众多的开源库中可能会引起冲突,还没发现)
-//                // 2. 运行时会自动将libs目录下的so库拷贝到指定目录
-//                // 3. 如果自己创建的so不需要重新编译,可以将(app/build/intermediates/transforms)生成的so拷贝到这个目录
-//                jniLibs.srcDirs = ['libs']
-//                // 如果是单个文件夹 可以直接这样如下配置
-//                // jniLibs.srcDir 'libs'
-//            }
-//        }
+        sourceSets {
+            main {
+                // 1. 配置在根目录libs下可以加载第三方so库, (最好不要创建jniLibs, 在众多的开源库中可能会引起冲突,还没发现)
+                // 2. 运行时会自动将libs目录下的so库拷贝到指定目录
+                // 3. 如果自己创建的so不需要重新编译,可以将(app/build/intermediates/transforms)生成的so拷贝到这个目录
+                jniLibs.srcDirs = ['libs']
+                // 如果是单个文件夹 可以直接这样如下配置
+                // jniLibs.srcDir 'libs'
+            }
+        }
     }
     signingConfigs {
         release {
@@ -118,15 +118,13 @@ dependencies {
     //implementation files('libs\\libammsdk.jar')  //微信登录分享
     implementation files('libs\\open_sdk_r5793.jar') //QQ分享
     implementation files('libs\\systembartint-1.0.4.jar')
-    implementation files('libs\\sqlcipher.jar')
-    implementation files('libs\\sqlcipher-javadoc.jar')
-
     implementation 'cn.bingoogolapple:bga-indicator:1.0.1@aar'
     implementation 'cn.bingoogolapple:bga-refreshlayout:1.1.8@aar'
     implementation 'cn.bingoogolapple:bga-banner:2.2.5@aar'
     //微博分享
     implementation 'com.sina.weibo.sdk:core:4.1.0:openDefaultRelease@aar'
     implementation 'com.google.zxing:core:3.4.0'
+    implementation  'net.zetetic:android-database-sqlcipher:3.5.2@aar'
 
 
 }

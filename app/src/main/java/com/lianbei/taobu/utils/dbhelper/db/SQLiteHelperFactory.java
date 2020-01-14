@@ -28,10 +28,8 @@ public class SQLiteHelperFactory {
 			synchronized (SQLiteHelperFactory.class) {
 				
 				if(sqLiteOpenHelper==null){
-
 					Logger.e(TAG, "init SQLiteOpenHelper");
 					sqLiteOpenHelper = new TaoBuDBHelper(context.getApplicationContext());
-					
 					Logger.e(TAG, "SQLiteDatabase loadLibs");
 					//必须先调用此方法
 					SQLiteDatabase.loadLibs(context);

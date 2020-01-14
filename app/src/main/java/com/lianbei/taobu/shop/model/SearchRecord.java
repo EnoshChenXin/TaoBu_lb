@@ -6,7 +6,15 @@ import java.io.Serializable;
 
 public class SearchRecord implements Serializable {
    private  String keywordRecord;
+   private int hotNum;
 
+    public int getHotNum() {
+        return hotNum;
+    }
+
+    public void setHotNum(int hotNum) {
+        this.hotNum = hotNum;
+    }
 
     public String getKeywordRecord() {
         return keywordRecord;

@@ -6,8 +6,10 @@ import android.util.Log;
 
 import com.lianbei.taobu.constants.Constant;
 import com.lianbei.taobu.shop.model.GoodsOptBean;
+import com.lianbei.taobu.shop.model.SearchRecord;
 import com.lianbei.taobu.utils.dbhelper.db.CarRentalDBHelper;
 import com.lianbei.taobu.utils.dbhelper.db.SQLiteHelperFactory;
+import com.lianbei.taobu.utils.dbhelper.db.TaoBuDBHelper;
 
 import net.sqlcipher.Cursor;
 import net.sqlcipher.database.SQLiteDatabase;
@@ -18,23 +20,22 @@ import java.util.List;
 
 public class OptDAPImpl implements OptDAO{
     private SQLiteOpenHelper sqLiteOpenHelper;
-    private String password = Constant.getImei();
+    private String password = "";
     SQLiteDatabase db = null;
 
     public OptDAPImpl(Context context) {
         sqLiteOpenHelper = SQLiteHelperFactory.create(context);
     }
     @Override
-    public long insertOperationArea(GoodsOptBean goodsOptBean) {
-
+    public long insertGoodsOpt(GoodsOptBean goodsOptBean) {
         try {
             db = sqLiteOpenHelper.getWritableDatabase(password);
             ContentValues values = new ContentValues();
-            values.put(CarRentalDBHelper.OPERATION_KEY_OPERAION_AREA_GROUP_ID,goodsOptBean.getOpt_id());
-            values.put(CarRentalDBHelper.OPERATION_KEY_IS_PUBLIC,String.valueOf(goodsOptBean.getOpt_name()));
-            values.put(CarRentalDBHelper.OPERATION_KEY_IS_DAILY_RENT,String.valueOf(goodsOptBean.getLevel()));
-            values.put(CarRentalDBHelper.OPERATION_KEY_IS_NIGHT_RENT,String.valueOf(goodsOptBean.getParent_opt_id()));
-            return db.insert(CarRentalDBHelper.OPERATION_AREA_TABLE, null, values);
+            values.put(TaoBuDBHelper.OPT_KEY_OPT_ID,goodsOptBean.getOpt_id());
+            values.put(TaoBuDBHelper.OPT_KEY_OPT_NAME,String.valueOf(goodsOptBean.getOpt_name()));
+            values.put(TaoBuDBHelper.OPT_KEY_LEVEL,String.valueOf(goodsOptBean.getLevel()));
+            values.put(TaoBuDBHelper.OPT_KEY_PARENT_OPT_ID,String.valueOf(goodsOptBean.getParent_opt_id()));
+            return db.insert(TaoBuDBHelper.OPT_TABLE, null, values);
         } finally {
 //			if (db != null)
 //				db.close();
@@ -42,7 +43,21 @@ public class OptDAPImpl implements OptDAO{
     }
 
     @Override
-    public List<GoodsOptBean> query() {
+    public long insertSearchRecord(SearchRecord searchRecord) {
+        try {
+            db = sqLiteOpenHelper.getWritableDatabase(password);
+            ContentValues values = new ContentValues();
+            values.put(TaoBuDBHelper.SEARCH_KEY_SEARCH_RECORD,searchRecord.getKeywordRecord());
+            values.put(TaoBuDBHelper.SEARCH_KEY_HOT_NUMBER,searchRecord.getHotNum());
+            return db.insert(TaoBuDBHelper.SEARCH_RECORD_TABLE, null, values);
+        } finally {
+//            if (db != null)
+//                db.close();
+        }
+    }
+
+    @Override
+    public List<GoodsOptBean> queryOptBean() {
         SQLiteDatabase db = null;
         Cursor cursor = null;
         try {
@@ -50,16 +65,16 @@ public class OptDAPImpl implements OptDAO{
 //			cursor = db.query("station_tb", new String[]{"latitude","longitude","operaionarea_group_name"}, null,
 //					null, null, null, null);
             db = sqLiteOpenHelper.getWritableDatabase(password);
-            String sql = "select * from station_tb s , operation_area_tb a where s.operation_area_group_id = a.operation_area_group_id";
+            String sql = "select * from opt_tb";
 //			String sql = "select * from operation_area_tb";
             cursor = db.rawQuery(sql, null);
             List<GoodsOptBean> modelStationList = new ArrayList<GoodsOptBean>();
             while (cursor != null && cursor.moveToNext()) {
                 GoodsOptBean goodsOptBean = new GoodsOptBean();
-                String opt_id = cursor.getString(cursor.getColumnIndex("opt_id"));
-                String opt_name = cursor.getString(cursor.getColumnIndex("opt_name"));
-                String level = cursor.getString(cursor.getColumnIndex("level"));
-                String parent_opt_id = cursor.getString(cursor.getColumnIndex("parent_opt_id"));
+                String opt_id = cursor.getString(cursor.getColumnIndex(TaoBuDBHelper.OPT_KEY_OPT_ID));
+                String opt_name = cursor.getString(cursor.getColumnIndex(TaoBuDBHelper.OPT_KEY_OPT_NAME));
+                String level = cursor.getString(cursor.getColumnIndex(TaoBuDBHelper.OPT_KEY_LEVEL));
+                String parent_opt_id = cursor.getString(cursor.getColumnIndex(TaoBuDBHelper.OPT_KEY_PARENT_OPT_ID));
                 goodsOptBean.setOpt_id(opt_id);
                 goodsOptBean.setOpt_name(opt_name);
                 goodsOptBean.setLevel(level);
@@ -77,13 +92,43 @@ public class OptDAPImpl implements OptDAO{
     }
 
     @Override
+    public List<SearchRecord> querySearchRecord() {
+        SQLiteDatabase db = null;
+        Cursor cursor = null;
+        try {
+//			db = sqLiteOpenHelper.getWritableDatabase(password);
+//			cursor = db.query("station_tb", new String[]{"latitude","longitude","operaionarea_group_name"}, null,
+//					null, null, null, null);
+            db = sqLiteOpenHelper.getWritableDatabase(password);
+            String sql = "select * from search_record_tb order by hot_num desc";
+            cursor = db.rawQuery(sql, null);
+            List<SearchRecord> searchRecords = new ArrayList<SearchRecord>();
+            while (cursor != null && cursor.moveToNext()) {
+                SearchRecord searchRecord = new SearchRecord();
+                String keywordRecord = cursor.getString(cursor.getColumnIndex(TaoBuDBHelper.SEARCH_KEY_SEARCH_RECORD));
+                int hotNum = cursor.getInt(cursor.getColumnIndex(TaoBuDBHelper.SEARCH_KEY_HOT_NUMBER));
+                searchRecord.setKeywordRecord(keywordRecord);
+                searchRecord.setHotNum(hotNum);
+                searchRecords.add(searchRecord);
+            }
+            return searchRecords;
+        }finally {
+            if (cursor != null) {
+                cursor.close();
+            }
+            if (db != null)
+                db.close();
+        }
+    }
+
+    @Override
     public Cursor rawQuery() {
         SQLiteDatabase db = null;
         Cursor cursor = null;
         try {
             db = sqLiteOpenHelper.getWritableDatabase(password);
-            String sql = "select * from station_tb s , operation_area_tb a where s.operation_area_group_id = a.operation_area_group_id";
-            cursor = db.rawQuery(sql, null);
+          //  String sql = "select * from station_tb s , operation_area_tb a where s.operation_area_group_id = a.operation_area_group_id";
+         //   cursor = db.rawQuery(sql, null);
             return cursor;
         } finally {
 //			if (cursor != null) {
@@ -100,15 +145,15 @@ public class OptDAPImpl implements OptDAO{
      * @return
      */
     @Override
-    public Cursor getSerchStationDB(String search_address) {
+    public Cursor getSerchGoodsOpt(String search_address) {
         SQLiteDatabase db = null;
         Cursor cursor = null;
         try {
             db = sqLiteOpenHelper.getWritableDatabase(password);
-            String sql = "select * from station_tb where station_tb.station_name like ? ";
-            String[] selectionArgs = new String[] { "%" + search_address+ "%" };
-            Log.e("sql: ", sql);
-            cursor = db.rawQuery(sql, selectionArgs);
+          //  String sql = "select * from station_tb where station_tb.station_name like ? ";
+         //   String[] selectionArgs = new String[] { "%" + search_address+ "%" };
+         //   Log.e("sql: ", sql);
+         //   cursor = db.rawQuery(sql, selectionArgs);
             return cursor;
         } finally{
 //			if (cursor != null) {
@@ -157,7 +202,14 @@ public class OptDAPImpl implements OptDAO{
         db.execSQL("DELETE FROM " +CarRentalDBHelper.OPERATION_AREA_TABLE);
         db.execSQL("DELETE FROM " +CarRentalDBHelper.STATION_TABLE);
     }
-
+    /**
+     * 清空本地表数据
+     */
+    public void clearSearchTable(){
+        SQLiteDatabase db = null;
+        db = sqLiteOpenHelper.getWritableDatabase(password);
+        db.execSQL("DELETE FROM " +TaoBuDBHelper.SEARCH_RECORD_TABLE);
+    }
 
     /**
      * This method will update Station record.
@@ -178,5 +230,21 @@ public class OptDAPImpl implements OptDAO{
 //				db.close();
         }
     }
-
+    /**
+     * This method will update Station record.
+     * @return boolean
+     */
+    public boolean updateSearchRecord(SearchRecord searchRecord) {
+        SQLiteDatabase db = null;
+        try {
+            db = sqLiteOpenHelper.getWritableDatabase(password);
+            ContentValues args = new ContentValues();
+            args.put(TaoBuDBHelper.SEARCH_KEY_SEARCH_RECORD, searchRecord.getKeywordRecord());
+            args.put(TaoBuDBHelper.SEARCH_KEY_HOT_NUMBER, Integer.valueOf(searchRecord.getHotNum()));
+            return  db.update(TaoBuDBHelper.SEARCH_RECORD_TABLE, args, TaoBuDBHelper.SEARCH_KEY_SEARCH_RECORD+"=?", new String[]{ searchRecord.getKeywordRecord()}) > 0;
+        } finally{
+//			if (db != null)
+//				db.close();
+        }
+    }
 }

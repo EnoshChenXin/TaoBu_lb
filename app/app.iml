@@ -105,8 +105,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-idling-resource:3.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:F.\AndroidProject\TaoBu_lb\app\libs\libammsdk.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:F.\AndroidProject\TaoBu_lb\app\libs\open_sdk_r5793.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\AndroidProject\TaoBu_lb\app\libs\sqlcipher-javadoc.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\AndroidProject\TaoBu_lb\app\libs\sqlcipher.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:F.\AndroidProject\TaoBu_lb\app\libs\systembartint-1.0.4.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:collections:28.0.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.bumptech.glide:glide:4.0.0@jar" level="project" />
@@ -190,6 +188,7 @@
     <orderEntry type="library" name="Gradle: cn.bingoogolapple:bga-refreshlayout:1.1.8@aar" level="project" />
     <orderEntry type="library" name="Gradle: cn.bingoogolapple:bga-banner:2.2.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.sina.weibo.sdk:core:4.1.0:openDefaultRelease@aar" level="project" />
+    <orderEntry type="library" name="Gradle: net.zetetic:android-database-sqlcipher:3.5.2@aar" level="project" />
     <orderEntry type="module" module-name="commomview" />
     <orderEntry type="module" module-name="uikit" />
     <orderEntry type="module" module-name="httplbrary" />

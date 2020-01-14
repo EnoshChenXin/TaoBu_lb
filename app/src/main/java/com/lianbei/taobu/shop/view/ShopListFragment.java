@@ -6,6 +6,8 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -34,11 +36,15 @@ import com.lianbei.taobu.listener.RequestCompletion;
 import com.lianbei.taobu.shop.adapter.CatsAdapter;
 import com.lianbei.taobu.shop.model.BannerImgInfo;
 import com.lianbei.taobu.shop.model.CatsBean;
+import com.lianbei.taobu.shop.model.GoodsOptBean;
 import com.lianbei.taobu.shop.model.TopGoodsBean;
 import com.lianbei.taobu.shop.viewmanager.ShopManager;
+import com.lianbei.taobu.taobu.view.GoodsUtils;
 import com.lianbei.taobu.taobu.view.viewutils.MastGridView;
 import com.lianbei.taobu.utils.TabLayoutAddOnClickHelper;
 import com.lianbei.taobu.utils.ThreadUtil;
+import com.lianbei.taobu.utils.Validator;
+import com.lianbei.taobu.utils.dbhelper.dao.OptDAPImpl;
 import com.lianbei.taobu.views.bannerview.bean.IBanner;
 import com.lianbei.taobu.views.bannerview.lib.CycleViewPager;
 import com.lianbei.taobu.views.bannerview.ui.ADInfo;
@@ -103,8 +109,8 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
     MastGridView mastgridview;
     CatsAdapter catsAdapter;
 
-
-
+    private List<GoodsOptBean> goodsOptBeanList = new ArrayList<>();
+    private GoodsOptBean goodsOptBean;
     public static int[] TAB_TITLES = new int[]{R.string.TAB_TEXT_COMPREHENSIVE, R.string.TAB_TEXT_COMMISSION, R.string.TAB_TEXT_PRICE, R.string.TAB_TEXT_SALES};
 
 
@@ -121,13 +127,14 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
     private List<TopGoodsBean> goodsSearchBeanList = new ArrayList<>();
     private String keyword = "";
     private String tagStr = ""; //排序序号/ 对饮接口参数
+    private String opt_id;
     private View SelectTabView = null;
     private int tabIndex = 0;
     private int SoftpNum = 0; //当前页面排序
     private boolean switchtable = false; //false 没有切换
     SearchGoodsListFragment searchGoodsListFragment;
-    private List<CatsBean>  catsBeanList;
-    private CatsBean catsBean = new CatsBean();
+    // private CatsBean catsBean = new CatsBean();
+    private static  ShopListFragment shopListFragment;
     /**
      * 是否是推荐频道tabs
      */
@@ -156,7 +163,7 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
         isrecommendlist = false;
         isSearch = true;
         this.keyword = keyword;
-      //  fetchData();
+        //  fetchData();
     }
 
     public void cleandata() {
@@ -171,8 +178,6 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
         keyword = bundle.getString(Constant.CHANNEL_KEYWORD, "");
         mChannelCode = getArguments().getString(Constant.CHANNEL_CODE, "");
         isrecommendlist = getArguments().getBoolean(Constant.IS_RECOMMEND_LIST, false);
-
-
     }
 
     @Override
@@ -205,77 +210,45 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
                     });
                     //如果是推荐列表
                     //mShopListAdapter = new ShopRecommendListAdapter (mShopList);
-
-//            GlideUtils.getInstance ().load ( this.getContext (), APIs.MYBASESET+"label_yhh.png", label_yhh);
-//            GlideUtils.getInstance ().load ( this.getContext (), APIs.MYBASESET+"labe_sybd.png", labe_sybd);
-//            GlideUtils.getInstance ().load ( this.getContext (), APIs.MYBASESET+"labe_dzg.png", labe_dzg);
-//            GlideUtils.getInstance ().load ( this.getContext (), APIs.MYBASESET+"label_yym.png", label_yym);
                     label_yhh.setImageResource(R.mipmap.label_yhh);
                     labe_sybd.setImageResource(R.mipmap.labe_sybd);
                     labe_dzg.setImageResource(R.mipmap.labe_dzg);
                     label_yym.setImageResource(R.mipmap.label_yym);
-                    intViwePager();
-                }else{
-                    if(mChannelCode.equals("14")){
-                        ThreadUtil.runInUIThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                if(mChannelCode.equals("14")) {
-                                    cats_view.setVisibility(View.VISIBLE);
-                                    catsBeanList =new ArrayList<>();
-                                    CatsBean catsBean = new CatsBean();
-                                    catsBean.setCat_name("裤装");
-                                    catsBean.setCat_key("裤装");
-                                    catsBean.setCat_id(8439);
-                                    catsBeanList.add(catsBean);
-
-                                    CatsBean catsBean1 = new CatsBean();
-                                    catsBean1.setCat_name("秋冬新品");
-                                    catsBean1.setCat_key("裤装秋冬新品");
-                                    catsBeanList.add(catsBean1);
-
-                                    CatsBean catsBean2 = new CatsBean();
-                                    catsBean2.setCat_name("羽绒服");
-                                    catsBean2.setCat_key("羽绒服");
-                                    catsBeanList.add(catsBean2);
-
-                                    CatsBean catsBean3 = new CatsBean();
-                                    catsBean3.setCat_name("棉服");
-                                    catsBean3.setCat_key("棉服");
-                                    catsBeanList.add(catsBean3);
-
-                                    CatsBean catsBean4 = new CatsBean();
-                                    catsBean4.setCat_name("上衣外套");
-                                    catsBean4.setCat_key("上衣外套");
-                                    catsBeanList.add(catsBean4);
-
-
-                                    DisplayMetrics dm = new DisplayMetrics();
-                                    ShopListFragment.this.getActivity ().getWindowManager().getDefaultDisplay().getMetrics(dm);
-                                    float density = dm.density;
-
-                                    int gridviewWidth = (int) (catsBeanList.size () * (100+4) * density);
-                                    int itemWidth = (int) (80 * density);
-                                    catsAdapter = new CatsAdapter(ShopListFragment.this.getContext (),
-                                            catsBeanList);
-                                    mastgridview.setDataSize ( catsBeanList.size (), gridviewWidth,itemWidth);
-                                    mastgridview.setAdapter(catsAdapter);
-                                    intViwePager();
-                                }
-                            }
-                        },600);
-                    }else{
-                        intViwePager();
-                    }
-
-
-
-
+                } else {
+                    cats_view.setVisibility(View.VISIBLE);
+                    ShopManager.getInstance(ShopListFragment.this.getContext()).opt_get(requestCompletion, mChannelCode);//11687
                 }
+                intViwePager();
+            }
+        },500);
+    }
+
+    Handler handler = new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message msg) {
+            if (msg.what == 0) {
+                ThreadUtil.runInUIThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        DisplayMetrics dm = new DisplayMetrics();
+                        ShopListFragment.this.getActivity().getWindowManager().getDefaultDisplay().getMetrics(dm);
+                        float density = dm.density;
+
+                        int gridviewWidth = (int) (goodsOptBeanList.size() * (100 + 4) * density);
+                        int itemWidth = (int) (80 * density);
+                        catsAdapter = new CatsAdapter(ShopListFragment.this.getContext(),
+                                goodsOptBeanList);
+                        mastgridview.setDataSize(goodsOptBeanList.size(), gridviewWidth, itemWidth);
+                        mastgridview.setAdapter(catsAdapter);
+                    }
+                }, 0);
 
             }
-        });
-    }
+
+
+            return false;
+        }
+    });
 
     @Override
     protected void initDataObserver() {
@@ -331,7 +304,7 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
         searchGoodsListFragment = (SearchGoodsListFragment) getChildFragmentManager()
                 .findFragmentById(R.id.frag_SearchGoodsFag);
         searchGoodsListFragment.setRequestSuccessCallback(requestSuccessCallback);
-        searchGoodsListFragment.setDatas(keyword, mChannelCode, "","0");
+        searchGoodsListFragment.setDatas(keyword, mChannelCode, "", "0");
     }
 
     @Override
@@ -369,23 +342,23 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
             }
         });
 
-        mastgridview.setOnItemClickListener ( new AdapterView.OnItemClickListener ( ) {
+        mastgridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView <?> adapterView, View view, int i, long l) {
-                if(searchGoodsListFragment != null){
-                    catsBean = catsBeanList.get(i);
-                    keyword = catsBean.getCat_key();
-                    for (int j = 0; j <catsBeanList.size() ; j++) {
-                        catsBeanList.get(j).setSelect(false);
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (searchGoodsListFragment != null) {
+                    goodsOptBean = goodsOptBeanList.get(i);
+                    opt_id = goodsOptBean.getOpt_id();
+                    for (int j = 0; j < goodsOptBeanList.size(); j++) {
+                        goodsOptBeanList.get(j).setSelect(false);
                     }
-                    catsBeanList.get(i).setSelect(true);
+                    goodsOptBeanList.get(i).setSelect(true);
                     catsAdapter.notifyDataSetChanged();
                     TabLayoutAddOnClickHelper.seTTablestate(ShopListFragment.this.getContext(), tabs);
                     tabs.getTabAt(0).select();
-                    searchGoodsListFragment.setDatas(keyword, mChannelCode, "","0");
+                    searchGoodsListFragment.setDatas(keyword, opt_id, "", "0");
                 }
             }
-        } );
+        });
     }
 
     View newview = null;
@@ -405,11 +378,11 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
                         switchtable = false;
                     }
                     getGoodSoft(tabIndex);
-                   // bgastickynavlayout.scrollToBottom();
+                    // bgastickynavlayout.scrollToBottom();
                     if (tabIndex == 0) {
-                        searchGoodsListFragment.setDatas(keyword, mChannelCode, "","0");
+                        searchGoodsListFragment.setDatas(keyword, mChannelCode, "", "0");
                     } else {
-                        searchGoodsListFragment.setDatas(keyword, mChannelCode, "",SoftpNum + "");
+                        searchGoodsListFragment.setDatas(keyword, mChannelCode, "", SoftpNum + "");
                     }
                 }
             }, 300);
@@ -508,16 +481,16 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
      */
     @Override
     public void onBGARefreshLayoutBeginRefreshing(BGARefreshLayout refreshLayout) {
-        if(catsBeanList !=null && catsBean != null){
-            for (int j = 0; j <catsBeanList.size() ; j++) {
-                catsBeanList.get(j).setSelect(false);
+        if (goodsOptBeanList != null && goodsOptBean != null) {
+            for (int j = 0; j < goodsOptBeanList.size(); j++) {
+                goodsOptBeanList.get(j).setSelect(false);
             }
             catsAdapter.notifyDataSetChanged();
-            searchGoodsListFragment.setKeyword("","0");
+            searchGoodsListFragment.setKeyword("", mChannelCode, "0");
             keyword = "";
             TabLayoutAddOnClickHelper.seTTablestate(ShopListFragment.this.getContext(), tabs);
             tabs.getTabAt(0).select();
-            catsBean = null;
+            goodsOptBean = null;
         }
         searchGoodsListFragment.onBGARefreshLayoutBeginRefreshing(refreshLayout);
     }
@@ -556,15 +529,16 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
     public void Error(Object... values) {
 
     }
-    @OnClick({R.id.new_pesion_icon, R.id.labe_dzg, R.id.label_yhh, R.id.labe_sybd, R.id.label_yym,R.id.youhuijuan_icon,R.id.zhuti_icon,R.id.baokuan_icon})
+
+    @OnClick({R.id.new_pesion_icon, R.id.labe_dzg, R.id.label_yhh, R.id.labe_sybd, R.id.label_yym, R.id.youhuijuan_icon, R.id.zhuti_icon, R.id.baokuan_icon})
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.new_pesion_icon:
-               // ShopManager.getInstance (this.getContext()).getGoodsSearch (keyword, mChannelCode,"11687" ,1 + "", 50 + "", "", "",false,false,requestCompletion, "-1:" );
-              //  ShopManager.getInstance(this.getContext()).cats_get(requestCompletion, "0");
+                // ShopManager.getInstance (this.getContext()).getGoodsSearch (keyword, mChannelCode,"11687" ,1 + "", 50 + "", "", "",false,false,requestCompletion, "-1:" );
+                //  ShopManager.getInstance(this.getContext()).cats_get(requestCompletion, "0");
                 ShopManager.getInstance(this.getContext()).opt_get(requestCompletion, "14");//11687
-              //ShopManager.getInstance(this.getContext()).get_cats_url("0",requestCompletion,"0");
+                //ShopManager.getInstance(this.getContext()).get_cats_url("0",requestCompletion,"0");
                 break;
             case R.id.labe_dzg:
                 Intent intent = new Intent(ShopListFragment.this.getContext(), ActivityGoodsList.class);
@@ -583,7 +557,7 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
                 break;
             case R.id.label_yym:
                 Intent intentActivityGoods = new Intent(this.getActivity(), ActivityGoodsMain.class);
-                intentActivityGoods.putExtra("param1",Constant.ZHULI);
+                intentActivityGoods.putExtra("param1", Constant.ZHULI);
                 startActivity(intentActivityGoods);
                 break;
             case R.id.baokuan_icon:
@@ -602,10 +576,43 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
         }
     }
 
+
     RequestCompletion requestCompletion = new RequestCompletion() {
         @Override
         public void Success(Object value, String tag) {
+            if (value != null) {
+                goodsOptBeanList.addAll(((List<GoodsOptBean>) value));
+                handler.sendEmptyMessage(0);
 
+
+//                GoodsUtils.disposeopt((List<GoodsOptBean>) value, new GoodsUtils.myInterface() {
+//                    @Override
+//                    public void result(Object o) {
+//                        goodsOptBeanList.addAll(((List<GoodsOptBean>) o));
+//                        ThreadUtil.runInThread(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                OptDAPImpl optDAP = new OptDAPImpl(ShopFragment.this.getContext());
+//                                for (int i = 0; i <goodsOptBeanList.size() ; i++) {
+//                                    long rr =   optDAP.insertGoodsOpt(goodsOptBeanList.get(i));
+//                                    Log.e("rr：",rr+"");
+//                                }
+//                            }
+//                        });
+//                        // ShareUtils.setDataList(ShopFragment.this.getContext(), ShareUtils.OPT_INFO, goodsOptBeanList);
+//                        // handler.sendEmptyMessage ( 0 );
+//                    }
+//                });
+//                ThreadUtil.runInThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//
+//                        //   goodsOptBeanList.addAll ( GoodsUtils.disposeopt ( (List<GoodsOptBean>)value ))  ;
+//                        // handler.sendEmptyMessage ( 0 );
+//                    }
+//                });
+
+            }
         }
 
         @Override
@@ -641,7 +648,7 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
         cycleViewPager.setTime(4000);
 //		cycleViewPager.setWheel(true);
         //设置圆点指示图标组居中显示，默认靠右
-		cycleViewPager.setIndicatorCenter();
+        cycleViewPager.setIndicatorCenter();
 
 //		// 将最后一个ImageView添加进来
 //		views.add(ViewFactory.getImageView(this, infos.get(infos.size() - 1).getUrl()));
@@ -666,22 +673,23 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
         cycleViewPager.getViewPager().addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int i, float v, int i1) {
-                if(viewpageChange != null){
-                    viewpageChange.onPageScrolled(i,v,i);
+                if (viewpageChange != null) {
+                    viewpageChange.onPageScrolled(i, v, i);
                     viewpageChange.pagerViewImageView(cycleViewPager.getImageViews());
                 }
             }
 
             @Override
             public void onPageSelected(int i) {
-                if(viewpageChange != null){
+                if (viewpageChange != null) {
                     viewpageChange.onPageSelected(i);
                     viewpageChange.pagerViewImageView(cycleViewPager.getImageViews());
                 }
             }
+
             @Override
             public void onPageScrollStateChanged(int i) {
-                if(viewpageChange != null){
+                if (viewpageChange != null) {
                     viewpageChange.onPageScrollStateChanged(i);
                     viewpageChange.pagerViewImageView(cycleViewPager.getImageViews());
                 }
@@ -733,9 +741,10 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
                     imageButton.setBackground(drawableSoftbottom);
                 }
                 //其他接口可调用
-                if (needRequestSuccessCallback != null) {
-                    needRequestSuccessCallback.success(tag);
-                }
+
+            }
+            if (needRequestSuccessCallback != null) {
+                needRequestSuccessCallback.success(tag);
             }
         }
     };
@@ -769,12 +778,17 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
 
 
     public ViewpageChange viewpageChange = null;
+
     public interface ViewpageChange {
         void onPageScrolled(int i, float v, int i1);
+
         void onPageSelected(int i);
+
         void onPageScrollStateChanged(int i);
+
         void pagerViewImageView(List<ImageView> imageviewlist);
     }
+
     public void setViewpageChange(ViewpageChange Callback) {
         viewpageChange = Callback;
 

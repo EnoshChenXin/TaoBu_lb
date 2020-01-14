@@ -97,14 +97,15 @@ public class SearchGoodsListFragment extends BaseFragment implements BGARefreshL
     public void setData(String mChannelCode,String channel_type){
 
     }
-    public void setDatas(String keyword ,String mChannelCode,String cat_id,String channel_type){
+    public void setDatas(String keyword ,String mChannelCode,String cat_id,String sort_type){
         this.keyword = keyword;
         this.mChannelCode = mChannelCode;
-        this.channel_type = channel_type;
-        ShopManager.getInstance (this.getContext()).getGoodsSearch (keyword, mChannelCode, cat_id,page + "", pageSize + "", channel_type, "",false,false,"",requestCompletion, "-1:"+channel_type );
+        this.channel_type = sort_type;
+        ShopManager.getInstance (this.getContext()).getGoodsSearch (keyword, mChannelCode, cat_id,page + "", pageSize + "", sort_type, "",false,false,"",requestCompletion, "-1:"+channel_type );
         Log.e ( "initData请求", mChannelCode + "--" + goodsSearchBeanList.size ( ) );
     }
-    public void setKeyword(String keyword,String channel_type){
+    public void setKeyword(String keyword,String mChannelCode,String channel_type){
+        this.mChannelCode = mChannelCode;
         this.keyword = keyword;
         this.channel_type = channel_type;
     }

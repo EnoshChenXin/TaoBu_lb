@@ -26,10 +26,10 @@ import com.lianbei.taobu.base.BaseActivity;
 import com.lianbei.taobu.circle.adapter.GroupGameListAdapter;
 import com.lianbei.taobu.shop.adapter.SecordRecordListAdapter;
 import com.lianbei.taobu.shop.model.SearchRecord;
-import com.lianbei.taobu.utils.CacheHelp;
-import com.lianbei.taobu.utils.DirectoryHelp;
+import com.lianbei.taobu.utils.ThreadUtil;
 import com.lianbei.taobu.utils.ToastUtil;
 import com.lianbei.taobu.utils.Validator;
+import com.lianbei.taobu.utils.dbhelper.dao.OptDAPImpl;
 import com.lianbei.taobu.views.SoftInputUtil;
 
 import java.util.ArrayList;
@@ -74,11 +74,12 @@ public class SearchGoodsActivity extends BaseActivity implements View.OnClickLis
     public void initViews() {
         list_record.setLayoutManager(new GridLayoutManager(this, 4));
         list_record.setNestedScrollingEnabled(false);//解决滑动卡顿
+        hideSearchRecordView(false);
     }
 
     @Override
     public void initData() {
-        requestPermission(0);
+      //  requestPermission(0);
     }
 
     public void SearchContent() {
@@ -88,10 +89,12 @@ public class SearchGoodsActivity extends BaseActivity implements View.OnClickLis
         shopListFragment.setNeedRequestSuccessCallback(new ShopListFragment.NeedRequestSuccessCallback() {
             @Override
             public void success(Object str) {
-                listframeLayout.setVisibility(View.VISIBLE);
+                hideSearchRecordView(true);
+                Log.e("SuccessCallback:","str");
             }
         });
         getSupportFragmentManager().beginTransaction().replace(R.id.listframeLayout, shopListFragment).commitAllowingStateLoss();
+        shopListFragment.fetchData();
     }
 
     @Override
@@ -176,7 +179,7 @@ public class SearchGoodsActivity extends BaseActivity implements View.OnClickLis
             case R.id.bt_clean:
                 recordList.clear();
                 recordListAdapter.notifyDataSetChanged();
-                CacheHelp.remove("t.list");
+                clearnRecord();
                 break;
             case R.id.clean_search_tv:
                 et_input_keyword.setText("");
@@ -189,40 +192,93 @@ public class SearchGoodsActivity extends BaseActivity implements View.OnClickLis
         if (Validator.isStrNotEmpty(keyword)) {
             et_input_keyword.setText(keyword + "");
             SoftInputUtil.hideSoftInput(this, listframeLayout);
-            hideSearchRecordView(true);
+           // hideSearchRecordView(true);
             SearchContent();
-            requestPermission(1);
+           // requestPermission(1);
+            saveRecord();
         } else {
             ToastUtil.showShort(this, "请输入关键词后再搜索");
         }
     }
 
+
+
+
     private void hideSearchRecordView(boolean hide) {
-        if (hide) {
-            lin_serarch.setVisibility(View.GONE);
-        } else {
-            lin_serarch.setVisibility(View.VISIBLE);
-            listframeLayout.setVisibility(View.INVISIBLE);
-        }
+        ThreadUtil.runInUIThread(new Runnable() {
+            @Override
+            public void run() {
+                if (hide) {
+                    lin_serarch.setVisibility(View.GONE);
+                    listframeLayout.setVisibility(View.VISIBLE);
+                } else {
+                    lin_serarch.setVisibility(View.VISIBLE);
+                    listframeLayout.setVisibility(View.GONE);
+                    CheckRecord();
+                }
+            }
+        });
+
 
     }
-
+    SearchRecord searchRecordrepert;
     private void saveRecord() {
         SearchRecord searchRecord = new SearchRecord();
         searchRecord.setKeywordRecord(keyword);
-        searchRecords.add(searchRecord);
-        CacheHelp.saveObjList(this, searchRecords, "t");
+       // searchRecords.add(searchRecord);
+        if(!chechRecordRepeat(searchRecord)){
+            searchRecord.setHotNum(0);
+            OptDAPImpl optDAP = new OptDAPImpl(this);
+            optDAP.insertSearchRecord(searchRecord);
+        }else{
+            if(searchRecordrepert != null){
+                int num = searchRecordrepert.getHotNum();
+                int eee = ++num;
+                searchRecordrepert.setHotNum(eee);
+                OptDAPImpl optDAP = new OptDAPImpl(this);
+                optDAP.updateSearchRecord(searchRecordrepert);
+
+            }
+        }
+
+
+
+       // CacheHelp.saveObjList(this, searchRecords, "t");
+    }
+
+  private  boolean chechRecordRepeat(SearchRecord searchRecord){
+      boolean Repeat = false;
+        if(recordList!= null && recordList.size()>0){
+            for (SearchRecord recordList: recordList) {
+                if(recordList.equals(searchRecord)){
+                    searchRecordrepert = recordList;
+                    Repeat  =true;
+                    return Repeat ;
+                }
+            }
+            return Repeat ;
+        }
+      return Repeat ;
+    }
+
+
+    private void  clearnRecord(){
+        OptDAPImpl optDAP = new OptDAPImpl(this);
+        optDAP.clearSearchTable();
     }
 
     private void CheckRecord() {
-        recordList = convertToSiteList(CacheHelp.getStrList("t"));
+        OptDAPImpl optDAP = new OptDAPImpl(this);
+        recordList = optDAP.querySearchRecord();
+
+     //   recordList = convertToSiteList(CacheHelp.getStrList("t"));
         if (!recordList.isEmpty()) {
-//            StringBuffer sre = new StringBuffer();
-//            for (int i = 0; i <recordList.size() ; i++) {
-//              String name =   recordList.get(i).getKeywordRecord();
-//                Log.e("name:",name+"");
-//                sre.append(name+" ,");
-//            }
+            StringBuffer sre = new StringBuffer();
+            for (int i = 0; i <recordList.size() ; i++) {
+              String name =   recordList.get(i).getKeywordRecord();
+                Log.e("name333:",name+"--"+"num:"+recordList.get(i).getHotNum());
+               // sre.append(name+" ,");
+            }
             recordListAdapter = new SecordRecordListAdapter(recordList);
             list_record.setAdapter(recordListAdapter);
             recordListAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {

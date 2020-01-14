@@ -10,9 +10,18 @@ public class GoodsOptBean  implements Serializable {
     String parent_opt_id; // id所属父ID，其中，parent_id=0时为顶级节点
     String opt_name ;  // 商品标签名
     String opt_id; //商品标签ID
+    private boolean isSelect;
 
     //主题详情
 
+
+    public boolean isSelect() {
+        return isSelect;
+    }
+
+    public void setSelect(boolean select) {
+        isSelect = select;
+    }
 
     public String getLevel() {
         return level;

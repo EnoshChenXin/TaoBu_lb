@@ -5,7 +5,7 @@ import android.util.Log;
 
 import net.sqlcipher.database.SQLiteDatabase;
 import net.sqlcipher.database.SQLiteOpenHelper;
-import net.sqlcipher.database.SQLiteDatabase.CursorFactory;
+
 
 /**
  * SqlLite 地图页面站点数据管理工具SqlLite
@@ -81,7 +81,6 @@ public class CarRentalDBHelper extends SQLiteOpenHelper {
     /**
      * Database creation sql statement
      */
-
     private static final String CREATE_STATION_TABLE = "CREATE TABLE "
             + STATION_TABLE
             + " ("
@@ -116,23 +115,22 @@ public class CarRentalDBHelper extends SQLiteOpenHelper {
             + OPERATION_KEY_USE_ATP + " BOOLEAN);";
 
 
+    @Override
+    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+        Log.e(TAG, "CREATE_OPERATION_TABLE:  " + CREATE_OPERATION_TABLE);
+        Log.e(TAG, "CREATE_STATION_TABLE:  " + CREATE_STATION_TABLE);
+        //	db.execSQL(CREATE_OPERATION_TABLE);
+        //	db.execSQL(CREATE_STATION_TABLE);
+        sqLiteDatabase.execSQL(CREATE_STATION_TABLE);
+    }
     public CarRentalDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     public CarRentalDBHelper(Context context, String name,
-                             CursorFactory factory, int version) {
+                             SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
 
-    }
-
-    @Override
-    public void onCreate(SQLiteDatabase db) {
-        Log.e(TAG, "CREATE_OPERATION_TABLE:  " + CREATE_OPERATION_TABLE);
-        Log.e(TAG, "CREATE_STATION_TABLE:  " + CREATE_STATION_TABLE);
-        //	db.execSQL(CREATE_OPERATION_TABLE);
-        //	db.execSQL(CREATE_STATION_TABLE);
-        db.execSQL(CREATE_STATION_TABLE);
     }
 
     @Override
@@ -140,4 +138,6 @@ public class CarRentalDBHelper extends SQLiteOpenHelper {
         // TODO Auto-generated method stub
 
     }
+
+
 }
