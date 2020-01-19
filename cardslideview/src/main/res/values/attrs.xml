@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="ratio" format="float" />
+
+    <attr name="card_loop" format="boolean" />
+    <attr name="card_side_offset_percent" format="float" />
+    <attr name="card_item_rate" format="float" />
+
+    <declare-styleable name="ElasticCardView">
+        <attr name="ratio" />
+    </declare-styleable>
+
+    <declare-styleable name="CardSlideView">
+        <attr name="card_loop" />
+        <attr name="card_side_offset_percent" />
+        <attr name="card_item_rate" />
+        <attr name="android:orientation" />
+    </declare-styleable>
+</resources>

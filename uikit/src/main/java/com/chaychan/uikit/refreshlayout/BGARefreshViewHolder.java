@@ -18,13 +18,14 @@ package com.chaychan.uikit.refreshlayout;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
-import android.support.annotation.ColorRes;
-import android.support.annotation.DrawableRes;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.chaychan.uikit.R;
+
+import androidx.annotation.ColorRes;
+import androidx.annotation.DrawableRes;
 
 /**
  * 作者:王浩 邮件:bingoogolapple@gmail.com

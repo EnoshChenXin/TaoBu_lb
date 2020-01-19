@@ -1,4 +1,4 @@
-include ':app', ':uikit', ':commomview', ':httplbrary', "calendarview", ':photopicker'
+include ':app', ':uikit', ':commomview', ':httplbrary', "calendarview", ':photopicker', ':cardslideview'
 //baselib.gradle dependencies
 gradle.ext.calligraphy = '2.2.0'
 gradle.ext.butterknife = '9.0.0'

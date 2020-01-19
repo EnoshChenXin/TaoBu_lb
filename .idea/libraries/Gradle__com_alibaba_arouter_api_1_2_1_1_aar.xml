@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.alibaba:arouter-api:1.2.1.1@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5db194d1368297272b031d7b18a796ca/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/73425533c53657db4ce4bef31b7ecece/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5db194d1368297272b031d7b18a796ca/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5db194d1368297272b031d7b18a796ca/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/73425533c53657db4ce4bef31b7ecece/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/73425533c53657db4ce4bef31b7ecece/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

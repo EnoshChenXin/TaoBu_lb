@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/TaoBu_lb.iml" filepath="$PROJECT_DIR$/TaoBu_lb.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/calendarview/calendarview.iml" filepath="$PROJECT_DIR$/calendarview/calendarview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cardslideview/cardslideview.iml" filepath="$PROJECT_DIR$/cardslideview/cardslideview.iml" />
       <module fileurl="file://$PROJECT_DIR$/commomview/commomview.iml" filepath="$PROJECT_DIR$/commomview/commomview.iml" />
       <module fileurl="file://$PROJECT_DIR$/httplbrary/httplbrary.iml" filepath="$PROJECT_DIR$/httplbrary/httplbrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/photopicker/photopicker.iml" filepath="$PROJECT_DIR$/photopicker/photopicker.iml" />

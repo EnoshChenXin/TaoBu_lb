@@ -4,11 +4,6 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
@@ -16,13 +11,19 @@ import android.view.MotionEvent;
 import com.chaychan.uikit.R;
 import com.chaychan.uikit.UIUtils;
 
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+
 /**
  * @author ChayChan
  * @description: 对RecyclerView进行封装
  * @date 2017/6/27  14:10
  */
 
-public class PowerfulRecyclerView extends RecyclerView{
+public class PowerfulRecyclerView extends RecyclerView {
 
     private Context mContext;
 
@@ -94,7 +95,7 @@ public class PowerfulRecyclerView extends RecyclerView{
             }
         }else{
             //瀑布流布局
-            mLayoutManager = new StaggeredGridLayoutManager (mNumColumns,mOrientation);
+            mLayoutManager = new StaggeredGridLayoutManager(mNumColumns,mOrientation);
         }
 
        setLayoutManager(mLayoutManager);

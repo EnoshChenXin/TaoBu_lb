@@ -2,7 +2,6 @@ package com.lidong.photopicker;
 
 import android.content.Context;
 import android.net.Uri;
-import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +12,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.viewpager.widget.PagerAdapter;
 import uk.co.senab.photoview.PhotoView;
 import uk.co.senab.photoview.PhotoViewAttacher;
 

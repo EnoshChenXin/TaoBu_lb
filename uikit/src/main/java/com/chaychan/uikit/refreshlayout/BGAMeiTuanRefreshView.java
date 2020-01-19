@@ -17,13 +17,14 @@ package com.chaychan.uikit.refreshlayout;
 
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
-import android.support.annotation.DrawableRes;
-import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.chaychan.uikit.R;
+
+import androidx.annotation.DrawableRes;
+import androidx.core.view.ViewCompat;
 
 /**
  * 作者:王浩 邮件:bingoogolapple@gmail.com

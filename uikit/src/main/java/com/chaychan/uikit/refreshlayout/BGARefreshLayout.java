@@ -19,7 +19,6 @@ import android.animation.ValueAnimator;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.MotionEvent;
@@ -36,6 +35,8 @@ import android.widget.ScrollView;
 import com.chaychan.uikit.refreshlayout.util.BGARefreshScrollingUtil;
 
 import java.lang.reflect.Field;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 
 /**

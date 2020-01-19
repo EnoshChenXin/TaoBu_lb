@@ -5,9 +5,6 @@ import android.graphics.Color;
 import android.graphics.drawable.Animatable;
 import android.net.Uri;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -29,6 +26,10 @@ import com.lianbei.commomview.adlibrary.bean.AdInfo;
 import com.lianbei.commomview.adlibrary.utils.DisplayUtil;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * Created by Administrator on 2015/10/20 0020.

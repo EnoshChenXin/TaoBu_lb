@@ -17,9 +17,6 @@ package com.haibin.calendarview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.Display;
 import android.view.MotionEvent;
@@ -27,6 +24,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import static androidx.viewpager.widget.PagerAdapter.POSITION_NONE;
 
 
 /**
@@ -51,7 +53,7 @@ public final class YearViewPager extends ViewPager {
     void setup(CalendarViewDelegate delegate) {
         this.mDelegate = delegate;
         this.mYearCount = mDelegate.getMaxYear() - mDelegate.getMinYear() + 1;
-        setAdapter(new PagerAdapter () {
+        setAdapter(new PagerAdapter() {
             @Override
             public int getCount() {
                 return mYearCount;

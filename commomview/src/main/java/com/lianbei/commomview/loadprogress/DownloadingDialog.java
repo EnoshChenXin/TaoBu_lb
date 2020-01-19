@@ -1,11 +1,11 @@
 package com.lianbei.commomview.loadprogress;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatDialog;
 
 
 import com.lianbei.commomview.R;
 
+import androidx.appcompat.app.AppCompatDialog;
 import cn.bingoogolapple.progressbar.BGAProgressBar;
 
 /**

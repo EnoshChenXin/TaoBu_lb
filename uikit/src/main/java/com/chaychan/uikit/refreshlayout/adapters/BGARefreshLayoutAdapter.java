@@ -15,8 +15,9 @@
  */
 package com.chaychan.uikit.refreshlayout.adapters;
 
-import android.databinding.BindingAdapter;
 import com.chaychan.uikit.refreshlayout.BGARefreshLayout;
+
+import androidx.databinding.BindingAdapter;
 
 /**
  * 作者:王浩 邮件:bingoogolapple@gmail.com

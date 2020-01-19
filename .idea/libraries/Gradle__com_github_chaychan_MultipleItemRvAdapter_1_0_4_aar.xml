@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.chaychan:MultipleItemRvAdapter:1.0.4@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b1b6ed961b8c79561d7ecae570f2d9d6/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a77010aa0445a85f50d886327742227/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b1b6ed961b8c79561d7ecae570f2d9d6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b1b6ed961b8c79561d7ecae570f2d9d6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a77010aa0445a85f50d886327742227/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a77010aa0445a85f50d886327742227/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

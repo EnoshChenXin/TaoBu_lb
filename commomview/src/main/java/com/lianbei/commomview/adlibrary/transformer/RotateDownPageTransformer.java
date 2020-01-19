@@ -1,12 +1,13 @@
 package com.lianbei.commomview.adlibrary.transformer;
 
 import android.annotation.SuppressLint;
-import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 
 
 import com.nineoldandroids.view.ViewHelper;
+
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * http://blog.csdn.net/lmj623565791/article/details/40411921

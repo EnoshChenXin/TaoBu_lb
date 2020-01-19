@@ -1,10 +1,11 @@
 package com.lianbei.commomview.adlibrary.transformer;
 
-import android.support.v4.view.ViewPager;
 import android.view.View;
 
 
 import com.nineoldandroids.view.ViewHelper;
+
+import androidx.viewpager.widget.ViewPager;
 
 public class DepthPageTransformer implements ViewPager.PageTransformer {
     private static final float MIN_SCALE = 0.75f;

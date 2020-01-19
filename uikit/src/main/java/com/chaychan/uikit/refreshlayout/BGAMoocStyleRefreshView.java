@@ -25,10 +25,11 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
-import android.support.annotation.ColorRes;
-import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.view.View;
+
+import androidx.annotation.ColorRes;
+import androidx.annotation.DrawableRes;
 
 /**
  * 作者:王浩 邮件:bingoogolapple@gmail.com
