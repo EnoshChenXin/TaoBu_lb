@@ -1,9 +1,14 @@
 package com.lianbei.taobu.api;
 
+import android.content.Context;
 import android.util.Log;
 
+import com.lianbei.taobu.R;
+import com.lianbei.taobu.application.GlobalApplication;
 import com.lianbei.taobu.constants.Constant;
+import com.lianbei.taobu.mine.model.UserInfo;
 import com.lianbei.taobu.utils.TimeUtils;
+import com.lianbei.taobu.utils.Validator;
 import com.lianbei.taobu.utils.secureity.MD5;
 
 import java.util.ArrayList;
@@ -60,4 +65,46 @@ public class PddParam {
 
 		return lmoney;
 	}
+
+
+	public static String  getCustom_parameters(boolean isbug){
+
+		String Custom = "cate:"+Constant.CATE+
+				        "|"+"uid:"+ UserInfo.getUserInfo ( GlobalApplication.getContext ( ) ).getUser_id ( ) + ""+
+				        "|"+"sid:"+isbug +
+				        "|"+"actid:"+Constant.ACTID ;
+		return Custom;
+	}
+
+	public  static void setCustom_parameters(Context context,String title,String opt){
+            if(title.equals(context.getResources().getString(R.string.NAVIGATION_TITLE__ZLXMD))){//助力享免单
+				Constant.ACTID ="-1";
+			}else if(title.equals(context.getResources().getString(R.string.NAVIGATION_TITLE__GXMD))){ //购享免单
+				Constant.ACTID ="-8";
+			}else if(title.equals(context.getResources().getString(R.string.NAVIGATION_TITLE__BKZQ))){//爆款专区
+				Constant.ACTID ="-3";
+			}else if(title.equals(context.getResources().getString(R.string.NAVIGATION_TITLE__ZTZQ))){
+				Constant.ACTID ="-4";
+			}else if(title.equals(context.getResources().getString(R.string.NAVIGATION_TITLE__TDHW))){//糖豆换物
+				Constant.ACTID ="-2";
+			}else if(title.equals(context.getResources().getString(R.string.NAVIGATION_TITLE__YHJ))){//优惠卷
+				Constant.ACTID ="-5";
+			}else if(title.equals(context.getResources().getString(R.string.NAVIGATION_TITLE__YXHH))){//优选好货
+				Constant.ACTID ="-6";
+			}else if(title.equals(context.getResources().getString(R.string.NAVIGATION_TITLE__GYBD))){//高佣榜单
+				Constant.ACTID ="-7";
+			}else if(title.equals(context.getResources().getString(R.string.NAVIGATION_TITLE__99BY))){//9.9包邮
+				Constant.ACTID ="-9";
+			}else{
+            	if(!Validator.isStrNotEmpty(title)){
+					Constant.ACTID =opt;
+				}
+
+			}
+
+
+
+	}
+
+
 }

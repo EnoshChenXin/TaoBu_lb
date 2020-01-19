@@ -7,7 +7,6 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.multidex.MultiDex;
 import android.util.DisplayMetrics;
 import android.webkit.WebView;
 
@@ -33,6 +32,9 @@ import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
 
 import java.util.Map;
+
+import androidx.multidex.MultiDex;
+import cn.jpush.android.api.JPushInterface;
 
 /**
  * Created by NEUNB on 2018/3/19.
@@ -61,6 +63,8 @@ public class GlobalApplication extends Application {
         mMainThread = Thread.currentThread();
         mMainThreadId = android.os.Process.myTid();
         mHandler = new Handler();
+        JPushInterface.setDebugMode(true); 	// 设置开启日志,发布时请关闭日志
+        JPushInterface.init(this);     		// 初始化 JPush
         initDisplayOpinion();
         //创建文件/夹
         DirectoryHelp.initCachePath(this);
