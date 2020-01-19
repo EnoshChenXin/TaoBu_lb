@@ -2,17 +2,16 @@ package com.lianbei.taobu.base.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.lianbei.taobu.MainActivity;
 import com.lianbei.taobu.MainActivity1;
-import com.lianbei.taobu.base.SplashCommonActivity;
 import com.lianbei.taobu.base.WelcomeActiity;
 
 import java.util.List;
+
+import androidx.viewpager.widget.PagerAdapter;
 
 /**
  * Created by Administrator on 2018/5/9.

@@ -3,7 +3,6 @@ package com.lianbei.taobu.taobu.view;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -17,6 +16,7 @@ import com.lianbei.taobu.taobu.viewmanager.TaoBuManager;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import butterknife.BindView;
 
 /**
@@ -50,7 +50,7 @@ public class SignMyFragment extends BaseFragment implements   TaoBuManager.Reque
     }
 
     private void setListView(){
-        mRvNews.setLayoutManager ( new GridLayoutManager ( mActivity, 1 ) );
+        mRvNews.setLayoutManager ( new GridLayoutManager( mActivity, 1 ) );
         mRvNews.setNestedScrollingEnabled ( false );//解决滑动卡顿
 
     }

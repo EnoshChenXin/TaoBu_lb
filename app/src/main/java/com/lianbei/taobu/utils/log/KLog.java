@@ -1,11 +1,12 @@
 package com.lianbei.taobu.utils.log;
 
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
 import java.io.File;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+
+import androidx.annotation.Nullable;
 
 public final class KLog {
 

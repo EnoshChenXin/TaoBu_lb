@@ -18,10 +18,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.design.widget.TabLayout;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.graphics.Palette;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -32,6 +28,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
+import com.google.android.material.tabs.TabLayout;
 import com.google.gson.Gson;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.base.BaseFragment;
@@ -52,6 +49,8 @@ import com.lianbei.taobu.views.ImageUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.palette.graphics.Palette;
+import androidx.viewpager.widget.ViewPager;
 import butterknife.BindView;
 import butterknife.OnClick;
 
@@ -458,7 +457,7 @@ public class ShopFragment extends BaseFragment implements View.OnClickListener {
     private void setAdapter() {
         mChannelPagerAdapter = new ChannelPagerAdapter(mChannelFragments, mSelectedChannels, getChildFragmentManager());
         mVpContent.setAdapter(mChannelPagerAdapter);
-        mVpContent.setOffscreenPageLimit(5);
+        mVpContent.setOffscreenPageLimit(mChannelFragments.size());
 
         // mTabChannel.setTabPaddingLeftAndRight( UIUtils.dip2Px(10), UIUtils.dip2Px(10));
         mTabChannel.setupWithViewPager(mVpContent);

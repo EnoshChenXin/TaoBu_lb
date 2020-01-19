@@ -2,7 +2,6 @@ package com.lianbei.taobu.wxapi;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.WindowManager;
 import android.widget.Toast;
@@ -20,6 +19,8 @@ import com.tencent.mm.opensdk.modelmsg.SendAuth;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.IWXAPIEventHandler;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class WXEntryActivity extends AppCompatActivity implements IWXAPIEventHandler {

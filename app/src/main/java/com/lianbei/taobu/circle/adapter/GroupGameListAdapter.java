@@ -1,6 +1,5 @@
 package com.lianbei.taobu.circle.adapter;
 
-import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.chaychan.adapter.MultipleItemRvAdapter;
@@ -8,6 +7,8 @@ import com.lianbei.taobu.circle.model.GameBean;
 import com.lianbei.taobu.taobu.adapter.GroupGameItemProvider;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 public class GroupGameListAdapter extends MultipleItemRvAdapter <GameBean.Gamelist, BaseViewHolder> {
 

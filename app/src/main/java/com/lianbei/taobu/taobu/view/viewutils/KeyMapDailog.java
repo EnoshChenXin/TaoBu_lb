@@ -7,7 +7,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.DialogFragment;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -21,6 +20,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lianbei.taobu.R;
+
+import androidx.fragment.app.DialogFragment;
 
 public class KeyMapDailog extends DialogFragment {
 

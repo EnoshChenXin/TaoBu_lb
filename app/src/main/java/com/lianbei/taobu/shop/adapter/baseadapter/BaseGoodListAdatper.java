@@ -1,6 +1,5 @@
 package com.lianbei.taobu.shop.adapter.baseadapter;
 
-import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.chaychan.adapter.MultipleItemRvAdapter;
@@ -12,6 +11,8 @@ import com.lianbei.taobu.shop.model.TopGoodsBean;
 import com.lianbei.taobu.utils.Validator;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 public class BaseGoodListAdatper extends MultipleItemRvAdapter <TopGoodsBean,BaseViewHolder> {
     private String mChannelCode;

@@ -1,15 +1,14 @@
 package com.lianbei.taobu.taobu.view;
 
 import android.content.Intent;
-import android.support.v7.widget.GridLayoutManager;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import cn.bingoogolapple.refreshlayout.BGANormalRefreshViewHolder;
 import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 
@@ -115,7 +114,7 @@ public class SignDynamicDetailActivity extends BaseActivity implements View.OnCl
 
     }
     private void setListView() {
-        mRvNews.setLayoutManager ( new GridLayoutManager ( this, 1 ) );
+        mRvNews.setLayoutManager ( new GridLayoutManager( this, 1 ) );
         mRvNews.setNestedScrollingEnabled ( false );//解决滑动卡顿
     }
     /**

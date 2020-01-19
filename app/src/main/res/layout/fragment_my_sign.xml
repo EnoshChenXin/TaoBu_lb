@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".taobu.view.SignMyFragment">
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -22,5 +22,5 @@
             app:dividerMarginLeft="2dp"
             app:dividerMarginRight="2dp"
             app:dividerSize="10dp" />
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

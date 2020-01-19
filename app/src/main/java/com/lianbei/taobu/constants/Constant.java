@@ -90,6 +90,14 @@ public class Constant {
     public static final String ZHULI = "zhuli";//助力
 
 
+    public static String CATE="2"; //cate:1表示H5的商品   cate:2表示APP
+    public static String UID=""; // user id
+    public static boolean SID=false; //true表示自购，false表示非自购
+    public static String ACTID ="";  //
+
+    //	cate:1|uid:0|sid:0|actid:0
+
+
 
     public  static final String SHOP_BANNER_URL_1 = "http://t16img.yangkeduo.com/pdd_oms/2019-12-23/32273f51e3a063d52a6cf0762a83573d.jpg";
     public  static final String SHOP_BANNER_URL_2 = "https://t16img.yangkeduo.com/mms_static/2019-12-01/8ea08537-5eea-4785-ae5b-9191db3fa2fc.jpg";

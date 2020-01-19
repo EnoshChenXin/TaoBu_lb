@@ -1,18 +1,15 @@
 package com.lianbei.taobu.shop.adapter;
 
-import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.chaychan.adapter.BaseItemProvider;
 import com.chaychan.adapter.MultipleItemRvAdapter;
 import com.lianbei.taobu.R;
-import com.lianbei.taobu.circle.adapter.itemprovider.BaseGroupGameItemProvider;
-import com.lianbei.taobu.circle.model.GameBean;
 import com.lianbei.taobu.shop.model.SearchRecord;
-import com.lianbei.taobu.taobu.adapter.GroupGameItemProvider;
-import com.lianbei.taobu.utils.GlideUtils;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 public class SecordRecordListAdapter extends MultipleItemRvAdapter <SearchRecord, BaseViewHolder> {
 

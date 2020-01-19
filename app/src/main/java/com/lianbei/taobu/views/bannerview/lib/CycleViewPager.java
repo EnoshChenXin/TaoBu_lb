@@ -1,12 +1,7 @@
 package com.lianbei.taobu.views.bannerview.lib;
 
 import android.annotation.SuppressLint;
-import android.app.Fragment;
-import android.os.Bundle;
 import android.os.Message;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -31,6 +26,8 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import butterknife.BindView;
 
 
@@ -38,7 +35,7 @@ import butterknife.BindView;
  * 实现可循环，可轮播的viewpager
  */
 @SuppressLint("NewApi")
-public class CycleViewPager extends BaseFragment implements OnPageChangeListener {
+public class CycleViewPager extends BaseFragment implements ViewPager.OnPageChangeListener {
 
     private List<ImageView> imageViews = new ArrayList<ImageView>();
     private List<ImageView> imageViews2 = new ArrayList<ImageView>();

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.constants.Constant;
 import com.lianbei.taobu.utils.SPUtils;
-import com.lianbei.taobu.utils.StatusBarUtil;
 import com.lianbei.taobu.utils.flyn.Eyes;
 
 /**

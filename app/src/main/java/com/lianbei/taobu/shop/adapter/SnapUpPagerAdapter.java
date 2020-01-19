@@ -1,15 +1,15 @@
 package com.lianbei.taobu.shop.adapter;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 
 import com.lianbei.taobu.shop.model.TabModel;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

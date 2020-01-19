@@ -1,13 +1,14 @@
 package com.lianbei.taobu.mine.view.addresspickerview;
 
 import android.graphics.Color;
-import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.lianbei.taobu.R;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  */

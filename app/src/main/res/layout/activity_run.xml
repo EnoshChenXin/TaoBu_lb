@@ -15,7 +15,7 @@
         app:titleText="@string/NAVIGATION_TITLE_WALK" />
 
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -663,6 +663,6 @@
 
         </RelativeLayout>
 
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>

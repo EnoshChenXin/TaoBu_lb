@@ -1,8 +1,6 @@
 package com.lianbei.taobu.taobu.viewmanager;
 
 import android.content.Context;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.lianbei.taobu.taobu.adapter.WalkSignUpTagAdapter;
@@ -12,6 +10,9 @@ import com.lianbei.taobu.taobu.model.WalkApplyBean;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 public class WalkSignUpManager {
     private Context mContext;
     private WalkSignUpTagAdapter walkSignUpTagAdapter;
@@ -19,7 +20,7 @@ public class WalkSignUpManager {
     private volatile static WalkSignUpManager singWithdrawalsManager;
     private WalkApplyBean walkBean;
     private WalkAllNeedBean walkAllNeedBean = new WalkAllNeedBean ( );
-    private  RecyclerView recyclerView = null;
+    private RecyclerView recyclerView = null;
 
     public WalkSignUpManager(){
     }
@@ -96,7 +97,7 @@ public class WalkSignUpManager {
     private  void setRecyclerView() {
         try {
             Log.e ( "recyclerView666",recyclerView+"" );
-            GridLayoutManager layoutManage = new GridLayoutManager ( mContext, 3 );
+            GridLayoutManager layoutManage = new GridLayoutManager( mContext, 3 );
             recyclerView.setLayoutManager ( layoutManage );
             walkSignUpTagAdapter = new WalkSignUpTagAdapter ( walkAllNeedBean.getData () );
             walkSignUpTagAdapter.setmListener ( new WalkSignUpTagAdapter.onClickListener ( ) {

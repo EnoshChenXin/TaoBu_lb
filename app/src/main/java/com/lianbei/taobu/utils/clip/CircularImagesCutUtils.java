@@ -14,7 +14,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
-import android.support.v4.content.FileProvider;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -34,6 +33,7 @@ import com.lianbei.taobu.utils.Utils;
 
 import java.io.File;
 
+import androidx.core.content.FileProvider;
 import retrofit2.http.Url;
 
 /**

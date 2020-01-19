@@ -1,6 +1,5 @@
 package com.lianbei.taobu.shop.adapter;
 
-import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.chaychan.adapter.MultipleItemRvAdapter;
@@ -8,6 +7,8 @@ import com.lianbei.taobu.shop.model.ShopBean;
 import com.lianbei.taobu.shop.adapter.itemview.ShopItemProvider;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 public class ShopListAdatper extends MultipleItemRvAdapter <ShopBean,BaseViewHolder> {
     private String mChannelCode;

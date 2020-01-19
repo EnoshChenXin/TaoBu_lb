@@ -1,12 +1,13 @@
 package com.lianbei.taobu.views;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.views.materialedittext.MaterialEditText;
+
+import androidx.core.content.ContextCompat;
 
 /**
  * Created by HASEE on 2017/3/30.

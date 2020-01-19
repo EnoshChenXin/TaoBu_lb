@@ -28,10 +28,10 @@
 
 
     <string name="TAB_TEXT_ALL_ORDER">全部</string>
-    <string name="TAB_TEXT_PAY_ORDER">已支付</string>
-    <string name="TAB_TEXT_COMPLETED_ORDER">已完成</string>
-    <string name="TAB_TEXT_FAILURE_ORDER">已失效</string>
-
+    <string name="TAB_TEXT_PAY_ORDER">有效订单</string>
+    <string name="TAB_TEXT_COMPLETED_ORDER">已审核</string>
+    <string name="TAB_TEXT_OK_ORDER">已结算</string>
+    <string name="TAB_TEXT_FAILURE_ORDER">失效订单</string>
 
     <string name="TAB_TEXT_COMPREHENSIVE">综合</string>
     <string name="TAB_TEXT_COMMISSION">佣金</string>
@@ -53,6 +53,16 @@
     <string name="NAVIGATION_TITLE_SEARCH_TXT">使用群名称搜索群</string>
     <string name="NAVIGATION_TITLE_BMI">体脂率计算</string>
     <string name="NAVIGATION_DYNAMIC_DETAIL">动态详情</string>
+
+    <string name="NAVIGATION_TITLE__ZLXMD">助力享免单</string>
+    <string name="NAVIGATION_TITLE__GXMD">购享免单</string>
+    <string name="NAVIGATION_TITLE__BKZQ">爆款专区</string>
+    <string name="NAVIGATION_TITLE__ZTZQ">主题专区</string>
+    <string name="NAVIGATION_TITLE__TDHW">糖豆换物</string>
+    <string name="NAVIGATION_TITLE__YHJ">优惠卷</string>
+    <string name="NAVIGATION_TITLE__YXHH">优选好货</string>
+    <string name="NAVIGATION_TITLE__GYBD">高佣商品</string>
+    <string name="NAVIGATION_TITLE__99BY">9.9包邮</string>
 
     <string name="take_photo">拍照</string>
     <string name="from_photo_album">从相册选择</string>

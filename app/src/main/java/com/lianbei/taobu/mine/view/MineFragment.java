@@ -103,7 +103,7 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
     public void initListener() {
 
     }
-    @OnClick({R.id.headImageView,R.id.set_Btn, R.id.nickName,R.id.message_Btn,R.id.order ,R.id.order1,R.id.img_bt_address,R.id.img_duihuan})
+    @OnClick({R.id.headImageView,R.id.set_Btn, R.id.nickName,R.id.message_Btn,R.id.order ,R.id.order1,R.id.img_bt_address,R.id.img_duihuan,R.id.img_invitation})
     @Override
     public void onClick(View view) {
         if(wxUserInfo.WxUserInfoIsEmpty (  this.getContext () )){
@@ -135,6 +135,11 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
             case R.id.img_duihuan:
                 toIntentDuiHuan();
                 break;
+            case R.id.img_invitation:
+                Intent intentinvitation = new Intent ( this.getActivity (),InvitationActivity.class );
+                startActivity ( intentinvitation );
+                break;
+
         }
     }
     private void toIntentOrder(){

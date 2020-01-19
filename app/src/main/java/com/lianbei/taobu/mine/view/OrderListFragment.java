@@ -23,7 +23,8 @@ public class OrderListFragment extends BaseFragment {
     private String mChannelCode = "0";
     protected BaseQuickAdapter orderBeanListadapter;
 
-    List <OrderBean> orderBeanList = new ArrayList <> (  );
+    List<OrderBean> orderBeanList = new ArrayList<>();
+
     @Override
     public int getContentViewId() {
         return R.layout.fragment_order_list;
@@ -36,35 +37,35 @@ public class OrderListFragment extends BaseFragment {
 
     @Override
     public void initData() {
-        if(orderBeanList!= null && orderBeanList.size ()>0)
+        if (orderBeanList != null && orderBeanList.size() > 0)
             return;
         Calendar calendar = Calendar.getInstance();
-        calendar.setTime(new Date ());
+        calendar.setTime(new Date());
         // 30秒以前
         calendar.add(Calendar.SECOND, -30);
         // 格式化显示
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SS");
         String time = sdf.format(calendar.getTime());
-        ShopManager.getInstance (this.getContext ()).getOrderListRange ("2019-11-01 00:00:00" ,"","", time, requestCompletion);
+        ShopManager.getInstance(this.getContext()).getOrderListRange("2019-11-01 00:00:00", "", "", time, requestCompletion);
 
     }
 
     @Override
     public void initListener() {
-        orderBeanListadapter = new OrderListAdapter ( mChannelCode, orderBeanList );
-        mRvNews.setAdapter ( orderBeanListadapter );
+        orderBeanListadapter = new OrderListAdapter(mChannelCode, orderBeanList);
+        mRvNews.setAdapter(orderBeanListadapter);
     }
 
-    RequestCompletion requestCompletion = new RequestCompletion ( ) {
+    RequestCompletion requestCompletion = new RequestCompletion() {
         @Override
         public void Success(Object value, String tag) {
-            if(value != null){
-                List <OrderBean> orderlist =(List <OrderBean>)value;
-                if(orderBeanList != null){
-                    orderBeanList.clear ();
+            if (value != null) {
+                List<OrderBean> orderlist = (List<OrderBean>) value;
+                if (orderBeanList != null) {
+                    orderBeanList.clear();
                 }
-                 orderBeanList.addAll (orderlist);
-                 orderBeanListadapter.notifyDataSetChanged ();
+                orderBeanList.addAll(orderlist);
+                orderBeanListadapter.notifyDataSetChanged();
             }
 
         }

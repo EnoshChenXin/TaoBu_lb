@@ -1,12 +1,13 @@
 package com.lianbei.taobu.taobu.adapter;
 
-import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.chaychan.adapter.MultipleItemRvAdapter;
 import com.lianbei.taobu.taobu.model.CommodityBean;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 public class CommodityListAdapter extends MultipleItemRvAdapter <CommodityBean, BaseViewHolder> {
 

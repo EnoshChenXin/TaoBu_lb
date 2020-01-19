@@ -37,7 +37,7 @@ public class ViewFactory {
 			if(tag.equals ( "banner" )){
 				imageView= (ImageView)LayoutInflater.from(context).inflate(
 						R.layout.view_banner, null);
-				GlideUtils.getInstance ().load(context, url.replace("list/300x196", "large"),imageView);
+				GlideUtils.getInstance ().load(context, url,imageView);
 			}else if(tag.equals ( "banner2" )){
 				imageView = (ImageView)LayoutInflater.from(context).inflate(
 						R.layout.view_banner2, null);

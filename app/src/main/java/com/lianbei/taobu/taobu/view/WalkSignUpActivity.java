@@ -1,7 +1,6 @@
 package com.lianbei.taobu.taobu.view;
 
 import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,6 +14,7 @@ import com.lianbei.taobu.utils.ToastUtil;
 
 import java.util.List;
 
+import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.OnClick;
 

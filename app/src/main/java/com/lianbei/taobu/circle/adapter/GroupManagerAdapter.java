@@ -1,14 +1,14 @@
 package com.lianbei.taobu.circle.adapter;
 
-import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.chaychan.adapter.MultipleItemRvAdapter;
 import com.lianbei.taobu.circle.adapter.itemprovider.GroupManagerItemProvider;
-import com.lianbei.taobu.circle.model.GroupPoperBean;
 import com.lianbei.taobu.circle.model.lineListBean;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 public class GroupManagerAdapter extends MultipleItemRvAdapter <lineListBean.ListBean, BaseViewHolder> {
 

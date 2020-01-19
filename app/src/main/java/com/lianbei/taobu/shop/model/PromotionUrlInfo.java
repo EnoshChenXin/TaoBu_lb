@@ -37,7 +37,7 @@ public class PromotionUrlInfo implements Serializable {
 
     private QQAppInfo qq_app_info; // qq小程序信息
 
-    public class WeAppInfo {
+    public class WeAppInfo implements Serializable {
 
         private String weibo_app_web_view_short_url;//微博推广短链接
 
@@ -71,7 +71,7 @@ public class PromotionUrlInfo implements Serializable {
         }
     }
 
-    public class QQAppInfo {
+    public class QQAppInfo  implements Serializable{
 
         private String app_id;// 拼多多小程序id
 

@@ -1,8 +1,6 @@
 package com.lianbei.taobu.shop.view;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.support.v7.widget.GridLayoutManager;
 import android.util.Log;
 import android.view.View;
 
@@ -34,6 +32,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import butterknife.BindView;
 
 public class ActivityGoodsList extends BaseActivity implements BGARefreshLayout.BGARefreshLayoutDelegate, BaseQuickAdapter.RequestLoadMoreListener, RequestCompletion, View.OnClickListener {
@@ -94,7 +93,7 @@ public class ActivityGoodsList extends BaseActivity implements BGARefreshLayout.
             param1 = getIntent().getStringExtra("param1");
             jsonArray = new JSONArray();
             if (pagertype.equals(Constant.JIUBAOYOU)) {
-                navigation_view.setTitleText("9.9包邮");
+                navigation_view.setTitleText(this.getResources().getString(R.string.NAVIGATION_TITLE__99BY));
                 JSONObject js = new JSONObject();
                 js.put("range_id", "1");
                 js.put("range_from", "0");
@@ -105,7 +104,7 @@ public class ActivityGoodsList extends BaseActivity implements BGARefreshLayout.
                 with_coupon = true;
                 is_brand_goods = true;
             } else if (pagertype.equals(Constant.HAOHUO)) {
-                navigation_view.setTitleText("优品推荐");
+                navigation_view.setTitleText(this.getResources().getString(R.string.NAVIGATION_TITLE__YXHH));
 //                JSONObject js1 = new JSONObject();
 //                js1.put("range_id", "1");
 //                js1.put("range_from", "0");
@@ -142,7 +141,7 @@ public class ActivityGoodsList extends BaseActivity implements BGARefreshLayout.
                 is_brand_goods = false;
                 Log.e("jsonArray",jsonArray.toString());
             }else if(pagertype.equals(Constant.YONGJIN)){
-                navigation_view.setTitleText("高佣商品");
+                navigation_view.setTitleText(this.getResources().getString(R.string.NAVIGATION_TITLE__GYBD));
                 mChannelCode = 8569;//精选8569
                 channel_type = 2;//按佣金金额降序排序
                 with_coupon = false;
@@ -154,10 +153,10 @@ public class ActivityGoodsList extends BaseActivity implements BGARefreshLayout.
         }
 
         if(pagertype.equals(Constant.BAOKUAN)) {
-            navigation_view.setTitleText("爆款专区");
+            navigation_view.setTitleText(this.getResources().getString(R.string.NAVIGATION_TITLE__BKZQ));
             ShopManager.getInstance(this).top_goods(this, page, pageSize, "-1");
         }else if(pagertype.equals(Constant.ZHUTI)){
-            navigation_view.setTitleText("主题专区");
+            navigation_view.setTitleText(this.getResources().getString(R.string.NAVIGATION_TITLE__ZTZQ));
             ShopManager.getInstance(this).Theme_Goods_list(param1, this, "-1");
         }else{
             ShopManager.getInstance(this).SearchGoods(keyword,mChannelCode + "", "",page + "", pageSize + "", channel_type + "", jsonArray.toString(), with_coupon, is_brand_goods, this, "-1");

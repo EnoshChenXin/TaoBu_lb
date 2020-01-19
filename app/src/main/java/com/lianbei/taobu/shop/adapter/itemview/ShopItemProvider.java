@@ -25,7 +25,6 @@ public class ShopItemProvider extends BaseShopItemProvider {
     @Override
     protected void setData(BaseViewHolder helper, ShopBean shopBean) {
         helper.setText( R.id.goods_name, shopBean.getTitle ());
-        helper.setText ( R.id.price,shopBean.getPrice ()+"" );
         PriceView priceView = helper.getView ( R.id.oldprice );
         priceView.setText ("54.3" );
         GlideUtils.getInstance ().load(mContext, shopBean.getImgurl ().replace("list/300x196", "large"), helper.getView(R.id.iv_img));

@@ -9,7 +9,6 @@ import android.text.TextUtils;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.engine.cache.ExternalCacheDiskCacheFactory;
 import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
@@ -42,7 +41,7 @@ public class GlideUtils {
         return mInstance;
     }
 
-    RequestOptions options = new RequestOptions ( )
+    RequestOptions options = new RequestOptions( )
             .placeholder ( R.mipmap.icon3 )
             .error ( R.mipmap.icon3 )                    //加载错误之后的错误图
 

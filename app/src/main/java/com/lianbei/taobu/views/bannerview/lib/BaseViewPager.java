@@ -1,11 +1,11 @@
 package com.lianbei.taobu.views.bannerview.lib;
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-import com.ashokvarma.bottomnavigation.behaviour.VerticalScrollingBehavior;
+import androidx.viewpager.widget.ViewPager;
+
 
 /**
  * 自定义高度的viewpapger

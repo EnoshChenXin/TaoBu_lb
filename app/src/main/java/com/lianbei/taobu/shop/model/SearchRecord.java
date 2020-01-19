@@ -1,8 +1,9 @@
 package com.lianbei.taobu.shop.model;
 
-import android.support.annotation.NonNull;
 
 import java.io.Serializable;
+
+import androidx.annotation.NonNull;
 
 public class SearchRecord implements Serializable {
    private  String keywordRecord;

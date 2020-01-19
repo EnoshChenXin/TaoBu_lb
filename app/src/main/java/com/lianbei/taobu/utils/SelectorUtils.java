@@ -2,14 +2,14 @@ package com.lianbei.taobu.utils;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
-import android.support.v4.content.ContextCompat;
 
 import com.lianbei.taobu.R;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+
+import androidx.core.content.ContextCompat;
 
 public class SelectorUtils {
     /**

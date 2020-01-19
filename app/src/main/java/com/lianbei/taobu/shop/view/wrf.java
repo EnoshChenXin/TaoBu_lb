@@ -1,8 +1,9 @@
 package com.lianbei.taobu.shop.view;
 
 import android.content.Context;
-import android.support.design.widget.TabLayout;
 import android.util.AttributeSet;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class wrf extends TabLayout {
     public wrf(Context context) {

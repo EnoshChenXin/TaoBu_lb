@@ -4,7 +4,6 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
@@ -13,6 +12,8 @@ import android.widget.ImageView;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.base.BaseActivity;
 import com.lianbei.taobu.utils.ScreenUtils;
+
+import androidx.annotation.NonNull;
 
 public class PicDetailActivity extends BaseActivity implements View.OnClickListener {
     private final String TAG = getClass().getSimpleName();

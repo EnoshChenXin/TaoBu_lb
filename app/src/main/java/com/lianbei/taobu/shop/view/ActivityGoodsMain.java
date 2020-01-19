@@ -1,13 +1,11 @@
 package com.lianbei.taobu.shop.view;
 
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.google.android.material.tabs.TabLayout;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.api.APIs;
 import com.lianbei.taobu.base.BaseActivity;
@@ -24,6 +22,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import butterknife.BindView;
 import cn.bingoogolapple.refreshlayout.BGANormalRefreshViewHolder;
 import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
@@ -60,9 +60,9 @@ public class ActivityGoodsMain extends BaseActivity implements BGARefreshLayout.
         createNavigationView ( R.id.navigation_id );
         param1 =this.getIntent().getStringExtra("param1");
         if(param1.equals(Constant.MIANDAN)){
-            navigationView.setTitleText("购享免单");
+            navigationView.setTitleText(this.getResources().getString(R.string.NAVIGATION_TITLE__GXMD));
         }else if(param1.equals(Constant.ZHULI)){
-            navigationView.setTitleText("助力享免单");
+            navigationView.setTitleText(this.getResources().getString(R.string.NAVIGATION_TITLE__ZLXMD));
         }
 
        // GlideUtils.getInstance ().loadRoundRadius ( this.getContext (), APIs.MYBASESET_ZHUANPAN,lottery_gen,120 );

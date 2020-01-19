@@ -1,17 +1,14 @@
 package com.lianbei.taobu.circle.view;
 
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.ViewPager;
-import android.util.Log;
-
+import com.google.android.material.tabs.TabLayout;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.base.BaseFragment;
 import com.lianbei.taobu.taobu.adapter.SectionsPagerAdapter;
 
 import java.util.ArrayList;
 
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import butterknife.BindView;
 
 public class CircleFragment extends BaseFragment {

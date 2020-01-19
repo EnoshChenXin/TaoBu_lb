@@ -1,9 +1,6 @@
 package com.lianbei.taobu.circle.view;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -23,6 +20,7 @@ import com.lianbei.taobu.constants.Constant;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import butterknife.BindView;
 import butterknife.OnClick;
 
@@ -52,7 +50,7 @@ public class SearchGroupListActivity extends BaseActivity implements View.OnClic
     }
 
     private void setListView(){
-        mRvList.setLayoutManager ( new GridLayoutManager ( this, 1 ) );
+        mRvList.setLayoutManager ( new GridLayoutManager( this, 1 ) );
         mRvList.setNestedScrollingEnabled ( false );//解决滑动卡顿
     }
     @OnClick(R.id.cancel_btn)

@@ -44,13 +44,12 @@ import com.lianbei.taobu.views.bannerview.lib.CycleViewPager;
 import com.lianbei.taobu.views.bannerview.ui.ADInfo;
 import com.lianbei.taobu.views.h5.H5PublicActivity;
 
-import android.support.v7.widget.GridLayoutManager;
-import android.widget.Toast;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import butterknife.BindView;
 import butterknife.OnClick;
 import cn.bingoogolapple.refreshlayout.BGANormalRefreshViewHolder;
@@ -282,7 +281,7 @@ public class TaobuFragment extends BaseFragment implements View.OnClickListener,
 
 
     private void setListView(){
-        mRvNews.setLayoutManager ( new GridLayoutManager ( mActivity, 1 ) );
+        mRvNews.setLayoutManager ( new GridLayoutManager( mActivity, 1 ) );
         mRvNews.setNestedScrollingEnabled ( false );//解决滑动卡顿
     }
 

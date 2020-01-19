@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.v4.widget.NestedScrollView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -33,12 +32,14 @@ import com.lianbei.taobu.views.PriceView;
 import com.lianbei.taobu.views.bannerview.bean.IBanner;
 import com.lianbei.taobu.views.bannerview.lib.CycleViewPager;
 import com.lianbei.taobu.views.bannerview.ui.ADInfo;
+import com.lianbei.taobu.views.h5.H5PublicActivity;
 
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.core.widget.NestedScrollView;
 import butterknife.BindView;
 import butterknife.OnClick;
 
@@ -227,16 +228,16 @@ public class ActivityGoodsDetail extends BaseActivity implements View.OnClickLis
                 EventBus.getDefault().post(new MessageEvent(""));
                 break;
             case R.id.promotion_lin:
-                promotionUrl(0);
+                promotionUrl(true,0);
                 break;
             case R.id.promotion_btn2:
                 if (coupon_start_time != 0 && coupon_end_time != 0) {
-                    promotionUrl(0);
+                    promotionUrl(true,0);
                 }
                 break;
             case R.id.share_promotion: //分享赚
                 if (goodDetailBean != null) {
-                    promotionUrl(1);
+                    promotionUrl(false,1);
 
                 }
 
@@ -256,13 +257,13 @@ public class ActivityGoodsDetail extends BaseActivity implements View.OnClickLis
     /**
      * 多多进宝推广链接生成
      */
-    private void promotionUrl(int tag) {
+    private void promotionUrl(boolean isbuy,int tag) {
 //        if(UserUtils.isNotLogin ( this )){
 //            return;
 //        }
         UserInfo userInfo = UserInfo.getUserInfo(this);
         int userid = userInfo.getUser_id();
-        ShopManager.getInstance(this).PDD_Url_Generate(goods_ids.toString(), userid + "", pddurlgenerateCompletion, tag + "");
+        ShopManager.getInstance(this).PDD_Url_Generate(goods_ids.toString(), isbuy, pddurlgenerateCompletion, tag + "");
     }
 
 
@@ -416,16 +417,21 @@ public class ActivityGoodsDetail extends BaseActivity implements View.OnClickLis
         @Override
         public void Success(Object value, String tag) {
             PromotionUrlInfo promotionUrlInfo = (PromotionUrlInfo) value;
-            String url = "";
-            if (AppUtils.isInstallApp(ActivityGoodsDetail.this)) {
-                url = promotionUrlInfo.getMobile_url();
-            } else {
-                url = promotionUrlInfo.getUrl();
-            }
             if (tag.equals("0")) {
-                Intent it = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                it.setClassName("com.android.browser", "com.android.browser.BrowserActivity");
-                startActivity(it);
+                if(AppUtils.isInstallApp(ActivityGoodsDetail.this)){
+                    String content =promotionUrlInfo.getSchema_url();
+                    Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse(content));
+                    startActivity(intent);
+                }else{
+                    Intent pdd= new Intent(ActivityGoodsDetail.this, H5PublicActivity.class);
+                    pdd.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    pdd.putExtra("url",promotionUrlInfo.getUrl());
+                    pdd.putExtra("title", "拼多多");
+                    startActivity(pdd);
+//                    Intent it = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+//                    it.setClassName("com.android.browser", "com.android.browser.BrowserActivity");
+//                    startActivity(it);
+                }
             } else {
                 Intent intent = new Intent(ActivityGoodsDetail.this, ShareGoodsActivity.class);
                 intent.putExtra("goodDetailBean", goodDetailBean);

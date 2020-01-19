@@ -1,14 +1,10 @@
 package com.lianbei.taobu.shop.view;
 
 import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.widget.GridLayoutManager;
-import android.util.Log;
 import android.view.View;
 
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chaychan.uikit.TipView;
 import com.chaychan.uikit.powerfulrecyclerview.PowerfulRecyclerView;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.base.BaseFragment;
@@ -31,6 +27,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import butterknife.BindView;
 import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 

@@ -4,7 +4,6 @@ import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
@@ -12,25 +11,26 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 
 public class gradual extends View {
     private int animatedValue;
-    private int colorEnd ;
+    private int colorEnd;
     private int colorStart;
     private int animatedValue1;
 
-    private int startColorIntTop1 =0; //初始计算数值
-    private int endColorIntTop2 =-6997975; //初始计算数值
+    private int startColorIntTop1 = 0; //初始计算数值
+    private int endColorIntTop2 = -6997975; //初始计算数值
 
 
     private int startColorIntBottom1;//初始计算数值
     private int endColorIntBottom2;//初始计算数值
+
+    private int viewType = 0; // 按照具体自定义，0为商城 1 为邀请好友背景
 
 
     public gradual(Context context) {
@@ -56,6 +56,14 @@ public class gradual extends View {
         this.endColorIntTop2 = ColorIntTop;
         this.endColorIntBottom2 = ColorIntBottom;
         init();
+    }
+
+    public int getViewType() {
+        return viewType;
+    }
+
+    public void setViewType(int viewType) {
+        this.viewType = viewType;
     }
 
     public void init() {
@@ -156,19 +164,30 @@ public class gradual extends View {
         //获取View的宽高
         int width = getWidth();
         int height = getHeight();
-        Double height2 = Double.valueOf(height * 0.42 + "");
-        int Xheight = (new Double(height2)).intValue();
-        int Arcbottom = Xheight - 90;
 
-        Paint paint = new Paint();
-        paint.setAntiAlias(true);
-        LinearGradient backGradient = new LinearGradient(0, 0, 0, height, new int[]{colorStart, colorEnd}, new float[]{0, 1f}, Shader.TileMode.CLAMP);
-        paint.setShader(backGradient);
+        if (viewType == 1) {
+            Double height2 = Double.valueOf(height * 0.42 + "");
+            int Xheight = (new Double(height2)).intValue();
+            Paint paint = new Paint();
+            paint.setAntiAlias(true);
+            LinearGradient backGradient = new LinearGradient(0, 0, 0, height, new int[]{colorStart, colorEnd}, new float[]{0, 1f}, Shader.TileMode.CLAMP);
+            paint.setShader(backGradient);
 
-        canvas.drawRect(0, 0, width, Arcbottom, paint);
-        paint.setStyle(Paint.Style.FILL);//描边加填充
-        RectF rectF6 = new RectF(0-20, Arcbottom - 90, width+20, Xheight);
-        canvas.drawArc(rectF6, 0, 180, true, paint); // 绘制弧形图形2
-        //canvas.drawArc(rectF6, 180, 180, false, paint);//用中心
+            canvas.drawRect(0, 0, width, height, paint);
+            paint.setStyle(Paint.Style.FILL);//描边加填充
+        } else {
+            Double height2 = Double.valueOf(height * 0.42 + "");
+            int Xheight = (new Double(height2)).intValue();
+            int Arcbottom = Xheight - 90;
+            Paint paint = new Paint();
+            paint.setAntiAlias(true);
+            LinearGradient backGradient = new LinearGradient(0, 0, 0, height, new int[]{colorStart, colorEnd}, new float[]{0, 1f}, Shader.TileMode.CLAMP);
+            paint.setShader(backGradient);
+            canvas.drawRect(0, 0, width, Arcbottom, paint);
+            paint.setStyle(Paint.Style.FILL);//描边加填充
+            RectF rectF6 = new RectF(0 - 20, Arcbottom - 90, width + 20, Xheight);
+            canvas.drawArc(rectF6, 0, 180, true, paint); // 绘制弧形图形2
+            //canvas.drawArc(rectF6, 180, 180, false, paint);//用中心
+        }
     }
 }

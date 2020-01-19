@@ -1,7 +1,6 @@
 package com.lianbei.taobu.circle.view;
 
 
-import android.support.v7.widget.GridLayoutManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -23,6 +22,7 @@ import com.lianbei.taobu.utils.Validator;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import butterknife.BindView;
 import butterknife.OnClick;
 
@@ -84,7 +84,7 @@ public class GroupManagerActivity extends BaseActivity implements View.OnClickLi
     }
 
     private void setListView() {
-        mRvNews.setLayoutManager ( new GridLayoutManager ( this, 1 ) );
+        mRvNews.setLayoutManager ( new GridLayoutManager( this, 1 ) );
         mRvNews.setNestedScrollingEnabled ( false );//解决滑动卡顿
     }
 

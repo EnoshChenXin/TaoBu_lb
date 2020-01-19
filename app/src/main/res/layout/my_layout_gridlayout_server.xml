@@ -130,6 +130,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent">
             <ImageView
+                android:id="@+id/img_invitation"
                 android:layout_width="@dimen/my_server_width"
                 android:layout_height="@dimen/my_server_width"
                 android:layout_gravity="center_horizontal"

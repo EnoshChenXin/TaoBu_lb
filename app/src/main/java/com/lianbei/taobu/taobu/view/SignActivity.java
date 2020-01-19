@@ -1,12 +1,6 @@
 package com.lianbei.taobu.taobu.view;
 
 import android.content.Intent;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.View;
 
 import android.widget.ImageView;
@@ -14,6 +8,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.tabs.TabLayout;
 import com.haibin.calendarview.Calendar;
 import com.haibin.calendarview.CalendarLayout;
 import com.haibin.calendarview.CalendarView;
@@ -33,6 +29,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import butterknife.BindView;
 import butterknife.OnClick;
 

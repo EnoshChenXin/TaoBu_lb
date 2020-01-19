@@ -1,7 +1,6 @@
 package com.lianbei.taobu.taobu.adapter;
 
 import android.graphics.Color;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +13,8 @@ import com.lianbei.taobu.taobu.model.WalkApplyBean;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 public class WalkSignUpTagAdapter extends RecyclerView.Adapter<WalkSignUpTagAdapter.ViewHolder> {
     //private List<WithdrawalAllBean> tagList;

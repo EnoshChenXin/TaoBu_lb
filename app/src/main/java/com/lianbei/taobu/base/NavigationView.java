@@ -13,6 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.lianbei.taobu.R;
+import com.lianbei.taobu.api.PddParam;
+
 import retrofit2.http.OPTIONS;
 
 /**
@@ -91,6 +93,8 @@ public class NavigationView extends LinearLayout {
     public void setTitleText(String titleText) {
         if (null != titleText) {
             nav_title.setText(titleText);
+            //方便起见，这里牵扯到业务逻辑
+            PddParam.setCustom_parameters(this.getContext(),titleText,"");
         }
     }
 

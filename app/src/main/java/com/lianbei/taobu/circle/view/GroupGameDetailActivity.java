@@ -4,14 +4,12 @@ package com.lianbei.taobu.circle.view;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.tabs.TabLayout;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.base.BaseActivity;
 import com.lianbei.taobu.circle.adapter.GroupGameDatailAdapter;
@@ -31,6 +29,8 @@ import com.lianbei.taobu.views.CircleImageView;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import butterknife.BindView;
 import butterknife.OnClick;
 

@@ -4,7 +4,6 @@ package com.lianbei.taobu.shop.view;
 import android.Manifest;
 import android.content.Context;
 import android.os.Build;
-import android.support.v7.widget.GridLayoutManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -23,7 +22,6 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chaychan.uikit.powerfulrecyclerview.PowerfulRecyclerView;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.base.BaseActivity;
-import com.lianbei.taobu.circle.adapter.GroupGameListAdapter;
 import com.lianbei.taobu.shop.adapter.SecordRecordListAdapter;
 import com.lianbei.taobu.shop.model.SearchRecord;
 import com.lianbei.taobu.utils.ThreadUtil;
@@ -36,6 +34,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import butterknife.BindView;
 import butterknife.OnClick;
 import pub.devrel.easypermissions.EasyPermissions;
@@ -85,16 +84,18 @@ public class SearchGoodsActivity extends BaseActivity implements View.OnClickLis
     public void SearchContent() {
         //listframeLayout.setVisibility(View.VISIBLE);
         //必需继承FragmentActivity,嵌套fragment只需要这行代码
-        shopListFragment = ShopListFragment.newInstance(keyword);
+        if(shopListFragment == null){
+            shopListFragment = ShopListFragment.newInstance(keyword);
+        }
+        getSupportFragmentManager().beginTransaction().replace(R.id.listframeLayout, shopListFragment).commitAllowingStateLoss();
         shopListFragment.setNeedRequestSuccessCallback(new ShopListFragment.NeedRequestSuccessCallback() {
             @Override
             public void success(Object str) {
                 hideSearchRecordView(true);
-                Log.e("SuccessCallback:","str");
             }
         });
-        getSupportFragmentManager().beginTransaction().replace(R.id.listframeLayout, shopListFragment).commitAllowingStateLoss();
-        shopListFragment.fetchData();
+
+        shopListFragment.seatchData(keyword);
     }
 
     @Override
@@ -121,9 +122,11 @@ public class SearchGoodsActivity extends BaseActivity implements View.OnClickLis
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (!s.equals("") || s.toString().length() > 0) {
-                    clean_search_tv.setVisibility(View.VISIBLE);
+                  //  clean_search_tv.setVisibility(View.VISIBLE);
+                    hideSearchButton(false);
                 } else {
-                    clean_search_tv.setVisibility(View.GONE);
+                  //  clean_search_tv.setVisibility(View.GONE);
+                    hideSearchButton(true);
                 }
 
             }
@@ -131,9 +134,11 @@ public class SearchGoodsActivity extends BaseActivity implements View.OnClickLis
             @Override
             public void afterTextChanged(Editable s) {
                 if (!s.toString().equals("") || s.toString().length() > 0) {
-                    clean_search_tv.setVisibility(View.VISIBLE);
+                    //clean_search_tv.setVisibility(View.VISIBLE);
+                    hideSearchButton(false);
                 } else {
-                    clean_search_tv.setVisibility(View.GONE);
+                   // clean_search_tv.setVisibility(View.GONE);
+                    hideSearchButton(true);
                 }
             }
         });
@@ -154,6 +159,7 @@ public class SearchGoodsActivity extends BaseActivity implements View.OnClickLis
     public void onRefreshClick() {
 
     }
+
 
     public void hideSoftkeyboard() {
         try {
@@ -218,8 +224,14 @@ public class SearchGoodsActivity extends BaseActivity implements View.OnClickLis
                 }
             }
         });
-
-
+    }
+    private void hideSearchButton(boolean hide){
+        if(hide){
+            clean_search_tv.setVisibility(View.GONE);
+        }else{
+           // hideSearchRecordView(!hide);
+            clean_search_tv.setVisibility(View.VISIBLE);
+        }
     }
     SearchRecord searchRecordrepert;
     private void saveRecord() {

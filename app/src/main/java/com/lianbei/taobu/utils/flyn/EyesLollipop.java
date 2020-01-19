@@ -6,16 +6,18 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v4.view.OnApplyWindowInsetsListener;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.WindowInsetsCompat;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.OnApplyWindowInsetsListener;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 @TargetApi(Build.VERSION_CODES.LOLLIPOP)
 class EyesLollipop {
@@ -77,7 +79,7 @@ class EyesLollipop {
         //设置系统状态栏处于可见状态
         window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
         //通过OnApplyWindowInsetsListener()使Layout在绘制过程中将View向下偏移了,使collapsingToolbarLayout可以占据状态栏
-        ViewCompat.setOnApplyWindowInsetsListener(collapsingToolbarLayout, new OnApplyWindowInsetsListener () {
+        ViewCompat.setOnApplyWindowInsetsListener(collapsingToolbarLayout, new OnApplyWindowInsetsListener() {
             @Override
             public WindowInsetsCompat onApplyWindowInsets(View v, WindowInsetsCompat insets) {
                 return insets;

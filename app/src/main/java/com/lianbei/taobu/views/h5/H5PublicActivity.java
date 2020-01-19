@@ -1,6 +1,10 @@
 package com.lianbei.taobu.views.h5;
 
 
+import android.graphics.Bitmap;
+import android.util.Log;
+import android.webkit.WebView;
+
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
@@ -82,6 +86,43 @@ public class H5PublicActivity extends BaseActivity {
 
     @Override
     public void initListener() {
+        webView.setOnWebCallBack(new ProgressWebView.OnWebCallBack() {
+            @Override
+            public void getTitle(String title) {
+                navigationView.setTitleText (title);
+            }
+
+            @Override
+            public void getUrl(String url) {
+
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+
+            }
+
+            @Override
+            public void shouldOverrideUrlLoading(WebView view, String url) {
+
+
+            }
+
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+
+            }
+
+            @Override
+            public void onProgressChanged(WebView view, int newProgress) {
+
+            }
+
+            @Override
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+
+            }
+        });
 
     }
 

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#848497"
+    android:orientation="vertical"
+    tools:context=".mine.view.InvitationActivity">
+
+
+    <ImageView
+        android:id="@+id/main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+    <com.lianbei.taobu.shop.view.gradual
+        android:visibility="visible"
+        android:id="@+id/main_float_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:background="@null"
+            android:src="@mipmap/back2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="邀请注册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_18" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/code_card"
+        android:layout_marginBottom="-50dp"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        >
+        <com.crazysunj.cardslideview.CardSlideView
+            android:layout_gravity="bottom"
+            android:id="@+id/slide_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:card_item_rate="1.78"
+            app:card_side_offset_percent="0.25" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_60"
+            android:layout_weight="7.4"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="可以复制邀请码给好友下载APP注册时填写专属海报的二维码包含您的邀请信息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_size_12" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/code_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_tv"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_gridview2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4">
+
+        <TextView
+            android:paddingLeft="@dimen/dp_40"
+            android:paddingRight="@dimen/dp_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的邀请码"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/sp_size_12" />
+
+        <TextView
+            android:id="@+id/invitation_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9999999"
+            android:textSize="@dimen/sp_size_20"
+            android:textStyle="bold" />
+        
+        <View
+            android:background="#DDD4C9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/copy_code"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:text="立即复制"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_90"
+        android:layout_alignParentBottom="true"
+        android:background="#8A000000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/share_copy_link" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="分享链接"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/share_save_qr_code" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="地推二维码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/share_save_qr_pic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="分享专属海报"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/share_save_money_pic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="分享收益海报"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_size_12" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

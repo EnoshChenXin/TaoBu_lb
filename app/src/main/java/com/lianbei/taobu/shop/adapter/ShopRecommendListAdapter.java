@@ -1,6 +1,5 @@
 package com.lianbei.taobu.shop.adapter;
 
-import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
@@ -8,6 +7,8 @@ import com.lianbei.taobu.R;
 import com.lianbei.taobu.shop.model.ShopBean;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 public class ShopRecommendListAdapter extends BaseQuickAdapter <ShopBean, BaseViewHolder> {
 

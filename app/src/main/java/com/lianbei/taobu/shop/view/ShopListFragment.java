@@ -8,11 +8,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -25,26 +20,21 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.google.android.material.tabs.TabLayout;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.api.APIs;
 import com.lianbei.taobu.base.BaseFragment;
-import com.lianbei.taobu.circle.adapter.InformationAdapter;
-import com.lianbei.taobu.circle.model.InformationBean;
-import com.lianbei.taobu.circle.view.GameEventFragment;
 import com.lianbei.taobu.constants.Constant;
 import com.lianbei.taobu.listener.RequestCompletion;
 import com.lianbei.taobu.shop.adapter.CatsAdapter;
 import com.lianbei.taobu.shop.model.BannerImgInfo;
-import com.lianbei.taobu.shop.model.CatsBean;
 import com.lianbei.taobu.shop.model.GoodsOptBean;
 import com.lianbei.taobu.shop.model.TopGoodsBean;
 import com.lianbei.taobu.shop.viewmanager.ShopManager;
-import com.lianbei.taobu.taobu.view.GoodsUtils;
 import com.lianbei.taobu.taobu.view.viewutils.MastGridView;
 import com.lianbei.taobu.utils.TabLayoutAddOnClickHelper;
 import com.lianbei.taobu.utils.ThreadUtil;
 import com.lianbei.taobu.utils.Validator;
-import com.lianbei.taobu.utils.dbhelper.dao.OptDAPImpl;
 import com.lianbei.taobu.views.bannerview.bean.IBanner;
 import com.lianbei.taobu.views.bannerview.lib.CycleViewPager;
 import com.lianbei.taobu.views.bannerview.ui.ADInfo;
@@ -53,6 +43,10 @@ import com.lianbei.taobu.views.h5.H5PublicActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.ViewPager;
 import butterknife.BindView;
 import butterknife.OnClick;
 import cn.bingoogolapple.refreshlayout.BGANormalRefreshViewHolder;
@@ -134,7 +128,7 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
     private boolean switchtable = false; //false 没有切换
     SearchGoodsListFragment searchGoodsListFragment;
     // private CatsBean catsBean = new CatsBean();
-    private static  ShopListFragment shopListFragment;
+    private volatile static ShopListFragment categoryFragment = null;
     /**
      * 是否是推荐频道tabs
      */
@@ -147,7 +141,14 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
     }
 
     public static ShopListFragment newInstance(String keyword) {
-        ShopListFragment categoryFragment = new ShopListFragment();
+        if (categoryFragment == null) {
+            synchronized (ShopListFragment.class) {
+                if (categoryFragment == null) {
+                    categoryFragment = new ShopListFragment();
+                }
+            }
+        }
+        // ShopListFragment categoryFragment = new ShopListFragment();
         Bundle bundle = new Bundle();
         bundle.putString(Constant.CHANNEL_KEYWORD, keyword);
         categoryFragment.setArguments(bundle);
@@ -166,11 +167,6 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
         //  fetchData();
     }
 
-    public void cleandata() {
-
-    }
-
-
     @Override
     public void initViews() {
         //取出传过来的值
@@ -179,6 +175,17 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
         mChannelCode = getArguments().getString(Constant.CHANNEL_CODE, "");
         isrecommendlist = getArguments().getBoolean(Constant.IS_RECOMMEND_LIST, false);
     }
+
+    public void seatchData(String keyword) {
+        this.keyword = keyword;
+        ThreadUtil.runInUIThread(new Runnable() {
+            @Override
+            public void run() {
+                intViwePager();
+            }
+        }, 500);
+    }
+
 
     @Override
     public void fetchData() {
@@ -215,12 +222,15 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
                     labe_dzg.setImageResource(R.mipmap.labe_dzg);
                     label_yym.setImageResource(R.mipmap.label_yym);
                 } else {
-                    cats_view.setVisibility(View.VISIBLE);
-                    ShopManager.getInstance(ShopListFragment.this.getContext()).opt_get(requestCompletion, mChannelCode);//11687
+                    if (!Validator.isStrNotEmpty(keyword)) {
+                        cats_view.setVisibility(View.VISIBLE);
+                        ShopManager.getInstance(ShopListFragment.this.getContext()).opt_get(requestCompletion, mChannelCode);//11687
+                    }
+
                 }
                 intViwePager();
             }
-        },500);
+        }, 500);
     }
 
     Handler handler = new Handler(new Handler.Callback() {
@@ -258,49 +268,18 @@ public class ShopListFragment extends BaseFragment implements BGARefreshLayout.B
     }
 
     private void intViwePager() {
-        for (int channel : TAB_TITLES) {
-            tabs.addTab(tabs.newTab());
+        if (tabs == null || tabs.getTabCount() == 0) {
+            for (int channel : TAB_TITLES) {
+                tabs.addTab(tabs.newTab());
+
+            }
+            tabs.setTabMode(TabLayout.MODE_FIXED);//设置tab模式，当前为系统默认模式
+            tabs.setTabIndicatorFullWidth(false);
+            TabLayoutAddOnClickHelper.AddOnClick(this.getContext(), tabs, tabOnClickListener, onClickListener);
         }
-//        if (list != null && list.size() == 0) {
-//            for (int channel : TAB_TITLES) {
-//                SearchGoodsListFragment seatchfoodsFragment = new SearchGoodsListFragment();
-//                seatchfoodsFragment.setRequestSuccessCallback(requestSuccessCallback);
-//                Bundle bundle = new Bundle();
-//                bundle.putString(Constant.CHANNEL_CODE, mChannelCode);
-//                bundle.putString(Constant.CHANNEL_TYPE, GoodsUtils.GoodsSortType(getString(channel)));
-//                bundle.putString(Constant.CHANNEL_KEYWORD, keyword);
-//                seatchfoodsFragment.setArguments(bundle);
-////           Bundle bundle = new Bundle();
-////           bundle.putString(Constant.CHANNEL_CODE,TAB_TITLES[0]);
-//                list.add(seatchfoodsFragment);
-//                Log.e(channel + "------intViwePager---:" + list.size(), mChannelCode + "");
-//            }
-//        }
-        tabs.setTabMode(TabLayout.MODE_FIXED);//设置tab模式，当前为系统默认模式
-//        if (list == null || list.size() == 0)
-//            return;
-
-        //sectionsPagerAdapter.setFragments(list);
-        //   mContentVp.setAdapter(sectionsPagerAdapter);
-        //  mContentVp.setOffscreenPageLimit(1);
-        // tv_item_one.setBackgroundColor( Color.RED);//被选中就为红色
-        //  mIndicator.initData(0, mContentVp);
-        // tabs.setupWithViewPager(mContentVp);
-        tabs.setTabIndicatorFullWidth(false);
-        //   mContentVp.setCurrentItem(0);  //初始化显示第一个页面
-        // tabs.getTabAt(0).select();
-        // View tabView = LayoutInflater.from ( this.getContext () ).inflate (R.layout.text,null  );
-        //  tabs.getTabAt ( 1 ).setCustomView (LayoutInflater.from ( this.getContext () ).inflate (R.layout.text,null  ) );
-        //  tabs.getTabAt ( 2 ).setCustomView (LayoutInflater.from ( this.getContext () ).inflate (R.layout.text,null  ));
-        //  tabs.getTabAt ( 3 ).setCustomView (LayoutInflater.from ( this.getContext () ).inflate (R.layout.text,null  ));
-        TabLayoutAddOnClickHelper.AddOnClick(this.getContext(), tabs, tabOnClickListener, onClickListener);
-
         searchGoodsListFragment = SearchGoodsListFragment.getInstance();
         //获取Fragmen管理器
         childfragmentmanager = getChildFragmentManager();
-//        //开启
-//        FragmentTransaction transaction = childfragmentmanager.beginTransaction();
-//        transaction.replace(R.id.frlg_search_shop_list, searchGoodsListFragment).commitAllowingStateLoss();
         searchGoodsListFragment = (SearchGoodsListFragment) getChildFragmentManager()
                 .findFragmentById(R.id.frag_SearchGoodsFag);
         searchGoodsListFragment.setRequestSuccessCallback(requestSuccessCallback);

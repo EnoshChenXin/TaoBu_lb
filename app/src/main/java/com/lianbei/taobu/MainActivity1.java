@@ -14,6 +14,7 @@ import com.lianbei.taobu.base.BaseActivity;
 import com.lianbei.taobu.base.BaseFragment;
 import com.lianbei.taobu.circle.view.CircleFragment;
 import com.lianbei.taobu.mine.view.MineFragment;
+import com.lianbei.taobu.receiver.PushSetUtils;
 import com.lianbei.taobu.shop.view.ShopFragment;
 import com.lianbei.taobu.taobu.view.TaobuFragment;
 import com.lianbei.taobu.utils.SPUtils;
@@ -81,6 +82,10 @@ public class MainActivity1 extends BaseActivity {
         IntentFilter intentFilter=new IntentFilter();
         intentFilter.addAction("com.action.circle");
         registerReceiver(myReceiver,intentFilter);
+        PushSetUtils.getInstance(this).setStyleBasic();
+        PushSetUtils.getInstance(this).setStyleCustom();
+        PushSetUtils.getInstance(this).setAddActionsStyle();
+        PushSetUtils.getInstance(this).handleSetTag("A");
     }
 
     @Override

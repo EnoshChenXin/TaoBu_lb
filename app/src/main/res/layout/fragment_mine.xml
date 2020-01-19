@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".mine.view.MineFragment">
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -643,5 +643,5 @@
                     android:layout_marginBottom="@dimen/dp_20" />
             </LinearLayout>
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

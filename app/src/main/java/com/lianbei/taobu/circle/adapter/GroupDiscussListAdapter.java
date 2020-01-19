@@ -1,14 +1,14 @@
 package com.lianbei.taobu.circle.adapter;
 
-import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.chaychan.adapter.MultipleItemRvAdapter;
 import com.lianbei.taobu.circle.adapter.base.BaseDisscussListProvider;
-import com.lianbei.taobu.circle.adapter.itemprovider.DiscussItemProvider;
 import com.lianbei.taobu.circle.model.ItemInfoMsg;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * 群组留言回复列表

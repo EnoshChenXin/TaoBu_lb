@@ -5,10 +5,9 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 
-import com.lianbei.taobu.base.BaseActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class PermissionsUtil {
     private RequestPermissionCallBack mRequestPermissionCallBack;

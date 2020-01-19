@@ -2,7 +2,6 @@ package com.lianbei.taobu.shop.view;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.GridLayoutManager;
 import android.util.Log;
 import android.view.View;
 
@@ -19,6 +18,7 @@ import com.lianbei.taobu.utils.ThreadUtil;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import butterknife.BindView;
 import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 
@@ -145,7 +145,7 @@ public class SearchGoodsListFragment2 extends BaseFragment implements BGARefresh
 
     @Override
     public void initListener() {
-        mRvNews.setLayoutManager ( new GridLayoutManager ( this.getContext ( ), 1 ) );
+        mRvNews.setLayoutManager ( new GridLayoutManager( this.getContext ( ), 1 ) );
         mShopListAdapter = new BaseGoodListAdatper ( mChannelCode, BaseGoodListAdatper.COMMON_GOOD, goodsSearchBeanList );
         mRvNews.setAdapter ( mShopListAdapter );
         mShopListAdapter.setOnItemClickListener ( new BaseQuickAdapter.OnItemClickListener ( ) {

@@ -2,13 +2,12 @@ package com.lianbei.taobu.utils;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.content.ContextCompat;
 import android.text.TextPaint;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.android.material.tabs.TabLayout;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.shop.model.Channel;
 import com.lianbei.taobu.shop.view.ShopListFragment;

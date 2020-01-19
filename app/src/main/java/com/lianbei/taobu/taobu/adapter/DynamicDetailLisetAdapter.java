@@ -1,7 +1,5 @@
 package com.lianbei.taobu.taobu.adapter;
 
-import android.support.annotation.Nullable;
-import android.util.Log;
 import android.widget.ImageView;
 
 import com.chad.library.adapter.base.BaseViewHolder;
@@ -13,6 +11,8 @@ import com.lianbei.taobu.utils.GlideUtils;
 import com.lianbei.taobu.utils.Validator;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * 动态详情

@@ -1,7 +1,6 @@
 package com.lianbei.taobu.shop.view;
 
 import android.content.Intent;
-import android.support.v7.widget.GridLayoutManager;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -18,6 +17,7 @@ import com.lianbei.taobu.utils.UIUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import butterknife.BindView;
 
 public class SearchGoodsListView extends BaseFragment implements RequestCompletion {
@@ -36,7 +36,7 @@ public class SearchGoodsListView extends BaseFragment implements RequestCompleti
 
     @Override
     public void initViews() {
-        mRvNews.setLayoutManager(new GridLayoutManager (mActivity, 1));
+        mRvNews.setLayoutManager(new GridLayoutManager(mActivity, 1));
         // 设置下拉刷新和上拉加载更多的风格     参数1：应用程序上下文，参数2：是否具有上拉加载更多功能
         BGANormalRefreshViewHolder refreshViewHolder = new BGANormalRefreshViewHolder(mActivity, false);
         // 设置下拉刷新

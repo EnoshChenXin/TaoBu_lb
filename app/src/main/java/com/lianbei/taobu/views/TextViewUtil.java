@@ -2,7 +2,6 @@ package com.lianbei.taobu.views;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v4.content.ContextCompat;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.AbsoluteSizeSpan;
@@ -19,6 +18,8 @@ import android.text.style.UnderlineSpan;
 
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.utils.DisplayUtil;
+
+import androidx.core.content.ContextCompat;
 
 
 /**

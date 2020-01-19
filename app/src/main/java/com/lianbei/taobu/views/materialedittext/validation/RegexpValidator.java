@@ -1,8 +1,8 @@
 package com.lianbei.taobu.views.materialedittext.validation;
 
-import android.support.annotation.NonNull;
-
 import java.util.regex.Pattern;
+
+import androidx.annotation.NonNull;
 
 /**
  * Custom validator for Regexes

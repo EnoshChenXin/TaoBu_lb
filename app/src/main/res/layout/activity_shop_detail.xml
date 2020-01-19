@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         app:titleText="@string/NAVIGATION_SHOP_DETAILS"/>
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_below="@id/navigation_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -232,7 +232,7 @@
                     android:src="@mipmap/zaoqi_banner" />
             </LinearLayout>
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
         android:weightSum="10"

@@ -164,7 +164,7 @@
         </LinearLayout>
         <!--上部分end-->
 
-        <android.support.design.widget.TabLayout
+        <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="45dp"

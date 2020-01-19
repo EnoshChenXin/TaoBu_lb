@@ -1,11 +1,6 @@
 package com.lianbei.taobu.mine.adapter;
 
-import android.graphics.Rect;
-import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseViewHolder;
@@ -16,6 +11,8 @@ import com.lianbei.taobu.mine.model.AddressBean;
 import com.lianbei.taobu.views.CustomRoundAngleImageView;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * 动态详情

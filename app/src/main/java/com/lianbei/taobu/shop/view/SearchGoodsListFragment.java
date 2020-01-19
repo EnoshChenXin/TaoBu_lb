@@ -2,16 +2,14 @@ package com.lianbei.taobu.shop.view;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.util.Log;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chaychan.uikit.powerfulrecyclerview.PowerfulRecyclerView;
 import com.lianbei.taobu.R;
+import com.lianbei.taobu.api.PddParam;
 import com.lianbei.taobu.base.BaseFragment;
-import com.lianbei.taobu.constants.Constant;
 import com.lianbei.taobu.listener.RequestCompletion;
 import com.lianbei.taobu.shop.adapter.baseadapter.BaseGoodListAdatper;
 import com.lianbei.taobu.shop.model.TopGoodsBean;
@@ -25,6 +23,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import butterknife.BindView;
 import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 
@@ -157,12 +156,13 @@ public class SearchGoodsListFragment extends BaseFragment implements BGARefreshL
 
     @Override
     public void initListener() {
-        mRvNews.setLayoutManager ( new GridLayoutManager ( this.getContext ( ), 1 ) );
+        mRvNews.setLayoutManager ( new GridLayoutManager( this.getContext ( ), 1 ) );
         mShopListAdapter = new BaseGoodListAdatper ( mChannelCode, BaseGoodListAdatper.COMMON_GOOD, goodsSearchBeanList );
         mRvNews.setAdapter ( mShopListAdapter );
         mShopListAdapter.setOnItemClickListener ( new BaseQuickAdapter.OnItemClickListener ( ) {
             @Override
             public void onItemClick(BaseQuickAdapter baseQuickAdapter, View view, int i) {
+                PddParam.setCustom_parameters(SearchGoodsListFragment.this.getContext ( ),"",mChannelCode);
                 Intent intent = new Intent ( SearchGoodsListFragment.this.getContext ( ), ActivityGoodsDetail.class );
                 intent.setFlags ( Intent.FLAG_ACTIVITY_CLEAR_TASK );
                 intent.putExtra ( "goods_id", goodsSearchBeanList.get ( i ).getGoods_id ( ) );

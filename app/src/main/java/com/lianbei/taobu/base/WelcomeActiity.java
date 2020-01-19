@@ -1,6 +1,5 @@
 package com.lianbei.taobu.base;
 
-import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
 import android.view.Window;
 import android.view.WindowManager;
@@ -17,6 +16,7 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import androidx.viewpager.widget.ViewPager;
 import butterknife.BindView;
 
 /**

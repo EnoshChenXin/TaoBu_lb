@@ -21,8 +21,6 @@ public class CommodityItemProvider extends BaseCommodityItemProvider {
 
     @Override
     protected void setData(BaseViewHolder helper, CommodityBean commodityBean) {
-
         helper.setText ( R.id.describe,commodityBean.getDescribe ()+"" );
-        helper.setText ( R.id.price,commodityBean.getPrice ()+"" );
     }
 }

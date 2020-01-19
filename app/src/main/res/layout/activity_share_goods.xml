@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         app:titleText="商品分享" />
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:fillViewport="true"
         android:overScrollMode="never"
@@ -107,6 +107,6 @@
 
         </LinearLayout>
     </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>

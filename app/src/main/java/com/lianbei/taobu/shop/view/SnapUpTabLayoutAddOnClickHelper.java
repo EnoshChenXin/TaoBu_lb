@@ -1,14 +1,12 @@
 package com.lianbei.taobu.shop.view;
 
 import android.content.Context;
-import android.support.design.widget.TabLayout;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.android.material.tabs.TabLayout;
 import com.lianbei.taobu.R;
 import com.lianbei.taobu.shop.model.TabModel;
-import com.lianbei.taobu.shop.view.ActivityGoodsMain;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

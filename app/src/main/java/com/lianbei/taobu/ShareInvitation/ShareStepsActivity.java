@@ -5,13 +5,9 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Build;
-import android.os.Handler;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -28,6 +24,7 @@ import com.lianbei.taobu.views.ImageUtils;
 
 import java.util.List;
 
+import androidx.annotation.NonNull;
 import butterknife.BindView;
 import butterknife.OnClick;
 import pub.devrel.easypermissions.AppSettingsDialog;
